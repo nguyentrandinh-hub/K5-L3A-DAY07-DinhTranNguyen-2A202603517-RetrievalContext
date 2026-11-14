@@ -1,0 +1,434 @@
+[
+  {
+    "id": "adv-d01",
+    "split": "dev",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 1 on page 5, what are the LSAT scores and percentiles for GPT-4, GPT-4 (no vision), and GPT-3.5?",
+    "expected_answer": "GPT-4: 163 (~88th percentile); GPT-4 (no vision): 161 (~83rd percentile); GPT-3.5: 149 (~40th percentile).",
+    "evidence": "Page 5, Table 1, LSAT row"
+  },
+  {
+    "id": "adv-d02",
+    "split": "dev",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 2 on page 7, what is the 0-shot HumanEval score for GPT-4 compared to GPT-3.5?",
+    "expected_answer": "GPT-4 achieves 67.0% (0-shot) on HumanEval, compared to 48.1% (0-shot) for GPT-3.5.",
+    "evidence": "Page 7, Table 2, HumanEval row"
+  },
+  {
+    "id": "adv-d03",
+    "split": "dev",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 8 on page 28, what is the average accuracy across all multiple-choice exam benchmarks for the GPT-4 Base model vs the RLHF model?",
+    "expected_answer": "The Base model averages 73.7% while the RLHF model averages 74.0%.",
+    "evidence": "Page 28, Table 8, Average row"
+  },
+  {
+    "id": "adv-d04",
+    "split": "dev",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "Describe the 3-panel visual input example shown on page 9 involving a smartphone and a VGA connector.",
+    "expected_answer": "Panel 1 shows a smartphone with a large blue VGA connector plugged into its charging port; Panel 2 shows the packaging for a 'Lightning Cable' adapter with a picture of a VGA connector; Panel 3 shows a close-up of the VGA connector.",
+    "evidence": "Page 9, 3-panel image"
+  },
+  {
+    "id": "adv-d05",
+    "split": "dev",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "What unusual scene is depicted in the image in Table 16 on page 36?",
+    "expected_answer": "A man is ironing clothes on an ironing board attached to the roof of a moving yellow taxi on a city street.",
+    "evidence": "Page 36, Table 16 image"
+  },
+  {
+    "id": "adv-d06",
+    "split": "dev",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "In the 'Pixel to Paper Summaries' visual example on page 37, what are the 3 steps of InstructGPT RLHF explained by GPT-4 from the paper screenshot?",
+    "expected_answer": "1. Supervised fine-tuning (SFT) on demonstration data; 2. Reward model (RM) training on human comparison rankings; 3. Reinforcement learning using Proximal Policy Optimization (PPO) against the reward model.",
+    "evidence": "Page 37, InstructGPT paper screenshot & explanation"
+  },
+  {
+    "id": "adv-d07",
+    "split": "dev",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 1 on page 3, what are the X-axis and Y-axis metrics and what trend is shown as compute increases?",
+    "expected_answer": "X-axis is Normalized training compute and Y-axis is Bits per word; bits per word decreases predictably following a power law as training compute increases, accurately predicting GPT-4's final loss.",
+    "evidence": "Page 3, Figure 1"
+  },
+  {
+    "id": "adv-d08",
+    "split": "dev",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 8 on page 12, what are the Expected Calibration Error (ECE) values for the pre-trained GPT-4 model vs the PPO (RLHF) model?",
+    "expected_answer": "Pre-trained model ECE is 0.007, while PPO model ECE is 0.074.",
+    "evidence": "Page 12, Figure 8 calibration plots"
+  },
+  {
+    "id": "adv-d09",
+    "split": "dev",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 9 on page 14, what metric is plotted on the Y-axis and which three models are compared?",
+    "expected_answer": "The Y-axis plots 'Incorrect behavior rate' (0% to 50%) on disallowed and sensitive content prompts, comparing text-davinci-003, gpt-3.5-turbo, and gpt-4 (where gpt-4 has the lowest incorrect behavior rate).",
+    "evidence": "Page 14, Figure 9"
+  },
+  {
+    "id": "adv-d10",
+    "split": "dev",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine Table 1 (page 5) and Table 2 (page 7): what is GPT-4's Uniform Bar Exam score/percentile and its 5-shot MMLU accuracy?",
+    "expected_answer": "GPT-4 scores 298/400 (~90th percentile) on the Uniform Bar Exam (Table 1, page 5) and 86.4% (5-shot) on MMLU (Table 2, page 7).",
+    "evidence": "Page 5 Table 1 + Page 7 Table 2"
+  },
+  {
+    "id": "adv-d11",
+    "split": "dev",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine page 2 and page 12: how was GPT-4 trained in two stages, and how did the second stage (PPO/RLHF) affect its MMLU calibration ECE?",
+    "expected_answer": "GPT-4 was pre-trained to predict the next token and then fine-tuned with RLHF (page 2); after PPO/RLHF, its calibration error (ECE) on MMLU increased from 0.007 (pre-train) to 0.074 (page 12).",
+    "evidence": "Page 2 Section 2 + Page 12 Figure 8"
+  },
+  {
+    "id": "adv-d12",
+    "split": "dev",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine Table 14 (page 34) and Table 15 (page 35): what is the computed sum of daily meat consumption for Georgia and Western Asia, and what is the stationary heat equation in the French physics problem?",
+    "expected_answer": "The sum of daily meat consumption for Georgia (79.84 g) and Western Asia (69.62 g) is 149.46 grams per person per day (page 34); the stationary 1D heat equation is d^2T/dx^2 = 0 (page 35).",
+    "evidence": "Page 34 Table 14 + Page 35 Table 15"
+  },
+  {
+    "id": "adv-d13",
+    "split": "dev",
+    "category": "Text",
+    "answerable": true,
+    "question": "According to Section 2 on page 2, what two reasons does OpenAI give for not disclosing GPT-4's architecture, hardware, and training compute details?",
+    "expected_answer": "Competitive landscape and safety implications of large-scale models.",
+    "evidence": "Page 2, Section 2"
+  },
+  {
+    "id": "adv-d14",
+    "split": "dev",
+    "category": "Text",
+    "answerable": true,
+    "question": "According to Section 3 on page 2, how much less compute was used to train the smaller models used to predict GPT-4's performance?",
+    "expected_answer": "1,000x to 10,000x less compute.",
+    "evidence": "Page 2, Section 3"
+  },
+  {
+    "id": "adv-d15",
+    "split": "dev",
+    "category": "Text",
+    "answerable": true,
+    "question": "According to Appendix C on page 28, how are evaluation and training data preprocessed before running substring match for cross-contamination?",
+    "expected_answer": "Both evaluation and training data are processed by removing all spaces and symbols.",
+    "evidence": "Page 28, Appendix C"
+  },
+  {
+    "id": "adv-u01",
+    "split": "dev",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "What is the exact total parameter count and number of transformer layers in GPT-4?",
+    "expected_answer": "Abstain — OpenAI explicitly withheld architecture and parameter count details.",
+    "evidence": "Absent in document (page 2 explicitly states architecture/size are not disclosed)"
+  },
+  {
+    "id": "adv-u02",
+    "split": "dev",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "How many kilowatt-hours (kWh) of electricity were consumed to pre-train GPT-4?",
+    "expected_answer": "Abstain — Training hardware and energy consumption are not disclosed.",
+    "evidence": "Absent in document"
+  },
+  {
+    "id": "adv-u03",
+    "split": "dev",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "What is the 2025 API pricing per 1 million input and output tokens for GPT-4?",
+    "expected_answer": "Abstain — The 2023 technical report does not contain 2025 API pricing.",
+    "evidence": "Absent in document"
+  },
+  {
+    "id": "adv-t01",
+    "split": "test",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 1 on page 5, what are the Uniform Bar Exam (MBE+MEE+MPT) scores and percentiles for GPT-4 compared to GPT-3.5?",
+    "expected_answer": "GPT-4 scores 298 / 400 (~90th percentile), while GPT-3.5 scores 213 / 400 (~10th percentile).",
+    "evidence": "Page 5, Table 1, Uniform Bar Exam row"
+  },
+  {
+    "id": "adv-t02",
+    "split": "test",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 1 on page 5, report the GRE Quantitative scores and percentiles for GPT-4, GPT-4 (no vision), and GPT-3.5.",
+    "expected_answer": "GPT-4: 163 / 170 (~80th percentile); GPT-4 (no vision): 157 / 170 (~62nd percentile); GPT-3.5: 147 / 170 (~25th percentile).",
+    "evidence": "Page 5, Table 1, GRE Quantitative row"
+  },
+  {
+    "id": "adv-t03",
+    "split": "test",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 1 on page 5, how many more Leetcode (easy) problems did GPT-4 solve compared to GPT-3.5 out of 41?",
+    "expected_answer": "GPT-4 solved 31/41 and GPT-3.5 solved 12/41, so GPT-4 solved 19 more Leetcode (easy) problems.",
+    "evidence": "Page 5, Table 1, Leetcode (easy) row"
+  },
+  {
+    "id": "adv-t04",
+    "split": "test",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 2 on page 7, what are the GSM-8K scores for GPT-4 (5-shot CoT), GPT-3.5 (5-shot), and the best external SOTA model?",
+    "expected_answer": "GPT-4: 92.0% (5-shot chain-of-thought); GPT-3.5: 57.1% (5-shot); Best external tuned SOTA (Chinchilla + SFT+ORM-RL): 87.3%.",
+    "evidence": "Page 7, Table 2, GSM-8K row"
+  },
+  {
+    "id": "adv-t05",
+    "split": "test",
+    "category": "Table",
+    "answerable": true,
+    "question": "According to Table 2 on page 7, which benchmark is the only one where GPT-4 does not beat the best external SOTA model with benchmark-specific training, and what are both scores?",
+    "expected_answer": "DROP (F1 score): GPT-4 scores 80.9 (3-shot), whereas the benchmark-specific tuned SOTA (QDGAT) scores 88.4.",
+    "evidence": "Page 7, Table 2, DROP row & caption"
+  },
+  {
+    "id": "adv-t06",
+    "split": "test",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 8 on page 28, compare the GPT-4 Base model vs RLHF model accuracy on AP Calculus BC (MCQ) and AMC 12.",
+    "expected_answer": "On AP Calculus BC (MCQ), Base is 66.7% vs RLHF 57.8%. On AMC 12, Base is 20.0% vs RLHF 32.0%.",
+    "evidence": "Page 28, Table 8, AP Calculus BC and AMC 12 rows"
+  },
+  {
+    "id": "adv-t07",
+    "split": "test",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "In the 1997 daily meat consumption chart image on page 34 (Table 14), list all three countries/regions and their exact values in grams per person per day.",
+    "expected_answer": "Finland: 175 g, Georgia: 79.84 g, and Western Asia: 69.62 g per person per day.",
+    "evidence": "Page 34, Table 14 bar chart image"
+  },
+  {
+    "id": "adv-t08",
+    "split": "test",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "In the French physics bolometer schematic on page 35 (Table 15), what are the boundary temperatures at x=0 and x=L, and what is the final expression for T(x)?",
+    "expected_answer": "T(0) = T0 and T(L) = Tb, yielding T(x) = (Tb - T0) * (x / L) + T0.",
+    "evidence": "Page 35, Table 15 schematic & solution"
+  },
+  {
+    "id": "adv-t09",
+    "split": "test",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "What is shown in the meme image on page 38 and why is it humorous?",
+    "expected_answer": "It shows chicken nuggets arranged to vaguely resemble a world map with the caption 'Sometimes I just look at pictures of the earth from space and I marvel at how beautiful it all is', creating humor by contrasting grand cosmic awe with ordinary fast food.",
+    "evidence": "Page 38, chicken nuggets world map meme"
+  },
+  {
+    "id": "adv-t10",
+    "split": "test",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "Describe the two-panel machine learning comic illustration on page 39 and the contrast it makes.",
+    "expected_answer": "The top panel shows a frustrated presenter discussing Kernel C-dimension, structural risk minimization, and loss functions; the bottom panel shows someone casually suggesting 'MORE LAYERS!' / stacking more layers, satirizing complex theory vs brute-force deep learning.",
+    "evidence": "Page 39, ML comic illustration"
+  },
+  {
+    "id": "adv-t11",
+    "split": "test",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "In Figure 5 on page 57, list the six tools provided to GPT-4 in the tool-augmented chemistry prompt diagram.",
+    "expected_answer": "Molecule search, Purchase, Patent Search, Modify compound, Email, and Literature Answer.",
+    "evidence": "Page 57, Figure 5"
+  },
+  {
+    "id": "adv-t12",
+    "split": "test",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 4 on page 6 ('Exam results ordered by GPT-3.5 performance'), what are the X-axis, Y-axis (with range), and the three models in the legend?",
+    "expected_answer": "X-axis is Exam; Y-axis is Estimated percentile lower bound (0% to 100%); legend shows GPT-4, GPT-4 (no vision), and GPT-3.5.",
+    "evidence": "Page 6, Figure 4"
+  },
+  {
+    "id": "adv-t13",
+    "split": "test",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 5 on page 8 ('GPT-4 3-shot accuracy on MMLU across languages'), what is the X-axis metric and range, and which models/baselines appear in the legend?",
+    "expected_answer": "X-axis is Accuracy (%) ranging from 0% to 90%; legend compares Random guessing, Chinchilla, PaLM, and GPT-4.",
+    "evidence": "Page 8, Figure 5"
+  },
+  {
+    "id": "adv-t14",
+    "split": "test",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 6 on page 10 ('Performance of GPT-4 on internal adversarially-designed factuality evaluations'), what is the Y-axis metric and range, and what four models are in the legend?",
+    "expected_answer": "Y-axis is Accuracy (%) from 0% to 80%; the four models in the legend are chatgpt-v2, chatgpt-v3, chatgpt-v4, and gpt-4.",
+    "evidence": "Page 10, Figure 6"
+  },
+  {
+    "id": "adv-t15",
+    "split": "test",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In System Card Figure 8 on page 65 ('Performance of GPT-4 on TruthfulQA'), what is the Y-axis scale and which three model families are shown in the legend?",
+    "expected_answer": "Y-axis is Accuracy (%) from 0% to 70%; the three model families in the legend are Anthropic-LM, GPT-3.5, and GPT-4.",
+    "evidence": "Page 65, Figure 8"
+  },
+  {
+    "id": "adv-t16",
+    "split": "test",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 11 on page 98 ('Results on IF evaluations'), what is GPT-4 RLHF's win rate against GPT-3.5 Turbo RLHF and against GPT-3.5 RLHF?",
+    "expected_answer": "GPT-4 RLHF achieves a 61.1% win rate against GPT-3.5 Turbo RLHF and a 70.2% win rate against GPT-3.5 RLHF.",
+    "evidence": "Page 98, Figure 11 matrix"
+  },
+  {
+    "id": "adv-t17",
+    "split": "test",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine Table 1 (page 5) and Table 8 (page 28): compare GPT-4's simulated LSAT score/percentile with the MCQ accuracy of GPT-4 Base vs RLHF on LSAT.",
+    "expected_answer": "In Table 1 (page 5), GPT-4 scores 163 (~88th percentile) on the LSAT; in Table 8 (page 28), GPT-4 Base gets 67.0% vs RLHF 72.0% on LSAT MCQ.",
+    "evidence": "Page 5 Table 1 + Page 28 Table 8"
+  },
+  {
+    "id": "adv-t18",
+    "split": "test",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine Table 1 (page 5) and Table 14 (page 34): calculate GPT-4's combined SAT total score (Math + Evidence-Based Reading & Writing) out of 1600, and state Finland's 1997 daily meat consumption.",
+    "expected_answer": "GPT-4's combined SAT score is 700 + 710 = 1410 / 1600 (page 5); Finland's 1997 daily meat consumption is 175 grams per person per day (page 34).",
+    "evidence": "Page 5 Table 1 + Page 34 Table 14"
+  },
+  {
+    "id": "adv-t19",
+    "split": "test",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine Table 2 (page 7) and System Card Figure 8 (page 65): what is GPT-4 vs GPT-3.5's 5-shot MMLU accuracy, and which model performs best on TruthfulQA in Figure 8?",
+    "expected_answer": "On 5-shot MMLU (page 7, Table 2), GPT-4 scores 86.4% vs GPT-3.5 70.0%; on TruthfulQA (page 65, Figure 8), GPT-4 (RLHF) achieves the highest accuracy.",
+    "evidence": "Page 7 Table 2 + Page 65 Figure 8"
+  },
+  {
+    "id": "adv-t20",
+    "split": "test",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine Figure 8 (page 12) and Figure 9 (page 14): what is the trade-off of RLHF/PPO between calibration ECE and incorrect behavior rate on disallowed prompts?",
+    "expected_answer": "While PPO/RLHF worsens MMLU calibration ECE from 0.007 (pre-train) to 0.074 (page 12, Figure 8), GPT-4 RLHF achieves a much lower incorrect behavior rate on disallowed and sensitive prompts compared to prior models (page 14, Figure 9).",
+    "evidence": "Page 12 Figure 8 + Page 14 Figure 9"
+  },
+  {
+    "id": "adv-t21",
+    "split": "test",
+    "category": "Text",
+    "answerable": true,
+    "question": "In Section 3.2 on page 2, write the approximate power-law equation relating HumanEval pass rate to training compute C.",
+    "expected_answer": "-E_P[log(pass_rate(C))] = alpha * C^(-k).",
+    "evidence": "Page 2, Section 3.2"
+  },
+  {
+    "id": "adv-t22",
+    "split": "test",
+    "category": "Text",
+    "answerable": true,
+    "question": "According to page 12, what four high-risk areas did external domain experts adversarially test GPT-4 on?",
+    "expected_answer": "AI alignment risks, cybersecurity, biorisk, and international security.",
+    "evidence": "Page 12, adversarial testing paragraph"
+  },
+  {
+    "id": "adv-t23",
+    "split": "test",
+    "category": "Text",
+    "answerable": true,
+    "question": "According to page 12, how are zero-shot GPT-4 classifiers used during RLHF fine-tuning?",
+    "expected_answer": "They provide an additional reward signal to the GPT-4 policy model during RLHF fine-tuning.",
+    "evidence": "Page 12, bottom paragraph"
+  },
+  {
+    "id": "adv-t24",
+    "split": "test",
+    "category": "Text",
+    "answerable": true,
+    "question": "According to page 14, what deployment-time safety techniques are important to complement model-level interventions?",
+    "expected_answer": "Monitoring for abuse and a pipeline for fast iterative model improvement.",
+    "evidence": "Page 14, top paragraph"
+  },
+  {
+    "id": "adv-u04",
+    "split": "test",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "What is the exact number of attention heads and hidden dimension size (d_model) in GPT-4?",
+    "expected_answer": "Abstain — Architecture details such as attention heads and hidden dimension are not disclosed.",
+    "evidence": "Absent in document"
+  },
+  {
+    "id": "adv-u05",
+    "split": "test",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "How many metric tons of CO2 equivalent were emitted during GPT-4 pre-training?",
+    "expected_answer": "Abstain — Carbon emissions are not reported in the technical report.",
+    "evidence": "Absent in document"
+  },
+  {
+    "id": "adv-u06",
+    "split": "test",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "What is the exact release date and MMLU score of GPT-4o in this report?",
+    "expected_answer": "Abstain — GPT-4o is not part of this 2023 GPT-4 Technical Report.",
+    "evidence": "Absent in document"
+  },
+  {
+    "id": "adv-u07",
+    "split": "test",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "What exact percentage of GPT-4's pre-training dataset came from GitHub vs Wikipedia?",
+    "expected_answer": "Abstain — Pre-training dataset composition percentages are not disclosed.",
+    "evidence": "Absent in document"
+  },
+  {
+    "id": "adv-u08",
+    "split": "test",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "What is OpenAI's enterprise SLA uptime guarantee (e.g., 99.9%) for the GPT-4 API?",
+    "expected_answer": "Abstain — Commercial API SLA terms are not in the technical report.",
+    "evidence": "Absent in document"
+  },
+  {
+    "id": "adv-u09",
+    "split": "test",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "How many NVIDIA A100 GPUs were used simultaneously during GPT-4 pre-training?",
+    "expected_answer": "Abstain — Training hardware count is explicitly withheld.",
+    "evidence": "Absent in document"
+  }
+]

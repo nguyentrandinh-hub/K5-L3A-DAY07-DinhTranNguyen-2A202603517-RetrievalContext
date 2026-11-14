@@ -1,0 +1,2798 @@
+[
+  {
+    "query_id": "adv-t25",
+    "split": "test",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 1 on page 5, what are the USABO Semifinal Exam 2020 scores and percentiles for GPT-4 compared to GPT-3.5?",
+    "status": "answered",
+    "answer": "In the USABO Semifinal Exam 2020, GPT-4 scored 87 out of 150, placing it in the 99th to 100th percentile, while GPT-3.5 scored 43 out of 150, placing it in the 31st to 33rd percentile. [gpt4-p005-t00]",
+    "citations": [
+      "gpt4-p005-t00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "USABO Semifinal Exam 2020 scores percentiles GPT-4 GPT-3.5 Table 1 page 5",
+        "results": [
+          {
+            "id": "gpt4-p005-v00",
+            "page": 5,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p006-t00",
+            "page": 6,
+            "score": 0.032266
+          },
+          {
+            "id": "gpt4-p005-t00",
+            "page": 5,
+            "score": 0.031025
+          },
+          {
+            "id": "gpt4-p030-t00",
+            "page": 30,
+            "score": 0.030331
+          },
+          {
+            "id": "gpt4-p023-t00",
+            "page": 23,
+            "score": 0.030018
+          },
+          {
+            "id": "gpt4-p028-v00",
+            "page": 28,
+            "score": 0.02971
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6954.44,
+    "prompt_tokens": 4081,
+    "completion_tokens": 126,
+    "llm_cost_usd": 0.000688,
+    "error": null
+  },
+  {
+    "query_id": "adv-t26",
+    "split": "test",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 1 on page 5, report the Introductory, Certified, and Advanced Sommelier (theory knowledge) percentages for GPT-4 vs GPT-3.5.",
+    "status": "answered",
+    "answer": "For the Introductory Sommelier (theory knowledge), GPT-4 scored 92% while GPT-3.5 scored 80%. For the Certified Sommelier (theory knowledge), GPT-4 scored 86% compared to GPT-3.5's 58%. For the Advanced Sommelier (theory knowledge), GPT-4 achieved 77% while GPT-3.5 scored 46%. [gpt4-p005-t02][gpt4-p005-v00]",
+    "citations": [
+      "gpt4-p005-t02",
+      "gpt4-p005-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 1 page 5 GPT-4 GPT-3.5 Introductory Certified Advanced Sommelier percentages",
+        "results": [
+          {
+            "id": "gpt4-p028-t02",
+            "page": 28,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p005-t02",
+            "page": 5,
+            "score": 0.031754
+          },
+          {
+            "id": "gpt4-p005-v00",
+            "page": 5,
+            "score": 0.031514
+          },
+          {
+            "id": "gpt4-p030-t03",
+            "page": 30,
+            "score": 0.031025
+          },
+          {
+            "id": "gpt4-p028-v00",
+            "page": 28,
+            "score": 0.03101
+          },
+          {
+            "id": "gpt4-p030-v00",
+            "page": 30,
+            "score": 0.030579
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6510.78,
+    "prompt_tokens": 4139,
+    "completion_tokens": 155,
+    "llm_cost_usd": 0.000714,
+    "error": null
+  },
+  {
+    "query_id": "adv-t27",
+    "split": "test",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 2 on page 7, what are the AI2 Reasoning Challenge (ARC) 25-shot scores for GPT-4, GPT-3.5, and the best external tuned SOTA model (ST-MOE)?",
+    "status": "answered",
+    "answer": "The AI2 Reasoning Challenge (ARC) 25-shot scores are as follows: GPT-4 scored 96.3%, GPT-3.5 scored 85.2%, and the best external tuned SOTA model (ST-MOE) scored 86.5%. [gpt4-p007-t00][gpt4-p007-t01]",
+    "citations": [
+      "gpt4-p007-t00",
+      "gpt4-p007-t01"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 2 AI2 Reasoning Challenge ARC 25-shot scores GPT-4 GPT-3.5 ST-MOE",
+        "results": [
+          {
+            "id": "gpt4-p007-t00",
+            "page": 7,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p007-t01",
+            "page": 7,
+            "score": 0.031514
+          },
+          {
+            "id": "gpt4-p010-t00",
+            "page": 10,
+            "score": 0.028992
+          },
+          {
+            "id": "gpt4-p065-t00",
+            "page": 65,
+            "score": 0.028718
+          },
+          {
+            "id": "gpt4-p005-v00",
+            "page": 5,
+            "score": 0.028405
+          },
+          {
+            "id": "gpt4-p029-t02",
+            "page": 29,
+            "score": 0.027984
+          }
+        ]
+      },
+      {
+        "event": "inspect_page",
+        "page": 7,
+        "focus": "AI2 Reasoning Challenge (ARC) 25-shot scores for GPT-4, GPT-3.5, and ST-MOE",
+        "inspection": "The relevant information from page 7 of the GPT-4 Technical Report regarding the AI2 Reasoning Challenge (ARC) 25-shot scores for GPT-4, GPT-3.5, and ST-MOE is as follows:\n\n- **AI2 Reasoning Challenge (ARC)**\n  - **GPT-4:** 96.3%\n  - **GPT-3.5:** 85.2%\n  - **ST-MOE:** 86.5%\n\nIf you need further details or information, feel free to ask!"
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 11864.48,
+    "prompt_tokens": 31765,
+    "completion_tokens": 170,
+    "llm_cost_usd": 0.004916,
+    "error": null
+  },
+  {
+    "query_id": "adv-t28",
+    "split": "test",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 2 on page 7, what are the HellaSwag 10-shot accuracy scores for GPT-4, GPT-3.5, and the best external tuned SOTA model (ALUM)?",
+    "status": "answered",
+    "answer": "The HellaSwag 10-shot accuracy scores are as follows: GPT-4 achieved 95.3%, GPT-3.5 achieved 85.5%, and the best external tuned SOTA model (ALUM) achieved 84.2%. [gpt4-p007-t00]",
+    "citations": [
+      "gpt4-p007-t00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "HellaSwag 10-shot accuracy scores Table 2 page 7",
+        "results": [
+          {
+            "id": "gpt4-p028-v00",
+            "page": 28,
+            "score": 0.032266
+          },
+          {
+            "id": "gpt4-p008-v00",
+            "page": 8,
+            "score": 0.031054
+          },
+          {
+            "id": "gpt4-p065-v00",
+            "page": 65,
+            "score": 0.03101
+          },
+          {
+            "id": "gpt4-p007-t00",
+            "page": 7,
+            "score": 0.030282
+          },
+          {
+            "id": "gpt4-p011-v00",
+            "page": 11,
+            "score": 0.028992
+          },
+          {
+            "id": "gpt4-p032-t00",
+            "page": 32,
+            "score": 0.028718
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5368.45,
+    "prompt_tokens": 3357,
+    "completion_tokens": 103,
+    "llm_cost_usd": 0.000565,
+    "error": null
+  },
+  {
+    "query_id": "adv-t29",
+    "split": "test",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 8 on page 28, compare the GPT-4 Base model vs RLHF model accuracy on SAT Math (MCQ) and GRE Verbal.",
+    "status": "answered",
+    "answer": "On the SAT Math (MCQ), the GPT-4 Base model achieved an accuracy of 91.4%, while the RLHF model achieved 86.2%. For the GRE Verbal, the Base model scored 87.5%, and the RLHF model scored 90.0%. Thus, the Base model outperformed the RLHF model in SAT Math, but the RLHF model outperformed the Base model in GRE Verbal.[gpt4-p028-t01][gpt4-p028-t00]",
+    "citations": [
+      "gpt4-p028-t01",
+      "gpt4-p028-t00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 8 page 28 GPT-4 Base model RLHF model accuracy SAT Math GRE Verbal",
+        "results": [
+          {
+            "id": "gpt4-p028-v00",
+            "page": 28,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p028-t00",
+            "page": 28,
+            "score": 0.032002
+          },
+          {
+            "id": "gpt4-p028-t02",
+            "page": 28,
+            "score": 0.031258
+          },
+          {
+            "id": "gpt4-p065-t00",
+            "page": 65,
+            "score": 0.030777
+          },
+          {
+            "id": "gpt4-p028-t01",
+            "page": 28,
+            "score": 0.030415
+          },
+          {
+            "id": "gpt4-p065-v00",
+            "page": 65,
+            "score": 0.030118
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6865.17,
+    "prompt_tokens": 3246,
+    "completion_tokens": 168,
+    "llm_cost_usd": 0.000588,
+    "error": null
+  },
+  {
+    "query_id": "adv-t30",
+    "split": "test",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 1 on page 5, what are the scores and percentiles for GPT-4 and GPT-3.5 on AP Biology and AP Statistics?",
+    "status": "answered",
+    "answer": "On AP Biology, GPT-4 scored 5 (85th - 100th percentile) and GPT-3.5 scored 4 (62nd - 85th percentile). On AP Statistics, GPT-4 also scored 5 (85th - 100th percentile) while GPT-3.5 scored 3 (40th - 63rd percentile). [gpt4-p005-v00]",
+    "citations": [
+      "gpt4-p005-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 1 scores percentiles GPT-4 GPT-3.5 AP Biology AP Statistics",
+        "results": [
+          {
+            "id": "gpt4-p006-t00",
+            "page": 6,
+            "score": 0.032266
+          },
+          {
+            "id": "gpt4-p005-v00",
+            "page": 5,
+            "score": 0.032002
+          },
+          {
+            "id": "gpt4-p006-t01",
+            "page": 6,
+            "score": 0.031514
+          },
+          {
+            "id": "gpt4-p028-v00",
+            "page": 28,
+            "score": 0.030679
+          },
+          {
+            "id": "gpt4-p028-t02",
+            "page": 28,
+            "score": 0.03055
+          },
+          {
+            "id": "gpt4-p005-t01",
+            "page": 5,
+            "score": 0.02967
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6585.58,
+    "prompt_tokens": 3825,
+    "completion_tokens": 129,
+    "llm_cost_usd": 0.000651,
+    "error": null
+  },
+  {
+    "query_id": "adv-t31",
+    "split": "test",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "In the 3-panel smartphone image on page 9, why is the 'Lightning Cable' adapter setup unusual or humorous?",
+    "status": "answered",
+    "answer": "The humor in the 'Lightning Cable' adapter setup is derived from the absurdity of using a large, outdated VGA connector, typically used for computer monitors, plugged into a modern smartphone's charging port. This juxtaposition highlights the ridiculousness of trying to connect old technology to new devices, making it an unusual and humorous scenario. The three panels illustrate this contrast effectively: the first shows the smartphone with the VGA connector, the second features the packaging for a 'Lightning Cable' adapter with a VGA image, and the third zooms in on the VGA connector with a small Lightning connector at the end, emphasizing the comedic mismatch between the two technologies.[gpt4-p009-t00][gpt4-p009-t01]",
+    "citations": [
+      "gpt4-p009-t00",
+      "gpt4-p009-t01"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "3-panel smartphone image page 9 Lightning Cable adapter setup unusual humorous",
+        "results": [
+          {
+            "id": "gpt4-p009-v00",
+            "page": 9,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p009-t00",
+            "page": 9,
+            "score": 0.032258
+          },
+          {
+            "id": "gpt4-p009-t01",
+            "page": 9,
+            "score": 0.031498
+          },
+          {
+            "id": "gpt4-p036-v00",
+            "page": 36,
+            "score": 0.031258
+          },
+          {
+            "id": "gpt4-p036-t00",
+            "page": 36,
+            "score": 0.030777
+          },
+          {
+            "id": "gpt4-p039-v00",
+            "page": 39,
+            "score": 0.03031
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6965.1,
+    "prompt_tokens": 2250,
+    "completion_tokens": 201,
+    "llm_cost_usd": 0.000458,
+    "error": null
+  },
+  {
+    "query_id": "adv-t32",
+    "split": "test",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "What is the title and year of the bar chart image in Table 14 on page 34, and which country has the highest bar?",
+    "status": "answered",
+    "answer": "The title of the bar chart in Table 14 is 'Daily meat consumption per person, 1997', and the country with the highest bar is Finland, with a consumption of 175 grams per person per day.[gpt4-p034-v00][page-034]",
+    "citations": [
+      "gpt4-p034-v00",
+      "page-034"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 14 page 34 bar chart image title year",
+        "results": [
+          {
+            "id": "gpt4-p034-v00",
+            "page": 34,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p038-v00",
+            "page": 38,
+            "score": 0.032258
+          },
+          {
+            "id": "gpt4-p039-v00",
+            "page": 39,
+            "score": 0.03101
+          },
+          {
+            "id": "gpt4-p009-v00",
+            "page": 9,
+            "score": 0.030798
+          },
+          {
+            "id": "gpt4-p036-v00",
+            "page": 36,
+            "score": 0.03031
+          },
+          {
+            "id": "gpt4-p008-v00",
+            "page": 8,
+            "score": 0.030303
+          }
+        ]
+      },
+      {
+        "event": "inspect_page",
+        "page": 34,
+        "focus": "Table 14 bar chart image title year and highest country",
+        "inspection": "The requested information is as follows:\n\n- **Title**: Daily meat consumption per person, 1997\n- **Highest Country**: Finland\n- **Finland Consumption**: 175 g\n- **Georgia Consumption**: 79.84 g\n- **Western Asia Consumption**: 69.62 g\n\nAll values are in grams per person per day."
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 11225.37,
+    "prompt_tokens": 30555,
+    "completion_tokens": 136,
+    "llm_cost_usd": 0.004699,
+    "error": null
+  },
+  {
+    "query_id": "adv-t33",
+    "split": "test",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "In the French physics bolometer schematic diagram on page 35 (Table 15), name the three main physical components labeled in the diagram.",
+    "status": "answered",
+    "answer": "The three main physical components labeled in the French physics bolometer schematic diagram are: 1) Thermal resistor (R(T)), 2) Heat conductor (barre conductrice), and 3) Power source (source de courant). [gpt4-p035-v00]",
+    "citations": [
+      "gpt4-p035-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "French physics bolometer schematic diagram page 35 Table 15",
+        "results": [
+          {
+            "id": "gpt4-p035-v00",
+            "page": 35,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p035-t01",
+            "page": 35,
+            "score": 0.032258
+          },
+          {
+            "id": "gpt4-p039-v00",
+            "page": 39,
+            "score": 0.030159
+          },
+          {
+            "id": "gpt4-p013-v00",
+            "page": 13,
+            "score": 0.030077
+          },
+          {
+            "id": "gpt4-p012-v00",
+            "page": 12,
+            "score": 0.029857
+          },
+          {
+            "id": "gpt4-p031-t01",
+            "page": 31,
+            "score": 0.029199
+          }
+        ]
+      },
+      {
+        "event": "inspect_page",
+        "page": 35,
+        "focus": "French physics bolometer schematic diagram components",
+        "inspection": "NOT_FOUND_ON_PAGE"
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 9922.87,
+    "prompt_tokens": 30395,
+    "completion_tokens": 120,
+    "llm_cost_usd": 0.004633,
+    "error": null
+  },
+  {
+    "query_id": "adv-t34",
+    "split": "test",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "In the 'Extreme Ironing' image in Table 16 on page 36, what vehicle and activity are shown?",
+    "status": "answered",
+    "answer": "The image in Table 16 on page 36 shows a man ironing clothes on an ironing board attached to the roof of a moving taxi, illustrating the activity of 'Extreme Ironing.' [gpt4-p036-t00][gpt4-p036-v00]",
+    "citations": [
+      "gpt4-p036-t00",
+      "gpt4-p036-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Extreme Ironing image Table 16 page 36",
+        "results": [
+          {
+            "id": "gpt4-p036-t00",
+            "page": 36,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p036-v00",
+            "page": 36,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p039-v00",
+            "page": 39,
+            "score": 0.031258
+          },
+          {
+            "id": "gpt4-p038-v00",
+            "page": 38,
+            "score": 0.030798
+          },
+          {
+            "id": "gpt4-p009-v00",
+            "page": 9,
+            "score": 0.030777
+          },
+          {
+            "id": "gpt4-p035-v00",
+            "page": 35,
+            "score": 0.030536
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5223.92,
+    "prompt_tokens": 2558,
+    "completion_tokens": 92,
+    "llm_cost_usd": 0.000439,
+    "error": null
+  },
+  {
+    "query_id": "adv-t35",
+    "split": "test",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "In the 'Pixel to Paper Summaries' screenshot image on page 37, which paper is shown and what is its main finding about making language models larger?",
+    "status": "answered",
+    "answer": "The paper shown in the 'Pixel to Paper Summaries' screenshot on page 37 is the InstructGPT paper. Its main finding is that making language models larger does not inherently improve their ability to follow user intent, as larger models can still produce outputs that are untruthful, toxic, or unhelpful. The authors emphasize the importance of fine-tuning models using human feedback to enhance their performance in following instructions effectively. [gpt4-p037-t00]",
+    "citations": [
+      "gpt4-p037-t00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Pixel to Paper Summaries page 37",
+        "results": [
+          {
+            "id": "gpt4-p037-t00",
+            "page": 37,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p039-v00",
+            "page": 39,
+            "score": 0.030159
+          },
+          {
+            "id": "gpt4-p014-v00",
+            "page": 14,
+            "score": 0.029857
+          },
+          {
+            "id": "gpt4-p006-v00",
+            "page": 6,
+            "score": 0.029469
+          },
+          {
+            "id": "gpt4-p009-v00",
+            "page": 9,
+            "score": 0.02895
+          },
+          {
+            "id": "gpt4-p034-v00",
+            "page": 34,
+            "score": 0.028783
+          }
+        ]
+      },
+      {
+        "event": "inspect_page",
+        "page": 37,
+        "focus": "Pixel to Paper Summaries screenshot image",
+        "inspection": "NOT_FOUND_ON_PAGE"
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 10975.63,
+    "prompt_tokens": 30185,
+    "completion_tokens": 154,
+    "llm_cost_usd": 0.004622,
+    "error": null
+  },
+  {
+    "query_id": "adv-t36",
+    "split": "test",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 3 on page 4 ('Inverse scaling prize, hindsight neglect'), what metric is on the Y-axis and which three OpenAI API models are compared alongside GPT-4?",
+    "status": "answered",
+    "answer": "In Figure 3, the Y-axis represents 'Accuracy' (measured in percentage), and the three OpenAI API models compared alongside GPT-4 are 'ada', 'babbage', and 'curie' [gpt4-p004-t02][gpt4-p004-v00].",
+    "citations": [
+      "gpt4-p004-t02",
+      "gpt4-p004-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 3 Inverse scaling prize hindsight neglect page 4",
+        "results": [
+          {
+            "id": "gpt4-p004-t01",
+            "page": 4,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p020-t05",
+            "page": 20,
+            "score": 0.032266
+          },
+          {
+            "id": "gpt4-p004-t02",
+            "page": 4,
+            "score": 0.031514
+          },
+          {
+            "id": "gpt4-p020-t04",
+            "page": 20,
+            "score": 0.031498
+          },
+          {
+            "id": "gpt4-p004-v00",
+            "page": 4,
+            "score": 0.03101
+          },
+          {
+            "id": "gpt4-p014-v00",
+            "page": 14,
+            "score": 0.029211
+          }
+        ]
+      },
+      {
+        "event": "inspect_page",
+        "page": 4,
+        "focus": "Figure 3 details including Y-axis metric and models compared",
+        "inspection": "NOT_FOUND_ON_PAGE"
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 10201.13,
+    "prompt_tokens": 29980,
+    "completion_tokens": 147,
+    "llm_cost_usd": 0.004587,
+    "error": null
+  },
+  {
+    "query_id": "adv-t37",
+    "split": "test",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 5 on page 8 ('GPT-4 3-shot accuracy on MMLU across languages'), what is the X-axis unit/range and which model achieves the highest accuracy across almost all languages?",
+    "status": "answered",
+    "answer": "The X-axis in Figure 5 represents accuracy (%) ranging from 0% to 90%. The model that achieves the highest accuracy across almost all languages is GPT-4, with an accuracy of 85.5%[gpt4-p008-t00][gpt4-p008-v00].",
+    "citations": [
+      "gpt4-p008-t00",
+      "gpt4-p008-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 5 GPT-4 3-shot accuracy on MMLU across languages",
+        "results": [
+          {
+            "id": "gpt4-p008-t00",
+            "page": 8,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p008-v00",
+            "page": 8,
+            "score": 0.032266
+          },
+          {
+            "id": "gpt4-p065-t00",
+            "page": 65,
+            "score": 0.030331
+          },
+          {
+            "id": "gpt4-p065-v00",
+            "page": 65,
+            "score": 0.029958
+          },
+          {
+            "id": "gpt4-p001-t03",
+            "page": 1,
+            "score": 0.029324
+          },
+          {
+            "id": "gpt4-p007-t02",
+            "page": 7,
+            "score": 0.029274
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5877.31,
+    "prompt_tokens": 2606,
+    "completion_tokens": 122,
+    "llm_cost_usd": 0.000464,
+    "error": null
+  },
+  {
+    "query_id": "adv-t38",
+    "split": "test",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 7 on page 11 ('Performance of GPT-4 on TruthfulQA'), what three GPT-4 prompting/training settings are compared, and what two baseline models are included?",
+    "status": "answered",
+    "answer": "The three GPT-4 prompting/training settings compared in Figure 7 are zero-shot prompting, few-shot prompting, and RLHF (Reinforcement Learning from Human Feedback) fine-tuning. The two baseline models included are GPT-3.5 and Anthropic-LM. [gpt4-p011-t01][gpt4-p065-v00]",
+    "citations": [
+      "gpt4-p011-t01",
+      "gpt4-p065-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 7 Performance of GPT-4 on TruthfulQA",
+        "results": [
+          {
+            "id": "gpt4-p011-t01",
+            "page": 11,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p065-v00",
+            "page": 65,
+            "score": 0.032018
+          },
+          {
+            "id": "gpt4-p011-t00",
+            "page": 11,
+            "score": 0.031514
+          },
+          {
+            "id": "gpt4-p010-t01",
+            "page": 10,
+            "score": 0.031025
+          },
+          {
+            "id": "gpt4-p065-t00",
+            "page": 65,
+            "score": 0.031025
+          },
+          {
+            "id": "gpt4-p011-v00",
+            "page": 11,
+            "score": 0.03101
+          }
+        ]
+      },
+      {
+        "event": "inspect_page",
+        "page": 11,
+        "focus": "Figure 7 Performance of GPT-4 on TruthfulQA",
+        "inspection": "NOT_FOUND_ON_PAGE"
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 9548.09,
+    "prompt_tokens": 30707,
+    "completion_tokens": 142,
+    "llm_cost_usd": 0.004693,
+    "error": null
+  },
+  {
+    "query_id": "adv-t39",
+    "split": "test",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 9 on page 14 ('Incorrect behavior rate on disallowed and sensitive content'), which three models are compared and does a lower or higher value indicate better safety?",
+    "status": "answered",
+    "answer": "Figure 9 compares three models: text-davinci-003, gpt-3.5-turbo, and gpt-4. A lower value indicates better safety, as it represents a lower incorrect behavior rate on disallowed and sensitive content prompts. [gpt4-p014-t00][gpt4-p014-v00]",
+    "citations": [
+      "gpt4-p014-t00",
+      "gpt4-p014-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 9 Incorrect behavior rate on disallowed and sensitive content page 14",
+        "results": [
+          {
+            "id": "gpt4-p014-t00",
+            "page": 14,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p014-v00",
+            "page": 14,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p063-t04",
+            "page": 63,
+            "score": 0.031746
+          },
+          {
+            "id": "gpt4-p013-v00",
+            "page": 13,
+            "score": 0.030118
+          },
+          {
+            "id": "gpt4-p082-t01",
+            "page": 82,
+            "score": 0.029911
+          },
+          {
+            "id": "gpt4-p048-v00",
+            "page": 48,
+            "score": 0.026993
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5698.91,
+    "prompt_tokens": 2608,
+    "completion_tokens": 111,
+    "llm_cost_usd": 0.000458,
+    "error": null
+  },
+  {
+    "query_id": "adv-t40",
+    "split": "test",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 11 on page 98 ('Results on IF evaluations'), what is the diagonal self-play win rate, and what is GPT-3.5 Turbo RLHF's win rate against GPT-4 RLHF?",
+    "status": "answered",
+    "answer": "The diagonal self-play win rate for GPT-4 RLHF is 50.0%. The win rate of GPT-3.5 Turbo RLHF against GPT-4 RLHF is 38.9%.[gpt4-p098-t00][gpt4-p098-v00]",
+    "citations": [
+      "gpt4-p098-t00",
+      "gpt4-p098-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 11 Results on IF evaluations page 98",
+        "results": [
+          {
+            "id": "gpt4-p098-t00",
+            "page": 98,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p098-v00",
+            "page": 98,
+            "score": 0.032258
+          },
+          {
+            "id": "gpt4-p006-v00",
+            "page": 6,
+            "score": 0.030798
+          },
+          {
+            "id": "gpt4-p014-v00",
+            "page": 14,
+            "score": 0.029877
+          },
+          {
+            "id": "gpt4-p004-v00",
+            "page": 4,
+            "score": 0.028543
+          },
+          {
+            "id": "gpt4-p025-t05",
+            "page": 25,
+            "score": 0.015873
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5451.1,
+    "prompt_tokens": 2586,
+    "completion_tokens": 111,
+    "llm_cost_usd": 0.000454,
+    "error": null
+  },
+  {
+    "query_id": "adv-t41",
+    "split": "test",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine Table 1 (page 5) and Table 2 (page 7): compare GPT-4 vs GPT-3.5 on the Medical Knowledge Self-Assessment Program (MKSAP) and on WinoGrande.",
+    "status": "answered",
+    "answer": "In the Medical Knowledge Self-Assessment Program (MKSAP), GPT-4 scored 75% while GPT-3.5 scored 53%. For the WinoGrande benchmark, GPT-4 achieved 87.5% compared to GPT-3.5's 81.6%. This indicates that GPT-4 outperformed GPT-3.5 in both assessments with a difference of 22% in MKSAP and 5.9% in WinoGrande. [gpt4-p005-v00][page-007]",
+    "citations": [
+      "gpt4-p005-v00",
+      "page-007"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 1 page 5 GPT-4 GPT-3.5 Medical Knowledge Self-Assessment Program MKSAP",
+        "results": [
+          {
+            "id": "gpt4-p005-v00",
+            "page": 5,
+            "score": 0.032258
+          },
+          {
+            "id": "gpt4-p028-t02",
+            "page": 28,
+            "score": 0.031545
+          },
+          {
+            "id": "gpt4-p030-v00",
+            "page": 30,
+            "score": 0.030331
+          },
+          {
+            "id": "gpt4-p005-t00",
+            "page": 5,
+            "score": 0.029911
+          },
+          {
+            "id": "gpt4-p028-v00",
+            "page": 28,
+            "score": 0.029877
+          },
+          {
+            "id": "gpt4-p013-v00",
+            "page": 13,
+            "score": 0.029418
+          }
+        ]
+      },
+      {
+        "event": "inspect_page",
+        "page": 7,
+        "focus": "Table 2 details comparing GPT-4 and GPT-3.5 on WinoGrande",
+        "inspection": "The relevant details from Table 2 on page 7 of the GPT-4 Technical Report regarding WinoGrande are as follows:\n\n- **GPT-4**: 87.5%\n- **GPT-3.5**: 81.6%\n- **LM SOTA**: 85.1%\n- **SOTA**: 85.1%\n\nIf you need more information or details from other sections, let me know!"
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 12041.82,
+    "prompt_tokens": 32830,
+    "completion_tokens": 196,
+    "llm_cost_usd": 0.005083,
+    "error": null
+  },
+  {
+    "query_id": "adv-t42",
+    "split": "test",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine Table 1 (page 5) and Table 8 (page 28): what is GPT-4's GRE Writing score/percentile in Table 1, and what is GPT-4 Base vs RLHF accuracy on USNCO Local Section Exam 2022 in Table 8?",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the GPT-4 Technical Report.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 1 GRE Writing score percentile GPT-4",
+        "results": [
+          {
+            "id": "gpt4-p006-t00",
+            "page": 6,
+            "score": 0.032266
+          },
+          {
+            "id": "gpt4-p005-t03",
+            "page": 5,
+            "score": 0.031778
+          },
+          {
+            "id": "gpt4-p006-t01",
+            "page": 6,
+            "score": 0.030777
+          },
+          {
+            "id": "gpt4-p005-t00",
+            "page": 5,
+            "score": 0.030622
+          },
+          {
+            "id": "gpt4-p025-t02",
+            "page": 25,
+            "score": 0.030415
+          },
+          {
+            "id": "gpt4-p006-v00",
+            "page": 6,
+            "score": 0.028595
+          }
+        ]
+      },
+      {
+        "event": "inspect_page",
+        "page": 5,
+        "focus": "Table 1 GRE Writing score percentile GPT-4",
+        "inspection": "The relevant information from page 5 of the GPT-4 Technical Report regarding the GRE Writing score percentile for GPT-4 is as follows:\n\n- **Exam**: Graduate Record Examination (GRE) Verbal\n- **GPT-4**: 169 / 170 (~99th percentile)\n- **GPT-4 (no vision)**: 165 / 170 (~96th percentile)\n- **GPT-3.5**: 154 / 170 (~63rd percentile)\n\nThis data indicates the scores and percentiles achieved by GPT-4 and GPT-3.5 on the GRE Verbal section."
+      },
+      {
+        "event": "inspect_page",
+        "page": 28,
+        "focus": "USNCO Local Section Exam 2022 accuracy for GPT-4 Base vs RLHF",
+        "inspection": "Here are the relevant details extracted from page 28 of the GPT-4 Technical Report regarding the USNCO Local Section Exam 2022 accuracy for GPT-4 Base vs RLHF:\n\n- **Exam**: USNCO Local Section Exam 2022\n  - **Base model**: 51.7%\n  - **RLHF model**: 63.3%\n\nAdditionally, the average scores for all exams are:\n- **Base model average**: 73.7%\n- **RLHF model average**: 74.0%\n\nThese values indicate the performance of the base model compared to the RLHF model on the specified exam."
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "elapsed_ms": 19230.28,
+    "prompt_tokens": 58439,
+    "completion_tokens": 202,
+    "llm_cost_usd": 0.009003,
+    "error": null
+  },
+  {
+    "query_id": "adv-t43",
+    "split": "test",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine Section 2 (page 2) and Section 5 (page 68): what are GPT-4's two training stages described on page 2, and what adversarial jailbreak attack type is shown on page 68?",
+    "status": "answered",
+    "answer": "GPT-4's two training stages are: 1) pre-training, where the model is trained to predict the next token in a document using publicly available and licensed data, and 2) fine-tuning, which involves Reinforcement Learning from Human Feedback (RLHF) to improve performance on specific tasks and adherence to desired behaviors. The adversarial jailbreak attack type shown on page 68 is a 'Jailbreak' prompt, which manipulates the model to adopt harmful viewpoints, such as those of an incel, by framing the conversation in a way that elicits biased responses. [gpt4-p002-t01][gpt4-p068-t02]",
+    "citations": [
+      "gpt4-p002-t01",
+      "gpt4-p068-t02"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "GPT-4 training stages site:gpt-4 technical report",
+        "results": [
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.032002
+          },
+          {
+            "id": "gpt4-p001-t04",
+            "page": 1,
+            "score": 0.031281
+          },
+          {
+            "id": "gpt4-p002-t00",
+            "page": 2,
+            "score": 0.030118
+          },
+          {
+            "id": "gpt4-p003-v00",
+            "page": 3,
+            "score": 0.03009
+          },
+          {
+            "id": "gpt4-p001-t01",
+            "page": 1,
+            "score": 0.029514
+          }
+        ]
+      },
+      {
+        "event": "inspect_page",
+        "page": 2,
+        "focus": "GPT-4's two training stages",
+        "inspection": "NOT_FOUND_ON_PAGE"
+      },
+      {
+        "event": "search",
+        "query": "adversarial jailbreak attack site:gpt-4 technical report",
+        "results": [
+          {
+            "id": "gpt4-p002-t00",
+            "page": 2,
+            "score": 0.031319
+          },
+          {
+            "id": "gpt4-p045-t00",
+            "page": 45,
+            "score": 0.030536
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.029514
+          },
+          {
+            "id": "gpt4-p068-t02",
+            "page": 68,
+            "score": 0.029462
+          },
+          {
+            "id": "gpt4-p011-t02",
+            "page": 11,
+            "score": 0.026154
+          },
+          {
+            "id": "gpt4-p068-t03",
+            "page": 68,
+            "score": 0.016393
+          }
+        ]
+      },
+      {
+        "event": "inspect_page",
+        "page": 68,
+        "focus": "adversarial jailbreak attack type",
+        "inspection": "NOT_FOUND_ON_PAGE"
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 19642.88,
+    "prompt_tokens": 60001,
+    "completion_tokens": 261,
+    "llm_cost_usd": 0.00916,
+    "error": null
+  },
+  {
+    "query_id": "adv-t44",
+    "split": "test",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine page 12 and Figure 6 (page 63): what role do zero-shot GPT-4 classifiers (RBRMs) play during RLHF, and what is the first Yes/No question in the RBRM classification prompt on page 63?",
+    "status": "answered",
+    "answer": "Zero-shot GPT-4 classifiers (RBRMs) provide an additional reward signal to the GPT-4 policy model during RLHF fine-tuning, targeting safety-relevant aspects of the model's outputs. The first Yes/No question in the RBRM classification prompt on page 63 is not specified in the context provided. [gpt4-p012-t04]",
+    "citations": [
+      "gpt4-p012-t04"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "zero-shot GPT-4 classifiers RLHF page 12",
+        "results": [
+          {
+            "id": "gpt4-p012-t04",
+            "page": 12,
+            "score": 0.032018
+          },
+          {
+            "id": "gpt4-p011-t01",
+            "page": 11,
+            "score": 0.03101
+          },
+          {
+            "id": "gpt4-p061-t02",
+            "page": 61,
+            "score": 0.030622
+          },
+          {
+            "id": "gpt4-p065-v00",
+            "page": 65,
+            "score": 0.030622
+          },
+          {
+            "id": "gpt4-p006-t02",
+            "page": 6,
+            "score": 0.029907
+          },
+          {
+            "id": "gpt4-p065-t00",
+            "page": 65,
+            "score": 0.029762
+          }
+        ]
+      },
+      {
+        "event": "inspect_page",
+        "page": 12,
+        "focus": "role of zero-shot GPT-4 classifiers during RLHF",
+        "inspection": "NOT_FOUND_ON_PAGE"
+      },
+      {
+        "event": "inspect_page",
+        "page": 63,
+        "focus": "first Yes/No question in the RBRM classification prompt",
+        "inspection": "NOT_FOUND_ON_PAGE"
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 14409.17,
+    "prompt_tokens": 56956,
+    "completion_tokens": 171,
+    "llm_cost_usd": 0.00865,
+    "error": null
+  },
+  {
+    "query_id": "adv-t45",
+    "split": "test",
+    "category": "Text",
+    "answerable": true,
+    "question": "In Section 3.1 on page 2, on what dataset did OpenAI predict GPT-4's final loss, and what mathematical relationship approximates final loss in terms of compute?",
+    "status": "answered",
+    "answer": "OpenAI predicted GPT-4's final loss on a dataset derived from their internal codebase, which is not part of the training set. The mathematical relationship that approximates final loss in terms of compute is given by the scaling law: L(C) = aC^b + c, where L is the final loss, C is the compute, and a, b, and c are constants determined from models trained with significantly less compute. This relationship was validated by fitting a power law to the smaller models, which accurately predicted GPT-4's final loss [gpt4-p002-t03][gpt4-p002-t04].",
+    "citations": [
+      "gpt4-p002-t03",
+      "gpt4-p002-t04"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Section 3.1 page 2 dataset final loss compute relationship",
+        "results": [
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p003-v00",
+            "page": 3,
+            "score": 0.032018
+          },
+          {
+            "id": "gpt4-p002-t03",
+            "page": 2,
+            "score": 0.031498
+          },
+          {
+            "id": "gpt4-p002-t04",
+            "page": 2,
+            "score": 0.031281
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.030536
+          },
+          {
+            "id": "gpt4-p003-t01",
+            "page": 3,
+            "score": 0.029083
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6675.02,
+    "prompt_tokens": 2394,
+    "completion_tokens": 186,
+    "llm_cost_usd": 0.000471,
+    "error": null
+  },
+  {
+    "query_id": "adv-t46",
+    "split": "test",
+    "category": "Text",
+    "answerable": true,
+    "question": "According to page 4, when a minority of exam problems were seen during training, how did OpenAI report the exam results to account for contamination?",
+    "status": "answered",
+    "answer": "OpenAI reported the exam results by running a variant of each exam with the questions that were seen during training removed, and then they reported the lower score of the two variants. They believe this approach provides representative results regarding contamination from training data. [gpt4-p004-t03]",
+    "citations": [
+      "gpt4-p004-t03"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "page 4 minority exam problems training contamination results",
+        "results": [
+          {
+            "id": "gpt4-p004-t03",
+            "page": 4,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p029-t01",
+            "page": 29,
+            "score": 0.030769
+          },
+          {
+            "id": "gpt4-p032-t00",
+            "page": 32,
+            "score": 0.030159
+          },
+          {
+            "id": "gpt4-p031-v00",
+            "page": 31,
+            "score": 0.030118
+          },
+          {
+            "id": "gpt4-p032-v00",
+            "page": 32,
+            "score": 0.028665
+          },
+          {
+            "id": "gpt4-p028-t02",
+            "page": 28,
+            "score": 0.028624
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5385.03,
+    "prompt_tokens": 2660,
+    "completion_tokens": 92,
+    "llm_cost_usd": 0.000454,
+    "error": null
+  },
+  {
+    "query_id": "adv-t47",
+    "split": "test",
+    "category": "Text",
+    "answerable": true,
+    "question": "According to Appendix C on page 29, how many random substrings and of what length are sampled from each evaluation example to test cross-contamination?",
+    "status": "answered",
+    "answer": "Three random substrings of 50 characters each are sampled from each evaluation example to test for cross-contamination. If the evaluation example is shorter than 50 characters, the entire example is used instead. [gpt4-p029-t00]",
+    "citations": [
+      "gpt4-p029-t00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Appendix C page 29 random substrings length sampled evaluation example cross-contamination",
+        "results": [
+          {
+            "id": "gpt4-p028-t03",
+            "page": 28,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p029-t00",
+            "page": 29,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p029-t01",
+            "page": 29,
+            "score": 0.031498
+          },
+          {
+            "id": "gpt4-p032-v00",
+            "page": 32,
+            "score": 0.030769
+          },
+          {
+            "id": "gpt4-p028-t02",
+            "page": 28,
+            "score": 0.030331
+          },
+          {
+            "id": "gpt4-p031-v00",
+            "page": 31,
+            "score": 0.029236
+          }
+        ]
+      },
+      {
+        "event": "inspect_page",
+        "page": 29,
+        "focus": "random substrings length sampled from each evaluation example to test cross-contamination",
+        "inspection": "NOT_FOUND_ON_PAGE"
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 10972.86,
+    "prompt_tokens": 30034,
+    "completion_tokens": 123,
+    "llm_cost_usd": 0.004581,
+    "error": null
+  },
+  {
+    "query_id": "adv-t48",
+    "split": "test",
+    "category": "Text",
+    "answerable": true,
+    "question": "According to Section 5 on page 68, what three levels of defense does OpenAI recommend developers adopt for language model systems?",
+    "status": "answered",
+    "answer": "OpenAI recommends developers adopt three levels of defense for language model systems: changes to the model itself, oversight and monitoring of model usage, and product design. [gpt4-p068-t05]",
+    "citations": [
+      "gpt4-p068-t05"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Section 5 page 68 levels of defense OpenAI language model systems",
+        "results": [
+          {
+            "id": "gpt4-p068-t05",
+            "page": 68,
+            "score": 0.031778
+          },
+          {
+            "id": "gpt4-p011-t02",
+            "page": 11,
+            "score": 0.031281
+          },
+          {
+            "id": "gpt4-p041-t00",
+            "page": 41,
+            "score": 0.029031
+          },
+          {
+            "id": "gpt4-p022-t01",
+            "page": 22,
+            "score": 0.028694
+          },
+          {
+            "id": "gpt4-p074-t00",
+            "page": 74,
+            "score": 0.026585
+          },
+          {
+            "id": "gpt4-p021-t02",
+            "page": 21,
+            "score": 0.016393
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5099.2,
+    "prompt_tokens": 2274,
+    "completion_tokens": 80,
+    "llm_cost_usd": 0.000389,
+    "error": null
+  },
+  {
+    "query_id": "adv-u10",
+    "split": "test",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "What exact batch size and learning rate schedule were used to pre-train GPT-4?",
+    "status": "abstain",
+    "answer": "Insufficient evidence (step limit).",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "batch size learning rate schedule pre-training GPT-4",
+        "results": [
+          {
+            "id": "gpt4-p032-t00",
+            "page": 32,
+            "score": 0.029911
+          },
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.029762
+          },
+          {
+            "id": "gpt4-p006-t02",
+            "page": 6,
+            "score": 0.029199
+          },
+          {
+            "id": "gpt4-p003-t01",
+            "page": 3,
+            "score": 0.029031
+          },
+          {
+            "id": "gpt4-p061-t02",
+            "page": 61,
+            "score": 0.027912
+          },
+          {
+            "id": "gpt4-p007-t01",
+            "page": 7,
+            "score": 0.026154
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "batch size learning rate schedule pre-training details GPT-4",
+        "results": [
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.030092
+          },
+          {
+            "id": "gpt4-p006-t02",
+            "page": 6,
+            "score": 0.029828
+          },
+          {
+            "id": "gpt4-p003-t01",
+            "page": 3,
+            "score": 0.028139
+          },
+          {
+            "id": "gpt4-p006-t03",
+            "page": 6,
+            "score": 0.028125
+          },
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.028083
+          },
+          {
+            "id": "gpt4-p032-t00",
+            "page": 32,
+            "score": 0.027864
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "pre-training batch size learning rate schedule GPT-4",
+        "results": [
+          {
+            "id": "gpt4-p003-t01",
+            "page": 3,
+            "score": 0.031025
+          },
+          {
+            "id": "gpt4-p032-t00",
+            "page": 32,
+            "score": 0.029911
+          },
+          {
+            "id": "gpt4-p006-t02",
+            "page": 6,
+            "score": 0.029631
+          },
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.029274
+          },
+          {
+            "id": "gpt4-p061-t02",
+            "page": 61,
+            "score": 0.026876
+          },
+          {
+            "id": "gpt4-p007-t01",
+            "page": 7,
+            "score": 0.026154
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "pre-training batch size learning rate schedule GPT-4 details",
+        "results": [
+          {
+            "id": "gpt4-p003-t01",
+            "page": 3,
+            "score": 0.030303
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.030092
+          },
+          {
+            "id": "gpt4-p006-t02",
+            "page": 6,
+            "score": 0.030018
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.02938
+          },
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.028543
+          },
+          {
+            "id": "gpt4-p032-t00",
+            "page": 32,
+            "score": 0.027864
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "GPT-4 pre-training batch size learning rate schedule details",
+        "results": [
+          {
+            "id": "gpt4-p003-t01",
+            "page": 3,
+            "score": 0.031281
+          },
+          {
+            "id": "gpt4-p032-t00",
+            "page": 32,
+            "score": 0.030579
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.030092
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.029052
+          },
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.028309
+          },
+          {
+            "id": "gpt4-p003-v00",
+            "page": 3,
+            "score": 0.027885
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "GPT-4 pre-training batch size learning rate schedule details",
+        "results": [
+          {
+            "id": "gpt4-p003-t01",
+            "page": 3,
+            "score": 0.031281
+          },
+          {
+            "id": "gpt4-p032-t00",
+            "page": 32,
+            "score": 0.030579
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.030092
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.029052
+          },
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.028309
+          },
+          {
+            "id": "gpt4-p003-v00",
+            "page": 3,
+            "score": 0.027885
+          }
+        ]
+      },
+      {
+        "event": "step_limit"
+      }
+    ],
+    "elapsed_ms": 21324.45,
+    "prompt_tokens": 14013,
+    "completion_tokens": 152,
+    "llm_cost_usd": 0.002193,
+    "error": null
+  },
+  {
+    "query_id": "adv-u11",
+    "split": "test",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "How many full-time human annotators were employed for GPT-4's RLHF data labeling?",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the GPT-4 Technical Report.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "full-time human annotators employed for GPT-4 RLHF data labeling",
+        "results": [
+          {
+            "id": "gpt4-p066-t03",
+            "page": 66,
+            "score": 0.032018
+          },
+          {
+            "id": "gpt4-p061-t02",
+            "page": 61,
+            "score": 0.031258
+          },
+          {
+            "id": "gpt4-p006-t02",
+            "page": 6,
+            "score": 0.030415
+          },
+          {
+            "id": "gpt4-p037-t01",
+            "page": 37,
+            "score": 0.029828
+          },
+          {
+            "id": "gpt4-p042-t01",
+            "page": 42,
+            "score": 0.027973
+          },
+          {
+            "id": "gpt4-p011-t01",
+            "page": 11,
+            "score": 0.02781
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "number of full-time human annotators for GPT-4 RLHF data labeling",
+        "results": [
+          {
+            "id": "gpt4-p066-t03",
+            "page": 66,
+            "score": 0.031258
+          },
+          {
+            "id": "gpt4-p061-t02",
+            "page": 61,
+            "score": 0.031099
+          },
+          {
+            "id": "gpt4-p006-t02",
+            "page": 6,
+            "score": 0.030331
+          },
+          {
+            "id": "gpt4-p037-t01",
+            "page": 37,
+            "score": 0.02886
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.028382
+          },
+          {
+            "id": "gpt4-p064-t00",
+            "page": 64,
+            "score": 0.027444
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "number of full-time human annotators employed for GPT-4 RLHF data labeling",
+        "results": [
+          {
+            "id": "gpt4-p066-t03",
+            "page": 66,
+            "score": 0.031746
+          },
+          {
+            "id": "gpt4-p061-t02",
+            "page": 61,
+            "score": 0.030835
+          },
+          {
+            "id": "gpt4-p006-t02",
+            "page": 6,
+            "score": 0.030331
+          },
+          {
+            "id": "gpt4-p065-v00",
+            "page": 65,
+            "score": 0.029828
+          },
+          {
+            "id": "gpt4-p037-t01",
+            "page": 37,
+            "score": 0.028372
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.026993
+          }
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "elapsed_ms": 11967.29,
+    "prompt_tokens": 6340,
+    "completion_tokens": 105,
+    "llm_cost_usd": 0.001014,
+    "error": null
+  },
+  {
+    "query_id": "adv-u12",
+    "split": "test",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "What is GPT-4 Turbo's context window token limit released in 2024?",
+    "status": "abstain",
+    "answer": "Insufficient evidence (step limit).",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "GPT-4 Turbo context window token limit 2024",
+        "results": [
+          {
+            "id": "gpt4-p001-t04",
+            "page": 1,
+            "score": 0.031319
+          },
+          {
+            "id": "gpt4-p098-t00",
+            "page": 98,
+            "score": 0.031054
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.029551
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.02885
+          },
+          {
+            "id": "gpt4-p064-t00",
+            "page": 64,
+            "score": 0.02837
+          },
+          {
+            "id": "gpt4-p098-v00",
+            "page": 98,
+            "score": 0.016129
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "GPT-4 Turbo context window token limit 2024 details",
+        "results": [
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.031545
+          },
+          {
+            "id": "gpt4-p001-t04",
+            "page": 1,
+            "score": 0.031319
+          },
+          {
+            "id": "gpt4-p098-t00",
+            "page": 98,
+            "score": 0.030622
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.028783
+          },
+          {
+            "id": "gpt4-p010-t00",
+            "page": 10,
+            "score": 0.028665
+          },
+          {
+            "id": "gpt4-p064-t00",
+            "page": 64,
+            "score": 0.027222
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "GPT-4 Turbo context window token limit 2024 specifications",
+        "results": [
+          {
+            "id": "gpt4-p098-t00",
+            "page": 98,
+            "score": 0.031054
+          },
+          {
+            "id": "gpt4-p001-t04",
+            "page": 1,
+            "score": 0.030886
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.02938
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.029139
+          },
+          {
+            "id": "gpt4-p064-t00",
+            "page": 64,
+            "score": 0.027444
+          },
+          {
+            "id": "gpt4-p098-v00",
+            "page": 98,
+            "score": 0.016129
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "GPT-4 Turbo context window token limit 2024 specifications details",
+        "results": [
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.031545
+          },
+          {
+            "id": "gpt4-p098-t00",
+            "page": 98,
+            "score": 0.030622
+          },
+          {
+            "id": "gpt4-p001-t04",
+            "page": 1,
+            "score": 0.030282
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.028612
+          },
+          {
+            "id": "gpt4-p010-t00",
+            "page": 10,
+            "score": 0.028439
+          },
+          {
+            "id": "gpt4-p064-t00",
+            "page": 64,
+            "score": 0.026709
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "GPT-4 Turbo context window token limit 2024 specifications details",
+        "results": [
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.031545
+          },
+          {
+            "id": "gpt4-p098-t00",
+            "page": 98,
+            "score": 0.030622
+          },
+          {
+            "id": "gpt4-p001-t04",
+            "page": 1,
+            "score": 0.030282
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.028612
+          },
+          {
+            "id": "gpt4-p010-t00",
+            "page": 10,
+            "score": 0.028439
+          },
+          {
+            "id": "gpt4-p064-t00",
+            "page": 64,
+            "score": 0.026709
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "GPT-4 Turbo context window token limit 2024 specifications",
+        "results": [
+          {
+            "id": "gpt4-p098-t00",
+            "page": 98,
+            "score": 0.031054
+          },
+          {
+            "id": "gpt4-p001-t04",
+            "page": 1,
+            "score": 0.030886
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.02938
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.029139
+          },
+          {
+            "id": "gpt4-p064-t00",
+            "page": 64,
+            "score": 0.027444
+          },
+          {
+            "id": "gpt4-p098-v00",
+            "page": 98,
+            "score": 0.016129
+          }
+        ]
+      },
+      {
+        "event": "step_limit"
+      }
+    ],
+    "elapsed_ms": 21216.47,
+    "prompt_tokens": 12204,
+    "completion_tokens": 162,
+    "llm_cost_usd": 0.001928,
+    "error": null
+  },
+  {
+    "query_id": "adv-u13",
+    "split": "test",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "What was the exact total financial cost in US dollars to train GPT-4?",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the GPT-4 Technical Report.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "total financial cost to train GPT-4",
+        "results": [
+          {
+            "id": "gpt4-p002-t03",
+            "page": 2,
+            "score": 0.030622
+          },
+          {
+            "id": "gpt4-p012-v00",
+            "page": 12,
+            "score": 0.026389
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p037-t02",
+            "page": 37,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p029-t02",
+            "page": 29,
+            "score": 0.016129
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.015873
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "financial cost to train GPT-4",
+        "results": [
+          {
+            "id": "gpt4-p002-t03",
+            "page": 2,
+            "score": 0.031054
+          },
+          {
+            "id": "gpt4-p043-t00",
+            "page": 43,
+            "score": 0.029462
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p037-t02",
+            "page": 37,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p014-t02",
+            "page": 14,
+            "score": 0.015873
+          },
+          {
+            "id": "gpt4-p064-t02",
+            "page": 64,
+            "score": 0.015873
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "financial cost to train GPT-4 in US dollars",
+        "results": [
+          {
+            "id": "gpt4-p002-t03",
+            "page": 2,
+            "score": 0.032266
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.030835
+          },
+          {
+            "id": "gpt4-p043-t00",
+            "page": 43,
+            "score": 0.030282
+          },
+          {
+            "id": "gpt4-p014-t02",
+            "page": 14,
+            "score": 0.029572
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.029236
+          },
+          {
+            "id": "gpt4-p001-t03",
+            "page": 1,
+            "score": 0.028446
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "financial cost to train GPT-4 in US dollars exact total",
+        "results": [
+          {
+            "id": "gpt4-p002-t03",
+            "page": 2,
+            "score": 0.032266
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.030018
+          },
+          {
+            "id": "gpt4-p029-t02",
+            "page": 29,
+            "score": 0.029514
+          },
+          {
+            "id": "gpt4-p043-t00",
+            "page": 43,
+            "score": 0.029214
+          },
+          {
+            "id": "gpt4-p014-t02",
+            "page": 14,
+            "score": 0.028612
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.028485
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "financial cost to train GPT-4 in US dollars exact total cost",
+        "results": [
+          {
+            "id": "gpt4-p002-t03",
+            "page": 2,
+            "score": 0.031778
+          },
+          {
+            "id": "gpt4-p043-t00",
+            "page": 43,
+            "score": 0.029907
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.029828
+          },
+          {
+            "id": "gpt4-p029-t02",
+            "page": 29,
+            "score": 0.02885
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.028783
+          },
+          {
+            "id": "gpt4-p014-t02",
+            "page": 14,
+            "score": 0.028694
+          }
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "elapsed_ms": 16649.88,
+    "prompt_tokens": 11098,
+    "completion_tokens": 132,
+    "llm_cost_usd": 0.001744,
+    "error": null
+  },
+  {
+    "query_id": "adv-u14",
+    "split": "test",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "What is GPT-4's BLEU score on WMT22 Vietnamese-to-English translation in this report?",
+    "status": "abstain",
+    "answer": "Insufficient evidence (step limit).",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "GPT-4 BLEU score WMT22 Vietnamese-to-English translation",
+        "results": [
+          {
+            "id": "gpt4-p029-t03",
+            "page": 29,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p029-t04",
+            "page": 29,
+            "score": 0.032002
+          },
+          {
+            "id": "gpt4-p008-t00",
+            "page": 8,
+            "score": 0.03125
+          },
+          {
+            "id": "gpt4-p001-t02",
+            "page": 1,
+            "score": 0.030798
+          },
+          {
+            "id": "gpt4-p001-t03",
+            "page": 1,
+            "score": 0.029877
+          },
+          {
+            "id": "gpt4-p007-t02",
+            "page": 7,
+            "score": 0.029828
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "GPT-4 BLEU score WMT22 Vietnamese-to-English translation results",
+        "results": [
+          {
+            "id": "gpt4-p029-t03",
+            "page": 29,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p001-t03",
+            "page": 1,
+            "score": 0.031498
+          },
+          {
+            "id": "gpt4-p029-t04",
+            "page": 29,
+            "score": 0.03101
+          },
+          {
+            "id": "gpt4-p008-t00",
+            "page": 8,
+            "score": 0.030018
+          },
+          {
+            "id": "gpt4-p001-t02",
+            "page": 1,
+            "score": 0.029236
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.029211
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "GPT-4 WMT22 Vietnamese-to-English BLEU score",
+        "results": [
+          {
+            "id": "gpt4-p008-t00",
+            "page": 8,
+            "score": 0.032258
+          },
+          {
+            "id": "gpt4-p001-t02",
+            "page": 1,
+            "score": 0.031319
+          },
+          {
+            "id": "gpt4-p001-t03",
+            "page": 1,
+            "score": 0.030777
+          },
+          {
+            "id": "gpt4-p007-t02",
+            "page": 7,
+            "score": 0.030159
+          },
+          {
+            "id": "gpt4-p008-v00",
+            "page": 8,
+            "score": 0.029572
+          },
+          {
+            "id": "gpt4-p005-t03",
+            "page": 5,
+            "score": 0.027526
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "GPT-4 WMT22 Vietnamese-to-English BLEU score",
+        "results": [
+          {
+            "id": "gpt4-p008-t00",
+            "page": 8,
+            "score": 0.032258
+          },
+          {
+            "id": "gpt4-p001-t02",
+            "page": 1,
+            "score": 0.031319
+          },
+          {
+            "id": "gpt4-p001-t03",
+            "page": 1,
+            "score": 0.030777
+          },
+          {
+            "id": "gpt4-p007-t02",
+            "page": 7,
+            "score": 0.030159
+          },
+          {
+            "id": "gpt4-p008-v00",
+            "page": 8,
+            "score": 0.029572
+          },
+          {
+            "id": "gpt4-p005-t03",
+            "page": 5,
+            "score": 0.027526
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "GPT-4 WMT22 Vietnamese-to-English BLEU score",
+        "results": [
+          {
+            "id": "gpt4-p008-t00",
+            "page": 8,
+            "score": 0.032258
+          },
+          {
+            "id": "gpt4-p001-t02",
+            "page": 1,
+            "score": 0.031319
+          },
+          {
+            "id": "gpt4-p001-t03",
+            "page": 1,
+            "score": 0.030777
+          },
+          {
+            "id": "gpt4-p007-t02",
+            "page": 7,
+            "score": 0.030159
+          },
+          {
+            "id": "gpt4-p008-v00",
+            "page": 8,
+            "score": 0.029572
+          },
+          {
+            "id": "gpt4-p005-t03",
+            "page": 5,
+            "score": 0.027526
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "GPT-4 WMT22 Vietnamese-to-English BLEU score",
+        "results": [
+          {
+            "id": "gpt4-p008-t00",
+            "page": 8,
+            "score": 0.032258
+          },
+          {
+            "id": "gpt4-p001-t02",
+            "page": 1,
+            "score": 0.031319
+          },
+          {
+            "id": "gpt4-p001-t03",
+            "page": 1,
+            "score": 0.030777
+          },
+          {
+            "id": "gpt4-p007-t02",
+            "page": 7,
+            "score": 0.030159
+          },
+          {
+            "id": "gpt4-p008-v00",
+            "page": 8,
+            "score": 0.029572
+          },
+          {
+            "id": "gpt4-p005-t03",
+            "page": 5,
+            "score": 0.027526
+          }
+        ]
+      },
+      {
+        "event": "step_limit"
+      }
+    ],
+    "elapsed_ms": 20153.01,
+    "prompt_tokens": 14501,
+    "completion_tokens": 164,
+    "llm_cost_usd": 0.002274,
+    "error": null
+  },
+  {
+    "query_id": "adv-u15",
+    "split": "test",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "Which cloud region and Kubernetes version hosted GPT-4 inference at launch?",
+    "status": "abstain",
+    "answer": "Insufficient evidence (step limit).",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "cloud region Kubernetes version GPT-4 inference launch",
+        "results": [
+          {
+            "id": "gpt4-p017-t01",
+            "page": 17,
+            "score": 0.032266
+          },
+          {
+            "id": "gpt4-p017-t00",
+            "page": 17,
+            "score": 0.03125
+          },
+          {
+            "id": "gpt4-p098-t00",
+            "page": 98,
+            "score": 0.029287
+          },
+          {
+            "id": "gpt4-p042-t03",
+            "page": 42,
+            "score": 0.029031
+          },
+          {
+            "id": "gpt4-p048-t04",
+            "page": 48,
+            "score": 0.026905
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016393
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "cloud region Kubernetes version GPT-4 inference launch details",
+        "results": [
+          {
+            "id": "gpt4-p017-t01",
+            "page": 17,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p017-t00",
+            "page": 17,
+            "score": 0.031258
+          },
+          {
+            "id": "gpt4-p042-t03",
+            "page": 42,
+            "score": 0.029762
+          },
+          {
+            "id": "gpt4-p098-t00",
+            "page": 98,
+            "score": 0.028783
+          },
+          {
+            "id": "gpt4-p048-t04",
+            "page": 48,
+            "score": 0.026547
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016393
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "cloud region Kubernetes version GPT-4 inference launch details",
+        "results": [
+          {
+            "id": "gpt4-p017-t01",
+            "page": 17,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p017-t00",
+            "page": 17,
+            "score": 0.031258
+          },
+          {
+            "id": "gpt4-p042-t03",
+            "page": 42,
+            "score": 0.029762
+          },
+          {
+            "id": "gpt4-p098-t00",
+            "page": 98,
+            "score": 0.028783
+          },
+          {
+            "id": "gpt4-p048-t04",
+            "page": 48,
+            "score": 0.026547
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016393
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "cloud region Kubernetes version GPT-4 inference launch details",
+        "results": [
+          {
+            "id": "gpt4-p017-t01",
+            "page": 17,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p017-t00",
+            "page": 17,
+            "score": 0.031258
+          },
+          {
+            "id": "gpt4-p042-t03",
+            "page": 42,
+            "score": 0.029762
+          },
+          {
+            "id": "gpt4-p098-t00",
+            "page": 98,
+            "score": 0.028783
+          },
+          {
+            "id": "gpt4-p048-t04",
+            "page": 48,
+            "score": 0.026547
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016393
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "cloud region Kubernetes version GPT-4 inference launch details",
+        "results": [
+          {
+            "id": "gpt4-p017-t01",
+            "page": 17,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p017-t00",
+            "page": 17,
+            "score": 0.031258
+          },
+          {
+            "id": "gpt4-p042-t03",
+            "page": 42,
+            "score": 0.029762
+          },
+          {
+            "id": "gpt4-p098-t00",
+            "page": 98,
+            "score": 0.028783
+          },
+          {
+            "id": "gpt4-p048-t04",
+            "page": 48,
+            "score": 0.026547
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016393
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "cloud region Kubernetes version GPT-4 inference launch details",
+        "results": [
+          {
+            "id": "gpt4-p017-t01",
+            "page": 17,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p017-t00",
+            "page": 17,
+            "score": 0.031258
+          },
+          {
+            "id": "gpt4-p042-t03",
+            "page": 42,
+            "score": 0.029762
+          },
+          {
+            "id": "gpt4-p098-t00",
+            "page": 98,
+            "score": 0.028783
+          },
+          {
+            "id": "gpt4-p048-t04",
+            "page": 48,
+            "score": 0.026547
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016393
+          }
+        ]
+      },
+      {
+        "event": "step_limit"
+      }
+    ],
+    "elapsed_ms": 21291.38,
+    "prompt_tokens": 9793,
+    "completion_tokens": 146,
+    "llm_cost_usd": 0.001557,
+    "error": null
+  }
+]

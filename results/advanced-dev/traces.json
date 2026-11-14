@@ -1,0 +1,1240 @@
+[
+  {
+    "query_id": "adv-d01",
+    "split": "dev",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 1 on page 5, what are the LSAT scores and percentiles for GPT-4, GPT-4 (no vision), and GPT-3.5?",
+    "status": "answered",
+    "answer": "For the LSAT, GPT-4 scored 163 (≈88th percentile), GPT-4 (no vision) scored 161 (≈83rd percentile), and GPT-3.5 scored 149 (≈40th percentile). [gpt4-p005-t00]",
+    "citations": [
+      "gpt4-p005-t00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 1 LSAT scores percentiles GPT-4 GPT-4 no vision GPT-3.5",
+        "results": [
+          {
+            "id": "gpt4-p005-v00",
+            "page": 5,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p006-t00",
+            "page": 6,
+            "score": 0.032002
+          },
+          {
+            "id": "gpt4-p030-v00",
+            "page": 30,
+            "score": 0.030835
+          },
+          {
+            "id": "gpt4-p006-v00",
+            "page": 6,
+            "score": 0.030777
+          },
+          {
+            "id": "gpt4-p005-t00",
+            "page": 5,
+            "score": 0.030159
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6450.82,
+    "prompt_tokens": 3231,
+    "completion_tokens": 105,
+    "llm_cost_usd": 0.000548,
+    "error": null
+  },
+  {
+    "query_id": "adv-d02",
+    "split": "dev",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 2 on page 7, what is the 0-shot HumanEval score for GPT-4 compared to GPT-3.5?",
+    "status": "answered",
+    "answer": "The 0-shot HumanEval score for GPT-4 is 67.0%, while for GPT-3.5 it is 48.1%[gpt4-p007-t01][gpt4-p032-t00].",
+    "citations": [
+      "gpt4-p007-t01",
+      "gpt4-p032-t00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 2 page 7 GPT-4 GPT-3.5 HumanEval score",
+        "results": [
+          {
+            "id": "gpt4-p007-t01",
+            "page": 7,
+            "score": 0.031754
+          },
+          {
+            "id": "gpt4-p007-t00",
+            "page": 7,
+            "score": 0.030622
+          },
+          {
+            "id": "gpt4-p006-v00",
+            "page": 6,
+            "score": 0.029877
+          },
+          {
+            "id": "gpt4-p032-t00",
+            "page": 32,
+            "score": 0.029211
+          },
+          {
+            "id": "gpt4-p003-t01",
+            "page": 3,
+            "score": 0.029206
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5683.02,
+    "prompt_tokens": 2320,
+    "completion_tokens": 110,
+    "llm_cost_usd": 0.000414,
+    "error": null
+  },
+  {
+    "query_id": "adv-d03",
+    "split": "dev",
+    "category": "Table",
+    "answerable": true,
+    "question": "In Table 8 on page 28, what is the average accuracy across all multiple-choice exam benchmarks for the GPT-4 Base model vs the RLHF model?",
+    "status": "answered",
+    "answer": "The average accuracy across all multiple-choice exam benchmarks for the GPT-4 Base model is 73.7%, while for the RLHF model it is 74.0%[gpt4-p028-t02][gpt4-p028-v00].",
+    "citations": [
+      "gpt4-p028-t02",
+      "gpt4-p028-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 8 page 28 average accuracy GPT-4 Base model RLHF model",
+        "results": [
+          {
+            "id": "gpt4-p028-v00",
+            "page": 28,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p028-t02",
+            "page": 28,
+            "score": 0.031754
+          },
+          {
+            "id": "gpt4-p065-t00",
+            "page": 65,
+            "score": 0.031498
+          },
+          {
+            "id": "gpt4-p065-v00",
+            "page": 65,
+            "score": 0.031258
+          },
+          {
+            "id": "gpt4-p006-t02",
+            "page": 6,
+            "score": 0.031054
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6256.36,
+    "prompt_tokens": 2723,
+    "completion_tokens": 113,
+    "llm_cost_usd": 0.000476,
+    "error": null
+  },
+  {
+    "query_id": "adv-d04",
+    "split": "dev",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "Describe the 3-panel visual input example shown on page 9 involving a smartphone and a VGA connector.",
+    "status": "answered",
+    "answer": "The 3-panel visual input example on page 9 illustrates the absurdity of using an outdated VGA connector with a modern smartphone. Panel 1 shows a smartphone with a large blue VGA connector plugged into its charging port. Panel 2 features the package for a 'Lightning Cable' adapter, which includes a picture of a VGA connector. Panel 3 provides a close-up of the VGA connector, highlighting its small Lightning connector at the end, used for charging iPhones and other Apple devices. The humor arises from the juxtaposition of old and new technology, emphasizing the impracticality of such a connection.[gpt4-p009-t00][gpt4-p009-t01]",
+    "citations": [
+      "gpt4-p009-t00",
+      "gpt4-p009-t01"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "3-panel visual input example smartphone VGA connector page 9",
+        "results": [
+          {
+            "id": "gpt4-p009-v00",
+            "page": 9,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p009-t00",
+            "page": 9,
+            "score": 0.032258
+          },
+          {
+            "id": "gpt4-p009-t01",
+            "page": 9,
+            "score": 0.031746
+          },
+          {
+            "id": "gpt4-p036-v00",
+            "page": 36,
+            "score": 0.030536
+          },
+          {
+            "id": "gpt4-p035-v00",
+            "page": 35,
+            "score": 0.030077
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6550.89,
+    "prompt_tokens": 1989,
+    "completion_tokens": 190,
+    "llm_cost_usd": 0.000412,
+    "error": null
+  },
+  {
+    "query_id": "adv-d05",
+    "split": "dev",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "What unusual scene is depicted in the image in Table 16 on page 36?",
+    "status": "answered",
+    "answer": "The unusual scene depicted in the image in Table 16 on page 36 shows a man ironing clothes on an ironing board that is attached to the roof of a moving taxi. This scenario illustrates the concept of 'Extreme Ironing,' presenting a humorous and extreme take on the mundane task of ironing in an unconventional setting, with the man wearing a yellow shirt and focused on his task against a backdrop of a city street filled with yellow taxis and buildings.[gpt4-p036-v00]",
+    "citations": [
+      "gpt4-p036-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 16 page 36 image description",
+        "results": [
+          {
+            "id": "gpt4-p036-v00",
+            "page": 36,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p009-v00",
+            "page": 9,
+            "score": 0.031754
+          },
+          {
+            "id": "gpt4-p038-v00",
+            "page": 38,
+            "score": 0.031498
+          },
+          {
+            "id": "gpt4-p035-v00",
+            "page": 35,
+            "score": 0.031281
+          },
+          {
+            "id": "gpt4-p039-v00",
+            "page": 39,
+            "score": 0.03009
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6593.7,
+    "prompt_tokens": 1942,
+    "completion_tokens": 140,
+    "llm_cost_usd": 0.000375,
+    "error": null
+  },
+  {
+    "query_id": "adv-d06",
+    "split": "dev",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "question": "In the 'Pixel to Paper Summaries' visual example on page 37, what are the 3 steps of InstructGPT RLHF explained by GPT-4 from the paper screenshot?",
+    "status": "answered",
+    "answer": "The three steps of InstructGPT RLHF explained by GPT-4 are: 1. Supervised fine-tuning (SFT): Collect demonstration data consisting of labeler-written prompts and desired output behavior to fine-tune GPT-3 with supervised learning. 2. Reward model (RM) training: Collect comparison data where a labeler ranks outputs from several model samples from best to worst, which is used to train the reward model. 3. Reinforcement learning using Proximal Policy Optimization (PPO): Optimize a policy against the reward model using reinforcement learning, where the policy generates outputs for new prompts, and the reward model calculates rewards to update the policy using the PPO algorithm. These steps are iteratively performed to align model outputs with human preferences and improve instruction following [gpt4-p037-t01][gpt4-p037-t02].",
+    "citations": [
+      "gpt4-p037-t01",
+      "gpt4-p037-t02"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Pixel to Paper Summaries InstructGPT RLHF page 37",
+        "results": [
+          {
+            "id": "gpt4-p037-t00",
+            "page": 37,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p098-v00",
+            "page": 98,
+            "score": 0.032002
+          },
+          {
+            "id": "gpt4-p065-v00",
+            "page": 65,
+            "score": 0.029857
+          },
+          {
+            "id": "gpt4-p037-t02",
+            "page": 37,
+            "score": 0.029514
+          },
+          {
+            "id": "gpt4-p037-t01",
+            "page": 37,
+            "score": 0.028787
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 7874.46,
+    "prompt_tokens": 2242,
+    "completion_tokens": 232,
+    "llm_cost_usd": 0.000476,
+    "error": null
+  },
+  {
+    "query_id": "adv-d07",
+    "split": "dev",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 1 on page 3, what are the X-axis and Y-axis metrics and what trend is shown as compute increases?",
+    "status": "answered",
+    "answer": "In Figure 1 on page 3, the X-axis represents 'Compute' (normalized training compute) and the Y-axis represents 'Bits per word'. The trend shown as compute increases is a decreasing trend, where bits per word decrease as compute increases, indicating improved performance with more compute. This trend is supported by a power law fit indicated by the dotted line in the figure, which accurately predicts GPT-4's final loss [gpt4-p003-t00][gpt4-p003-v00].",
+    "citations": [
+      "gpt4-p003-t00",
+      "gpt4-p003-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 1 page 3 metrics X-axis Y-axis trend compute increases",
+        "results": [
+          {
+            "id": "gpt4-p003-v00",
+            "page": 3,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p004-v00",
+            "page": 4,
+            "score": 0.031025
+          },
+          {
+            "id": "gpt4-p014-v00",
+            "page": 14,
+            "score": 0.030798
+          },
+          {
+            "id": "gpt4-p003-t01",
+            "page": 3,
+            "score": 0.030331
+          },
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.030214
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6864.25,
+    "prompt_tokens": 2328,
+    "completion_tokens": 161,
+    "llm_cost_usd": 0.000446,
+    "error": null
+  },
+  {
+    "query_id": "adv-d08",
+    "split": "dev",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 8 on page 12, what are the Expected Calibration Error (ECE) values for the pre-trained GPT-4 model vs the PPO (RLHF) model?",
+    "status": "answered",
+    "answer": "The Expected Calibration Error (ECE) for the pre-trained GPT-4 model is 0.007, while for the PPO (RLHF) model it is 0.074. This indicates that the post-training process significantly worsens calibration performance compared to the pre-trained model.[gpt4-p012-t00][gpt4-p012-v00]",
+    "citations": [
+      "gpt4-p012-t00",
+      "gpt4-p012-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 8 Expected Calibration Error ECE values pre-trained GPT-4 model PPO RLHF model",
+        "results": [
+          {
+            "id": "gpt4-p012-t00",
+            "page": 12,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p012-v00",
+            "page": 12,
+            "score": 0.032266
+          },
+          {
+            "id": "gpt4-p011-t01",
+            "page": 11,
+            "score": 0.030777
+          },
+          {
+            "id": "gpt4-p028-t02",
+            "page": 28,
+            "score": 0.03009
+          },
+          {
+            "id": "gpt4-p010-t03",
+            "page": 10,
+            "score": 0.029828
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6310.49,
+    "prompt_tokens": 2307,
+    "completion_tokens": 133,
+    "llm_cost_usd": 0.000426,
+    "error": null
+  },
+  {
+    "query_id": "adv-d09",
+    "split": "dev",
+    "category": "Chart",
+    "answerable": true,
+    "question": "In Figure 9 on page 14, what metric is plotted on the Y-axis and which three models are compared?",
+    "status": "answered",
+    "answer": "In Figure 9 on page 14, the Y-axis plots the incorrect behavior rate (percentage). The three models compared are text-davinci-003, gpt-3.5-turbo, and gpt-4.[gpt4-p014-v00]",
+    "citations": [
+      "gpt4-p014-v00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 9 page 14 metrics models comparison",
+        "results": [
+          {
+            "id": "gpt4-p028-v00",
+            "page": 28,
+            "score": 0.031778
+          },
+          {
+            "id": "gpt4-p003-v00",
+            "page": 3,
+            "score": 0.031754
+          },
+          {
+            "id": "gpt4-p014-v00",
+            "page": 14,
+            "score": 0.031319
+          },
+          {
+            "id": "gpt4-p098-v00",
+            "page": 98,
+            "score": 0.031025
+          },
+          {
+            "id": "gpt4-p008-v00",
+            "page": 8,
+            "score": 0.030579
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6082.08,
+    "prompt_tokens": 2399,
+    "completion_tokens": 98,
+    "llm_cost_usd": 0.000419,
+    "error": null
+  },
+  {
+    "query_id": "adv-d10",
+    "split": "dev",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine Table 1 (page 5) and Table 2 (page 7): what is GPT-4's Uniform Bar Exam score/percentile and its 5-shot MMLU accuracy?",
+    "status": "answered",
+    "answer": "GPT-4's Uniform Bar Exam score is 298 out of 400, which corresponds to approximately the 90th percentile. Its 5-shot MMLU accuracy is not explicitly stated in the provided context. [gpt4-p005-t00][gpt4-p030-t00]",
+    "citations": [
+      "gpt4-p005-t00",
+      "gpt4-p030-t00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 1 page 5 GPT-4 Uniform Bar Exam score percentile",
+        "results": [
+          {
+            "id": "gpt4-p006-t01",
+            "page": 6,
+            "score": 0.032018
+          },
+          {
+            "id": "gpt4-p006-t00",
+            "page": 6,
+            "score": 0.031754
+          },
+          {
+            "id": "gpt4-p005-t00",
+            "page": 5,
+            "score": 0.031319
+          },
+          {
+            "id": "gpt4-p005-t03",
+            "page": 5,
+            "score": 0.030835
+          },
+          {
+            "id": "gpt4-p030-t00",
+            "page": 30,
+            "score": 0.030579
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6461.27,
+    "prompt_tokens": 2222,
+    "completion_tokens": 101,
+    "llm_cost_usd": 0.000394,
+    "error": null
+  },
+  {
+    "query_id": "adv-d11",
+    "split": "dev",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine page 2 and page 12: how was GPT-4 trained in two stages, and how did the second stage (PPO/RLHF) affect its MMLU calibration ECE?",
+    "status": "answered",
+    "answer": "GPT-4 was trained in two stages: the first stage involved pre-training on a diverse dataset, while the second stage utilized Proximal Policy Optimization (PPO) and Reinforcement Learning from Human Feedback (RLHF) to fine-tune the model. This second stage negatively impacted the model's calibration, as evidenced by the Expected Calibration Error (ECE) increasing from 0.007 in the pre-trained model to 0.074 in the post-trained model, indicating that the post-training process hurt calibration significantly [gpt4-p012-t00][gpt4-p011-t01].",
+    "citations": [
+      "gpt4-p012-t00",
+      "gpt4-p011-t01"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "GPT-4 training stages PPO RLHF MMLU calibration ECE",
+        "results": [
+          {
+            "id": "gpt4-p012-t00",
+            "page": 12,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p029-t02",
+            "page": 29,
+            "score": 0.030415
+          },
+          {
+            "id": "gpt4-p011-t01",
+            "page": 11,
+            "score": 0.029762
+          },
+          {
+            "id": "gpt4-p037-t02",
+            "page": 37,
+            "score": 0.029437
+          },
+          {
+            "id": "gpt4-p012-v00",
+            "page": 12,
+            "score": 0.02895
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6568.67,
+    "prompt_tokens": 2247,
+    "completion_tokens": 179,
+    "llm_cost_usd": 0.000444,
+    "error": null
+  },
+  {
+    "query_id": "adv-d12",
+    "split": "dev",
+    "category": "Multi-hop",
+    "answerable": true,
+    "question": "Combine Table 14 (page 34) and Table 15 (page 35): what is the computed sum of daily meat consumption for Georgia and Western Asia, and what is the stationary heat equation in the French physics problem?",
+    "status": "answered",
+    "answer": "The computed sum of daily meat consumption for Georgia and Western Asia is 149.46 grams per person per day. The stationary heat equation in the French physics problem is d²T/dx² = 0, leading to the temperature profile T(x) = (Tb − T0) ∗ (x/L) + T0.[gpt4-p034-t01][gpt4-p035-t00]",
+    "citations": [
+      "gpt4-p034-t01",
+      "gpt4-p035-t00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 14 daily meat consumption Georgia Western Asia",
+        "results": [
+          {
+            "id": "gpt4-p034-v00",
+            "page": 34,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p034-t01",
+            "page": 34,
+            "score": 0.032266
+          },
+          {
+            "id": "gpt4-p034-t00",
+            "page": 34,
+            "score": 0.032002
+          },
+          {
+            "id": "gpt4-p031-t02",
+            "page": 31,
+            "score": 0.030536
+          },
+          {
+            "id": "gpt4-p031-v00",
+            "page": 31,
+            "score": 0.028439
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Table 15 stationary heat equation French physics problem",
+        "results": [
+          {
+            "id": "gpt4-p035-t00",
+            "page": 35,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p035-t01",
+            "page": 35,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p035-v00",
+            "page": 35,
+            "score": 0.031746
+          },
+          {
+            "id": "gpt4-p004-t00",
+            "page": 4,
+            "score": 0.028543
+          },
+          {
+            "id": "gpt4-p002-t05",
+            "page": 2,
+            "score": 0.015625
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 8776.8,
+    "prompt_tokens": 4213,
+    "completion_tokens": 155,
+    "llm_cost_usd": 0.000725,
+    "error": null
+  },
+  {
+    "query_id": "adv-d13",
+    "split": "dev",
+    "category": "Text",
+    "answerable": true,
+    "question": "According to Section 2 on page 2, what two reasons does OpenAI give for not disclosing GPT-4's architecture, hardware, and training compute details?",
+    "status": "answered",
+    "answer": "OpenAI provides two reasons for not disclosing GPT-4's architecture, hardware, and training compute details: (1) the competitive landscape, and (2) the safety implications of large-scale models like GPT-4. These considerations lead to a decision to withhold further details about the model's architecture and training methods. [gpt4-p002-t01][gpt4-p002-t02]",
+    "citations": [
+      "gpt4-p002-t01",
+      "gpt4-p002-t02"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Section 2 page 2 reasons for not disclosing GPT-4 architecture hardware training compute details",
+        "results": [
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.031545
+          },
+          {
+            "id": "gpt4-p003-v00",
+            "page": 3,
+            "score": 0.029643
+          },
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.015873
+          },
+          {
+            "id": "gpt4-p044-t00",
+            "page": 44,
+            "score": 0.015873
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5698.83,
+    "prompt_tokens": 2107,
+    "completion_tokens": 128,
+    "llm_cost_usd": 0.000393,
+    "error": null
+  },
+  {
+    "query_id": "adv-d14",
+    "split": "dev",
+    "category": "Text",
+    "answerable": true,
+    "question": "According to Section 3 on page 2, how much less compute was used to train the smaller models used to predict GPT-4's performance?",
+    "status": "answered",
+    "answer": "The smaller models used to predict GPT-4's performance were trained using between 1,000× and 10,000× less compute than GPT-4. [gpt4-p002-t03]",
+    "citations": [
+      "gpt4-p002-t03"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Section 3 page 2 compute used to train smaller models GPT-4 performance",
+        "results": [
+          {
+            "id": "gpt4-p003-v00",
+            "page": 3,
+            "score": 0.032787
+          },
+          {
+            "id": "gpt4-p002-t03",
+            "page": 2,
+            "score": 0.032258
+          },
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.03125
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.031025
+          },
+          {
+            "id": "gpt4-p003-t01",
+            "page": 3,
+            "score": 0.030579
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 4913.4,
+    "prompt_tokens": 2090,
+    "completion_tokens": 84,
+    "llm_cost_usd": 0.000364,
+    "error": null
+  },
+  {
+    "query_id": "adv-d15",
+    "split": "dev",
+    "category": "Text",
+    "answerable": true,
+    "question": "According to Appendix C on page 28, how are evaluation and training data preprocessed before running substring match for cross-contamination?",
+    "status": "answered",
+    "answer": "Evaluation and training data are preprocessed by removing all spaces and symbols, keeping only characters (including numbers). For each evaluation example, three substrings of 50 characters are randomly selected, or the entire example is used if it is less than 50 characters. A match is identified if any of the three sampled evaluation substrings is a substring of the processed training example, leading to a list of contaminated examples that are discarded to obtain uncontaminated scores. [gpt4-p028-t03][gpt4-p029-t00]",
+    "citations": [
+      "gpt4-p028-t03",
+      "gpt4-p029-t00"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Appendix C evaluation training data preprocessing substring match cross-contamination",
+        "results": [
+          {
+            "id": "gpt4-p028-t03",
+            "page": 28,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p029-t00",
+            "page": 29,
+            "score": 0.032522
+          },
+          {
+            "id": "gpt4-p029-t01",
+            "page": 29,
+            "score": 0.031746
+          },
+          {
+            "id": "gpt4-p028-t02",
+            "page": 28,
+            "score": 0.030118
+          },
+          {
+            "id": "gpt4-p032-t00",
+            "page": 32,
+            "score": 0.030118
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5760.01,
+    "prompt_tokens": 1847,
+    "completion_tokens": 147,
+    "llm_cost_usd": 0.000365,
+    "error": null
+  },
+  {
+    "query_id": "adv-u01",
+    "split": "dev",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "What is the exact total parameter count and number of transformer layers in GPT-4?",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the GPT-4 Technical Report.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "total parameter count and number of transformer layers in GPT-4",
+        "results": [
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.031099
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.030536
+          },
+          {
+            "id": "gpt4-p004-v00",
+            "page": 4,
+            "score": 0.027584
+          },
+          {
+            "id": "gpt4-p029-t02",
+            "page": 29,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016129
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "total parameter count and number of transformer layers in GPT-4",
+        "results": [
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.031099
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.030536
+          },
+          {
+            "id": "gpt4-p004-v00",
+            "page": 4,
+            "score": 0.027584
+          },
+          {
+            "id": "gpt4-p029-t02",
+            "page": 29,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016129
+          }
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "elapsed_ms": 7270.39,
+    "prompt_tokens": 3503,
+    "completion_tokens": 73,
+    "llm_cost_usd": 0.000569,
+    "error": null
+  },
+  {
+    "query_id": "adv-u02",
+    "split": "dev",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "How many kilowatt-hours (kWh) of electricity were consumed to pre-train GPT-4?",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the GPT-4 Technical Report.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "electricity consumed to pre-train GPT-4",
+        "results": [
+          {
+            "id": "gpt4-p002-t03",
+            "page": 2,
+            "score": 0.031319
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.028783
+          },
+          {
+            "id": "gpt4-p007-t02",
+            "page": 7,
+            "score": 0.028624
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.028175
+          },
+          {
+            "id": "gpt4-p007-t01",
+            "page": 7,
+            "score": 0.025992
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "electricity consumption pre-training GPT-4",
+        "results": [
+          {
+            "id": "gpt4-p061-t02",
+            "page": 61,
+            "score": 0.030077
+          },
+          {
+            "id": "gpt4-p007-t01",
+            "page": 7,
+            "score": 0.029877
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.028783
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.028531
+          },
+          {
+            "id": "gpt4-p007-t02",
+            "page": 7,
+            "score": 0.026847
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "electricity consumption pre-training GPT-4 kilowatt-hours",
+        "results": [
+          {
+            "id": "gpt4-p007-t01",
+            "page": 7,
+            "score": 0.029211
+          },
+          {
+            "id": "gpt4-p061-t02",
+            "page": 61,
+            "score": 0.028259
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.028139
+          },
+          {
+            "id": "gpt4-p001-t00",
+            "page": 1,
+            "score": 0.028125
+          },
+          {
+            "id": "gpt4-p010-t03",
+            "page": 10,
+            "score": 0.027885
+          }
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "elapsed_ms": 11370.69,
+    "prompt_tokens": 5498,
+    "completion_tokens": 89,
+    "llm_cost_usd": 0.000878,
+    "error": null
+  },
+  {
+    "query_id": "adv-u03",
+    "split": "dev",
+    "category": "Unanswerable",
+    "answerable": false,
+    "question": "What is the 2025 API pricing per 1 million input and output tokens for GPT-4?",
+    "status": "abstain",
+    "answer": "Insufficient evidence (step limit).",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "2025 API pricing per 1 million input and output tokens for GPT-4",
+        "results": [
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.030366
+          },
+          {
+            "id": "gpt4-p064-t00",
+            "page": 64,
+            "score": 0.029139
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p034-t00",
+            "page": 34,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016129
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "2025 API pricing GPT-4",
+        "results": [
+          {
+            "id": "gpt4-p007-t03",
+            "page": 7,
+            "score": 0.031025
+          },
+          {
+            "id": "gpt4-p004-t02",
+            "page": 4,
+            "score": 0.02748
+          },
+          {
+            "id": "gpt4-p055-t04",
+            "page": 55,
+            "score": 0.026334
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p017-t01",
+            "page": 17,
+            "score": 0.016393
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "2025 API pricing GPT-4 tokens",
+        "results": [
+          {
+            "id": "gpt4-p007-t03",
+            "page": 7,
+            "score": 0.030366
+          },
+          {
+            "id": "gpt4-p064-t00",
+            "page": 64,
+            "score": 0.025658
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p017-t01",
+            "page": 17,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016129
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "2025 API pricing GPT-4 tokens per million",
+        "results": [
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.029907
+          },
+          {
+            "id": "gpt4-p007-t03",
+            "page": 7,
+            "score": 0.028718
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016129
+          },
+          {
+            "id": "gpt4-p034-t00",
+            "page": 34,
+            "score": 0.016129
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "2025 API pricing GPT-4 tokens per million",
+        "results": [
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.029907
+          },
+          {
+            "id": "gpt4-p007-t03",
+            "page": 7,
+            "score": 0.028718
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016129
+          },
+          {
+            "id": "gpt4-p034-t00",
+            "page": 34,
+            "score": 0.016129
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "query": "2025 API pricing GPT-4 tokens per million",
+        "results": [
+          {
+            "id": "gpt4-p003-t00",
+            "page": 3,
+            "score": 0.029907
+          },
+          {
+            "id": "gpt4-p007-t03",
+            "page": 7,
+            "score": 0.028718
+          },
+          {
+            "id": "gpt4-p002-t01",
+            "page": 2,
+            "score": 0.016393
+          },
+          {
+            "id": "gpt4-p002-t02",
+            "page": 2,
+            "score": 0.016129
+          },
+          {
+            "id": "gpt4-p034-t00",
+            "page": 34,
+            "score": 0.016129
+          }
+        ]
+      },
+      {
+        "event": "step_limit"
+      }
+    ],
+    "elapsed_ms": 21659.65,
+    "prompt_tokens": 10994,
+    "completion_tokens": 150,
+    "llm_cost_usd": 0.001739,
+    "error": null
+  }
+]
