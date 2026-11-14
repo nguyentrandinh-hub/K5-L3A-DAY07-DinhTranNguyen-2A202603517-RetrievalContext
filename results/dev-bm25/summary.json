@@ -1,0 +1,17 @@
+{
+  "method": "bm25",
+  "split": "dev",
+  "budget_chars": 800,
+  "n": 15,
+  "hit1": 11,
+  "hit1_rate": 0.7333,
+  "hit3": 13,
+  "hit3_rate": 0.8667,
+  "context_hit": 9,
+  "context_hit_rate": 0.6,
+  "avg_context_chars": 645,
+  "median_ms": 8.63,
+  "embed_tokens": 0,
+  "rerank_tokens": 0,
+  "total_cost_usd": 0.0
+}

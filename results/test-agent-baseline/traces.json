@@ -1,0 +1,1317 @@
+[
+  {
+    "query_id": "q16",
+    "split": "test",
+    "answerable": true,
+    "question": "Which Gemini 4 model is described as fast and efficient for everyday coding and agentic workflows, and what is its 1M-token price?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "search_calls": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "Gemini 4 model fast efficient everyday coding agentic workflows 1M-token price",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-29::B::0072",
+            "source_id": "gemini-doc-29",
+            "source": "data/corpus/29_docs_antigravity-agent.md",
+            "page": 29,
+            "text": "| Model | Value in `agent_config.model` | Description |\n| :--- | :--- | :--- |\n| **Gemini 4 Hydrogen** (default) | `gemini-4-hydrogen` | Default Gemini 4 model bringing cutting-edge intelligence with speed and efficiency for everyday coding and agentic workflows. |\n| **Gemini 4 Carbon** | `gemini-4-carbon` | Most capable frontier reasoning model for complex software engineering, deep problem solving, and long-horizon agentic tasks. |\n| **Gemini 4 Argon** | `gemini-4-argon` | Our efficient Gemini 4 frontier reasoning model, delivering faster responses and lower token spend per turn compared to [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon) across software engineering and agentic tasks. |",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/antigravity-agent.md",
+              "page": 29,
+              "title": "Antigravity agent",
+              "source": "data/corpus/29_docs_antigravity-agent.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 72,
+              "document_id": "gemini-doc-29"
+            },
+            "score": 0.35090984814061194,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-09::B::0003",
+            "source_id": "gemini-doc-09",
+            "source": "data/corpus/09_docs_whats-new-gemini-4-argon.md",
+            "page": 9,
+            "text": "## New model  {% id=\"new-model\" %}\n\n| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Argon | `gemini-4-argon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our efficient Gemini 4 frontier reasoning model, delivering faster responses and lower token spend per turn compared to [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon) across complex coding, agentic, math, and science tasks. |",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-argon.md",
+              "page": 9,
+              "title": "Latest Gemini models — Gemini 4 Argon - what's new",
+              "source": "data/corpus/09_docs_whats-new-gemini-4-argon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 3,
+              "document_id": "gemini-doc-09"
+            },
+            "score": 0.3387040563317096,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-02::B::0010",
+            "source_id": "gemini-doc-02",
+            "source": "data/corpus/02_docs.md",
+            "page": 2,
+            "text": "{% card description=\"Brings cutting-edge intelligence to everyone, with speed and efficiency for everyday coding and agentic workflows, featuring a shared 1M context window and long decodes up to 1M tokens.\" title=\"Gemini 4 Hydrogen\" variant=\"model-card\" %}\n  {% section class=\"model-specs\" %}\n  *   *Model code* **gemini-4-hydrogen**\n  *   *Context* **1M tokens**\n  *   *Max output* **65K / 1M tokens**\n  *   *Modalities* **Text, Image, Audio, Video, PDF**\n\n{% /section %}",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs.md",
+              "page": 2,
+              "title": "Overview",
+              "source": "data/corpus/02_docs.md",
+              "section": "getting_started",
+              "strategy": "B",
+              "chunk_index": 10,
+              "document_id": "gemini-doc-02"
+            },
+            "score": 0.33115504580976673,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "[gemini-doc-29::B::0072 | data/corpus/29_docs_antigravity-agent.md | page 29]\n| Model | Value in `agent_config.model` | Description |\n| :--- | :--- | :--- |\n| **Gemini 4 Hydrogen** (default) | `gemini-4-hydrogen` | Default Gemini 4 model bringing cutting-edge intelligence with speed and efficiency for everyday coding and agentic workflows. |\n| **Gemini 4 Carbon** | `gemini-4-carbon` | Most capable frontier reasoning model for complex software engineering, deep problem solving, and long-horizon agentic tasks. |\n| **Gemini 4 Argon** | `gemini-4-argon` | Our efficient Gemini 4 frontier reasoning model, delivering faster responses and lower token spend per turn compared to [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon) across software engineering and agentic tasks. |",
+        "context_ids": [
+          "gemini-doc-29::B::0072"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "elapsed_ms": 4118.28,
+    "prompt_tokens": 780,
+    "completion_tokens": 97,
+    "llm_cost_usd": 0.000175,
+    "error": null
+  },
+  {
+    "query_id": "q17",
+    "split": "test",
+    "answerable": true,
+    "question": "In the api_reference section, what is the difference between `rate_limit_exceeded` and `quota_exceeded` error codes?",
+    "filter": {
+      "section": "api_reference"
+    },
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "search_calls": 4,
+    "events": [
+      {
+        "event": "search",
+        "query": "rate_limit_exceeded quota_exceeded error codes api_reference",
+        "filter": {
+          "section": "api_reference"
+        },
+        "results": [
+          {
+            "id": "gemini-doc-37::B::0002",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "## Standard API error codes  {% id=\"api-error-codes\" %}\n\nThese general request-level error codes correspond to standard HTTP status codes.\nUse the `code` field in your application logic to handle errors programmatically.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 2,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.4418310100713399,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-37::B::0010",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "| `content_blocked` | An unspecified policy reason blocked the request. |\n\n## Generation error codes  {% id=\"generation-error-codes\" %}\n\nThese error codes indicate a structural issue with the model's generated output (such as a malformed function call or an undeclared tool call).",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 10,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.3641359522836392,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-37::B::0008",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "## Generation blocked codes  {% id=\"generation-blocked-codes\" %}\n\nThese error codes indicate that policy, safety, or content restrictions blocked the model's output. When you receive one of these codes, modify your input and retry.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 8,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.34398657972120644,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "[gemini-doc-37::B::0002 | data/corpus/37_docs_api-errors.md | page 37]\n## Standard API error codes  {% id=\"api-error-codes\" %}\n\nThese general request-level error codes correspond to standard HTTP status codes.\nUse the `code` field in your application logic to handle errors programmatically.\n\n[gemini-doc-37::B::0010 | data/corpus/37_docs_api-errors.md | page 37]\n| `content_blocked` | An unspecified policy reason blocked the request. |\n\n## Generation error codes  {% id=\"generation-error-codes\" %}\n\nThese error codes indicate a structural issue with the model's generated output (such as a malformed function call or an undeclared tool call).",
+        "context_ids": [
+          "gemini-doc-37::B::0002",
+          "gemini-doc-37::B::0010"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "rate_limit_exceeded quota_exceeded error codes api_reference",
+        "filter": {
+          "section": "api_reference"
+        },
+        "results": [
+          {
+            "id": "gemini-doc-37::B::0002",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "## Standard API error codes  {% id=\"api-error-codes\" %}\n\nThese general request-level error codes correspond to standard HTTP status codes.\nUse the `code` field in your application logic to handle errors programmatically.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 2,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.4418310100713399,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-37::B::0010",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "| `content_blocked` | An unspecified policy reason blocked the request. |\n\n## Generation error codes  {% id=\"generation-error-codes\" %}\n\nThese error codes indicate a structural issue with the model's generated output (such as a malformed function call or an undeclared tool call).",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 10,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.3641359522836392,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-37::B::0008",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "## Generation blocked codes  {% id=\"generation-blocked-codes\" %}\n\nThese error codes indicate that policy, safety, or content restrictions blocked the model's output. When you receive one of these codes, modify your input and retry.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 8,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.34398657972120644,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "[gemini-doc-37::B::0002 | data/corpus/37_docs_api-errors.md | page 37]\n## Standard API error codes  {% id=\"api-error-codes\" %}\n\nThese general request-level error codes correspond to standard HTTP status codes.\nUse the `code` field in your application logic to handle errors programmatically.\n\n[gemini-doc-37::B::0010 | data/corpus/37_docs_api-errors.md | page 37]\n| `content_blocked` | An unspecified policy reason blocked the request. |\n\n## Generation error codes  {% id=\"generation-error-codes\" %}\n\nThese error codes indicate a structural issue with the model's generated output (such as a malformed function call or an undeclared tool call).",
+        "context_ids": [
+          "gemini-doc-37::B::0002",
+          "gemini-doc-37::B::0010"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "rate_limit_exceeded quota_exceeded error codes api_reference details",
+        "filter": {
+          "section": "api_reference"
+        },
+        "results": [
+          {
+            "id": "gemini-doc-37::B::0002",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "## Standard API error codes  {% id=\"api-error-codes\" %}\n\nThese general request-level error codes correspond to standard HTTP status codes.\nUse the `code` field in your application logic to handle errors programmatically.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 2,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.4275976509836464,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-37::B::0010",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "| `content_blocked` | An unspecified policy reason blocked the request. |\n\n## Generation error codes  {% id=\"generation-error-codes\" %}\n\nThese error codes indicate a structural issue with the model's generated output (such as a malformed function call or an undeclared tool call).",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 10,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.3524054995823781,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-37::B::0008",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "## Generation blocked codes  {% id=\"generation-blocked-codes\" %}\n\nThese error codes indicate that policy, safety, or content restrictions blocked the model's output. When you receive one of these codes, modify your input and retry.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 8,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.3329052287093594,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "[gemini-doc-37::B::0002 | data/corpus/37_docs_api-errors.md | page 37]\n## Standard API error codes  {% id=\"api-error-codes\" %}\n\nThese general request-level error codes correspond to standard HTTP status codes.\nUse the `code` field in your application logic to handle errors programmatically.\n\n[gemini-doc-37::B::0010 | data/corpus/37_docs_api-errors.md | page 37]\n| `content_blocked` | An unspecified policy reason blocked the request. |\n\n## Generation error codes  {% id=\"generation-error-codes\" %}\n\nThese error codes indicate a structural issue with the model's generated output (such as a malformed function call or an undeclared tool call).",
+        "context_ids": [
+          "gemini-doc-37::B::0002",
+          "gemini-doc-37::B::0010"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "rate_limit_exceeded quota_exceeded error codes api_reference details",
+        "filter": {
+          "section": "api_reference"
+        },
+        "results": [
+          {
+            "id": "gemini-doc-37::B::0002",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "## Standard API error codes  {% id=\"api-error-codes\" %}\n\nThese general request-level error codes correspond to standard HTTP status codes.\nUse the `code` field in your application logic to handle errors programmatically.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 2,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.4275976509836464,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-37::B::0010",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "| `content_blocked` | An unspecified policy reason blocked the request. |\n\n## Generation error codes  {% id=\"generation-error-codes\" %}\n\nThese error codes indicate a structural issue with the model's generated output (such as a malformed function call or an undeclared tool call).",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 10,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.3524054995823781,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-37::B::0008",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "## Generation blocked codes  {% id=\"generation-blocked-codes\" %}\n\nThese error codes indicate that policy, safety, or content restrictions blocked the model's output. When you receive one of these codes, modify your input and retry.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 8,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.3329052287093594,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "[gemini-doc-37::B::0002 | data/corpus/37_docs_api-errors.md | page 37]\n## Standard API error codes  {% id=\"api-error-codes\" %}\n\nThese general request-level error codes correspond to standard HTTP status codes.\nUse the `code` field in your application logic to handle errors programmatically.\n\n[gemini-doc-37::B::0010 | data/corpus/37_docs_api-errors.md | page 37]\n| `content_blocked` | An unspecified policy reason blocked the request. |\n\n## Generation error codes  {% id=\"generation-error-codes\" %}\n\nThese error codes indicate a structural issue with the model's generated output (such as a malformed function call or an undeclared tool call).",
+        "context_ids": [
+          "gemini-doc-37::B::0002",
+          "gemini-doc-37::B::0010"
+        ]
+      },
+      {
+        "event": "search_limit"
+      }
+    ],
+    "elapsed_ms": 8988.21,
+    "prompt_tokens": 2226,
+    "completion_tokens": 113,
+    "llm_cost_usd": 0.000402,
+    "error": null
+  },
+  {
+    "query_id": "q18",
+    "split": "test",
+    "answerable": true,
+    "question": "How are non-PDF text formats like TXT, Markdown, or HTML handled by Gemini compared to PDF files?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "search_calls": 2,
+    "events": [
+      {
+        "event": "search",
+        "query": "Gemini handling non-PDF text formats TXT Markdown HTML compared to PDF",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-01::B::0019",
+            "source_id": "gemini-doc-01",
+            "source": "data/corpus/01_docs_coding-agents.md",
+            "page": 1,
+            "text": "| **`llms-full.txt` file** | [`https://aistudio.google.com/llms-full.txt`](https://aistudio.google.com/llms-full.txt) | Combines all Gemini API documentation pages into a single file for full context loading. |\n| **Discovery headers** | Included on all `/docs` HTTP responses | Sets `Link` and `X-Llms-Txt` headers, and adds an `AI Agent Context` block to Markdown pages to point agents to the documentation indexes. |\n\nTo fetch Markdown from any documentation URL using the `Accept` header:\n\n```bash\ncurl --header \"Accept: text/markdown\" https://aistudio.google.com/docs/interactions-overview\n```\n\nYou can also click **Copy page** at the top of any documentation page to copy the Markdown source to your clipboard.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/coding-agents.md",
+              "page": 1,
+              "title": "Coding agent setup",
+              "source": "data/corpus/01_docs_coding-agents.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 19,
+              "document_id": "gemini-doc-01"
+            },
+            "score": 0.2266046264832587,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-01::B::0018",
+            "source_id": "gemini-doc-01",
+            "source": "data/corpus/01_docs_coding-agents.md",
+            "page": 1,
+            "text": "| Method | How to use | Why use it |\n| :--- | :--- | :--- |\n| **Accept header (content negotiation)** | Send `Accept: text/markdown` on any `/docs/...` URL | Gets raw Markdown from the same URL you visit in a browser without changing the path. |\n| **Direct `.md` URLs** | Add `.md` to any doc URL (such as `/docs/coding-agents.md`) | Gives you a clean Markdown link to share in prompts, `AGENTS.md` files, or scripts. |\n| **`llms.txt` index** | [`https://aistudio.google.com/llms.txt`](https://aistudio.google.com/llms.txt) | Lists every documentation page with links to each raw Markdown file. |",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/coding-agents.md",
+              "page": 1,
+              "title": "Coding agent setup",
+              "source": "data/corpus/01_docs_coding-agents.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 18,
+              "document_id": "gemini-doc-01"
+            },
+            "score": 0.22490239279522406,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-20::B::0002",
+            "source_id": "gemini-doc-20",
+            "source": "data/corpus/20_docs_document-processing.md",
+            "page": 20,
+            "text": "*   Transcribe document content (e.g. to HTML), preserving layouts and\n  formatting, for use in downstream applications.\n\nYou can also pass Microsoft Office and OpenDocument files, such as Word\ndocuments, PowerPoint presentations, and Excel spreadsheets. For details, see\n[Office and OpenDocument files](/docs/document-processing#office-documents).\nOther non-PDF documents, such as TXT, Markdown, or HTML files, are processed as\nplain text, which eliminates context like charts or formatting.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/document-processing.md",
+              "page": 20,
+              "title": "Documents",
+              "source": "data/corpus/20_docs_document-processing.md",
+              "section": "core_guides",
+              "strategy": "B",
+              "chunk_index": 2,
+              "document_id": "gemini-doc-20"
+            },
+            "score": 0.20816738999005308,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "[gemini-doc-01::B::0019 | data/corpus/01_docs_coding-agents.md | page 1]\n| **`llms-full.txt` file** | [`https://aistudio.google.com/llms-full.txt`](https://aistudio.google.com/llms-full.txt) | Combines all Gemini API documentation pages into a single file for full context loading. |\n| **Discovery headers** | Included on all `/docs` HTTP responses | Sets `Link` and `X-Llms-Txt` headers, and adds an `AI Agent Context` block to Markdown pages to point agents to the documentation indexes. |\n\nTo fetch Markdown from any documentation URL using the `Accept` header:\n\n```bash\ncurl --header \"Accept: text/markdown\" https://aistudio.google.com/docs/interactions-overview\n```\n\nYou can also click **Copy page** at the top of any documentation page to copy the Markdown source to your clipboard.",
+        "context_ids": [
+          "gemini-doc-01::B::0019"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Gemini handling non-PDF text formats TXT Markdown HTML compared to PDF files",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-20::B::0002",
+            "source_id": "gemini-doc-20",
+            "source": "data/corpus/20_docs_document-processing.md",
+            "page": 20,
+            "text": "*   Transcribe document content (e.g. to HTML), preserving layouts and\n  formatting, for use in downstream applications.\n\nYou can also pass Microsoft Office and OpenDocument files, such as Word\ndocuments, PowerPoint presentations, and Excel spreadsheets. For details, see\n[Office and OpenDocument files](/docs/document-processing#office-documents).\nOther non-PDF documents, such as TXT, Markdown, or HTML files, are processed as\nplain text, which eliminates context like charts or formatting.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/document-processing.md",
+              "page": 20,
+              "title": "Documents",
+              "source": "data/corpus/20_docs_document-processing.md",
+              "section": "core_guides",
+              "strategy": "B",
+              "chunk_index": 2,
+              "document_id": "gemini-doc-20"
+            },
+            "score": 0.24025400049040668,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-01::B::0018",
+            "source_id": "gemini-doc-01",
+            "source": "data/corpus/01_docs_coding-agents.md",
+            "page": 1,
+            "text": "| Method | How to use | Why use it |\n| :--- | :--- | :--- |\n| **Accept header (content negotiation)** | Send `Accept: text/markdown` on any `/docs/...` URL | Gets raw Markdown from the same URL you visit in a browser without changing the path. |\n| **Direct `.md` URLs** | Add `.md` to any doc URL (such as `/docs/coding-agents.md`) | Gives you a clean Markdown link to share in prompts, `AGENTS.md` files, or scripts. |\n| **`llms.txt` index** | [`https://aistudio.google.com/llms.txt`](https://aistudio.google.com/llms.txt) | Lists every documentation page with links to each raw Markdown file. |",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/coding-agents.md",
+              "page": 1,
+              "title": "Coding agent setup",
+              "source": "data/corpus/01_docs_coding-agents.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 18,
+              "document_id": "gemini-doc-01"
+            },
+            "score": 0.23158660023626043,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-01::B::0019",
+            "source_id": "gemini-doc-01",
+            "source": "data/corpus/01_docs_coding-agents.md",
+            "page": 1,
+            "text": "| **`llms-full.txt` file** | [`https://aistudio.google.com/llms-full.txt`](https://aistudio.google.com/llms-full.txt) | Combines all Gemini API documentation pages into a single file for full context loading. |\n| **Discovery headers** | Included on all `/docs` HTTP responses | Sets `Link` and `X-Llms-Txt` headers, and adds an `AI Agent Context` block to Markdown pages to point agents to the documentation indexes. |\n\nTo fetch Markdown from any documentation URL using the `Accept` header:\n\n```bash\ncurl --header \"Accept: text/markdown\" https://aistudio.google.com/docs/interactions-overview\n```\n\nYou can also click **Copy page** at the top of any documentation page to copy the Markdown source to your clipboard.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/coding-agents.md",
+              "page": 1,
+              "title": "Coding agent setup",
+              "source": "data/corpus/01_docs_coding-agents.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 19,
+              "document_id": "gemini-doc-01"
+            },
+            "score": 0.22264707046665022,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "[gemini-doc-01::B::0019 | data/corpus/01_docs_coding-agents.md | page 1]\n| **`llms-full.txt` file** | [`https://aistudio.google.com/llms-full.txt`](https://aistudio.google.com/llms-full.txt) | Combines all Gemini API documentation pages into a single file for full context loading. |\n| **Discovery headers** | Included on all `/docs` HTTP responses | Sets `Link` and `X-Llms-Txt` headers, and adds an `AI Agent Context` block to Markdown pages to point agents to the documentation indexes. |\n\nTo fetch Markdown from any documentation URL using the `Accept` header:\n\n```bash\ncurl --header \"Accept: text/markdown\" https://aistudio.google.com/docs/interactions-overview\n```\n\nYou can also click **Copy page** at the top of any documentation page to copy the Markdown source to your clipboard.",
+        "context_ids": [
+          "gemini-doc-01::B::0019"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "elapsed_ms": 5248.23,
+    "prompt_tokens": 1282,
+    "completion_tokens": 75,
+    "llm_cost_usd": 0.000237,
+    "error": null
+  },
+  {
+    "query_id": "q19",
+    "split": "test",
+    "answerable": true,
+    "question": "What happens if your coding agent does not have the Gemini Docs MCP server installed when using a Gemini agent skill?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "search_calls": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "Gemini agent skill MCP server installation requirements",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-24::B::0175",
+            "source_id": "gemini-doc-24",
+            "source": "data/corpus/24_docs_function-calling.md",
+            "page": 24,
+            "text": "## Remote MCP (Model Context Protocol)  {% id=\"mcp\" %}\n\nInteractions API supports connecting to remote MCP servers to give the model access to external tools and services. You provide the server `name` and `url` in the tools configuration.\n\nWhen using Remote MCP, be aware of the following constraints:\n\n* **Server types**: Remote MCP only works with Streamable HTTP servers. SSE (Server-Sent Events) servers are not supported.\n* **Naming**: MCP server names should not include the `-` character. Use `snake_case` server names instead.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/function-calling.md",
+              "page": 24,
+              "title": "Function calling",
+              "source": "data/corpus/24_docs_function-calling.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 175,
+              "document_id": "gemini-doc-24"
+            },
+            "score": 0.3135367565450813,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-01::B::0024",
+            "source_id": "gemini-doc-01",
+            "source": "data/corpus/01_docs_coding-agents.md",
+            "page": 1,
+            "text": "### Troubleshooting  {% id=\"troubleshooting\" %}\n\n- **Skill or MCP server not detected:** Restart your editor (Cursor or VS Code) or terminal session (Claude Code or Codex). Most agents load MCP servers and skills only when they start.\n- **Global skill conflict:** If your agent ignores a globally installed skill, install the skill in your project root without `--global`:  ```bash\n  npx skills add google-gemini/gemini-skills --skill gemini-api-dev\n  ```\n\n- **Rules ignored:** Make sure your `AGENTS.md`, `.cursorrules`, or `CLAUDE.md` file is in the root directory of your project.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/coding-agents.md",
+              "page": 1,
+              "title": "Coding agent setup",
+              "source": "data/corpus/01_docs_coding-agents.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 24,
+              "document_id": "gemini-doc-01"
+            },
+            "score": 0.2682919838820214,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-01::B::0013",
+            "source_id": "gemini-doc-01",
+            "source": "data/corpus/01_docs_coding-agents.md",
+            "page": 1,
+            "text": "## Connect the Gemini Docs MCP server  {% id=\"mcp-setup\" %}\n\nThe public **Gemini Docs MCP server** (`https://gemini-api-docs-mcp.dev`) gives your agent live access to the entire documentation site. Your agent can search and read documentation pages to check request schemas, model limits, and new features:\n\n- `gemini_search_docs`: Searches Gemini API documentation by topic or query.\n- `gemini_get_doc`: Reads the full Markdown content of a specific documentation page.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/coding-agents.md",
+              "page": 1,
+              "title": "Coding agent setup",
+              "source": "data/corpus/01_docs_coding-agents.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 13,
+              "document_id": "gemini-doc-01"
+            },
+            "score": 0.26540412540495073,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "[gemini-doc-24::B::0175 | data/corpus/24_docs_function-calling.md | page 24]\n## Remote MCP (Model Context Protocol)  {% id=\"mcp\" %}\n\nInteractions API supports connecting to remote MCP servers to give the model access to external tools and services. You provide the server `name` and `url` in the tools configuration.\n\nWhen using Remote MCP, be aware of the following constraints:\n\n* **Server types**: Remote MCP only works with Streamable HTTP servers. SSE (Server-Sent Events) servers are not supported.\n* **Naming**: MCP server names should not include the `-` character. Use `snake_case` server names instead.",
+        "context_ids": [
+          "gemini-doc-24::B::0175"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "elapsed_ms": 3466.4,
+    "prompt_tokens": 699,
+    "completion_tokens": 43,
+    "llm_cost_usd": 0.000131,
+    "error": null
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "answerable": true,
+    "question": "In the tools_and_agents section, what is the default outbound network access policy for managed agents in their Linux sandbox, and how can you restrict it?",
+    "filter": {
+      "section": "tools_and_agents"
+    },
+    "status": "answered",
+    "answer": "The default outbound network access policy for managed agents in their Linux sandbox is unrestricted outbound network access. You can restrict it by using a `network` allowlist to limit outbound traffic to specific domains or wildcard patterns [gemini-doc-27::B::0004].",
+    "citations": [
+      "gemini-doc-27::B::0004"
+    ],
+    "search_calls": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "default outbound network access policy for managed agents in Linux sandbox tools_and_agents section",
+        "filter": {
+          "section": "tools_and_agents"
+        },
+        "results": [
+          {
+            "id": "gemini-doc-27::B::0004",
+            "source_id": "gemini-doc-27",
+            "source": "data/corpus/27_docs_agents.md",
+            "page": 27,
+            "text": "### Network access  {% id=\"network-access\" %}\n\nBy default, environments have unrestricted outbound network access. Use a\n`network` allowlist to restrict outbound traffic to specific domains or\nwildcard patterns. For configuration details, see\n[Network Allow List](/docs/aistudio-agents#network-allow-list) (AI\nStudio) or [Network rules](/docs/custom-agents#with-network-rules)\n(API).\n\n### External tools and APIs  {% id=\"external-tools-and-apis\" %}",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/agents.md",
+              "page": 27,
+              "title": "Overview",
+              "source": "data/corpus/27_docs_agents.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 4,
+              "document_id": "gemini-doc-27"
+            },
+            "score": 0.39609903042382055,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-31::B::0087",
+            "source_id": "gemini-doc-31",
+            "source": "data/corpus/31_docs_agent-environment.md",
+            "page": 31,
+            "text": "## Network configuration  {% id=\"network-configuration\" %}\n\nBy default, environments have unrestricted outbound network access. Use the\n`network` field to restrict outbound traffic to specific domains. Each rule\nspecifies a `domain`, plus an optional `credential` to inject a stored secret\nand an optional `transform` object to inject headers into matching requests.\nThese headers can be unique per interaction, and you can update them for the same environment.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/agent-environment.md",
+              "page": 31,
+              "title": "Environments",
+              "source": "data/corpus/31_docs_agent-environment.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 87,
+              "document_id": "gemini-doc-31"
+            },
+            "score": 0.2724724717116916,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-27::B::0003",
+            "source_id": "gemini-doc-27",
+            "source": "data/corpus/27_docs_agents.md",
+            "page": 27,
+            "text": "*   **[Deep Research](/docs/deep-research)**: Autonomous research agent\n  that plans, executes, and synthesizes multi-step research tasks for use\n  cases like market analysis, due diligence, and literature reviews.\n\n## Security and best practices  {% id=\"security-best-practices\" %}\n\n{% callout type=\"note\" %}\n  Note: Managed agents are in **Public Preview**. Review the agent's actions and\n  outputs before relying on them in sensitive workflows.\n\n{% /callout %}\n\nEvery agent runs in a sandboxed environment that is isolated at the OS level.\nThe sandbox has unrestricted outbound network access by default. You can\nrestrict or disable network access using an allowlist.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/agents.md",
+              "page": 27,
+              "title": "Overview",
+              "source": "data/corpus/27_docs_agents.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 3,
+              "document_id": "gemini-doc-27"
+            },
+            "score": 0.24405720602858483,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "[gemini-doc-27::B::0004 | data/corpus/27_docs_agents.md | page 27]\n### Network access  {% id=\"network-access\" %}\n\nBy default, environments have unrestricted outbound network access. Use a\n`network` allowlist to restrict outbound traffic to specific domains or\nwildcard patterns. For configuration details, see\n[Network Allow List](/docs/aistudio-agents#network-allow-list) (AI\nStudio) or [Network rules](/docs/custom-agents#with-network-rules)\n(API).\n\n### External tools and APIs  {% id=\"external-tools-and-apis\" %}",
+        "context_ids": [
+          "gemini-doc-27::B::0004"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 4252.05,
+    "prompt_tokens": 709,
+    "completion_tokens": 107,
+    "llm_cost_usd": 0.000171,
+    "error": null
+  },
+  {
+    "query_id": "u03",
+    "split": "test",
+    "answerable": false,
+    "question": "What is the guaranteed uptime SLA percentage (e.g., 99.9%) and service credit refund policy for paid Gemini API tiers?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "search_calls": 4,
+    "events": [
+      {
+        "event": "search",
+        "query": "Gemini API paid tiers uptime SLA percentage service credit refund policy",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-40::B::0086",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "{% details %}\n  {% summary %}\n  **disabledSafetyPolicies**: `string enum array`\n\nOptional. Disabled safety policies for computer use.\n\n{% /summary %}\n\nPossible values:\n\n- `SAFETY_POLICY_UNSPECIFIED`: Unspecified safety policy.\n  - `FINANCIAL_TRANSACTIONS`: Safety policy for financial transactions.\n  - `SENSITIVE_DATA_MODIFICATION`: Safety policy for sensitive data modification.\n  - `COMMUNICATION_TOOL`: Safety policy for communication tools (e.g. Gmail, Chat, Meet).\n  - `ACCOUNT_CREATION`: Safety policy for account creation.\n  - `DATA_MODIFICATION`: Safety policy for data modification.\n  - `USER_CONSENT_MANAGEMENT`: Safety policy for user consent management.\n  - `LEGAL_TERMS_AND_AGREEMENTS`: Safety policy for legal terms and agreements.\n\n{% /details %}\n\n{% /details %}\n\n{% hr /%}",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 86,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.23817760785062522,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-40::B::0009",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "**toolUsePromptTokensDetails**: [`ModalityTokenCount`](/api-reference/generate-content#Resource:ModalityTokenCount) `array`\n\nOutput only. List of modalities that were processed for tool-use request inputs.\n\n{% details %}\n  {% summary %}\n  **serviceTier**: [`ServiceTier`](/api-reference/generate-content#Resource:ServiceTier)\n\nOutput only. Service tier of the request.\n\n{% /summary %}\n\nPossible values:\n\n- `unspecified`: Default service tier, which is standard.\n  - `standard`: Standard service tier.\n  - `flex`: Flex service tier.\n  - `priority`: Priority service tier.\n\n{% /details %}\n\n{% /details %}\n\n{% hr /%}\n\n**modelVersion**: `string`\n\nOutput only. The model version used to generate the response.\n\n{% hr /%}\n\n**responseId**: `string`",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 9,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.19245251465685378,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-40::B::0042",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "### ServiceTier  {% id=\"Resource:ServiceTier\" %}\n\n**Possible values:**\n\n- `unspecified`: Default service tier, which is standard.\n- `standard`: Standard service tier.\n- `flex`: Flex service tier.\n- `priority`: Priority service tier.\n\n### Content  {% id=\"Resource:Content\" %}\n\nThe base structured datatype containing multi-part content of a message.\n\nA [`Content`](/api-reference/generate-content#Resource:Content) includes a `role` field designating the producer of the [`Content`](/api-reference/generate-content#Resource:Content)\nand a `parts` field containing multi-part data that contains the content of\nthe message turn.\n\n**Properties:**\n\n{% section class=\"api-ref-property-list\" %}\n  {% details %}\n  {% summary %}\n  **parts**: `Part array`",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 42,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.1555297313249782,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "",
+        "context_ids": []
+      },
+      {
+        "event": "search",
+        "query": "Gemini API paid tiers uptime SLA percentage service credit refund policy",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-40::B::0086",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "{% details %}\n  {% summary %}\n  **disabledSafetyPolicies**: `string enum array`\n\nOptional. Disabled safety policies for computer use.\n\n{% /summary %}\n\nPossible values:\n\n- `SAFETY_POLICY_UNSPECIFIED`: Unspecified safety policy.\n  - `FINANCIAL_TRANSACTIONS`: Safety policy for financial transactions.\n  - `SENSITIVE_DATA_MODIFICATION`: Safety policy for sensitive data modification.\n  - `COMMUNICATION_TOOL`: Safety policy for communication tools (e.g. Gmail, Chat, Meet).\n  - `ACCOUNT_CREATION`: Safety policy for account creation.\n  - `DATA_MODIFICATION`: Safety policy for data modification.\n  - `USER_CONSENT_MANAGEMENT`: Safety policy for user consent management.\n  - `LEGAL_TERMS_AND_AGREEMENTS`: Safety policy for legal terms and agreements.\n\n{% /details %}\n\n{% /details %}\n\n{% hr /%}",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 86,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.23817760785062522,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-40::B::0009",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "**toolUsePromptTokensDetails**: [`ModalityTokenCount`](/api-reference/generate-content#Resource:ModalityTokenCount) `array`\n\nOutput only. List of modalities that were processed for tool-use request inputs.\n\n{% details %}\n  {% summary %}\n  **serviceTier**: [`ServiceTier`](/api-reference/generate-content#Resource:ServiceTier)\n\nOutput only. Service tier of the request.\n\n{% /summary %}\n\nPossible values:\n\n- `unspecified`: Default service tier, which is standard.\n  - `standard`: Standard service tier.\n  - `flex`: Flex service tier.\n  - `priority`: Priority service tier.\n\n{% /details %}\n\n{% /details %}\n\n{% hr /%}\n\n**modelVersion**: `string`\n\nOutput only. The model version used to generate the response.\n\n{% hr /%}\n\n**responseId**: `string`",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 9,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.19245251465685378,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-40::B::0042",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "### ServiceTier  {% id=\"Resource:ServiceTier\" %}\n\n**Possible values:**\n\n- `unspecified`: Default service tier, which is standard.\n- `standard`: Standard service tier.\n- `flex`: Flex service tier.\n- `priority`: Priority service tier.\n\n### Content  {% id=\"Resource:Content\" %}\n\nThe base structured datatype containing multi-part content of a message.\n\nA [`Content`](/api-reference/generate-content#Resource:Content) includes a `role` field designating the producer of the [`Content`](/api-reference/generate-content#Resource:Content)\nand a `parts` field containing multi-part data that contains the content of\nthe message turn.\n\n**Properties:**\n\n{% section class=\"api-ref-property-list\" %}\n  {% details %}\n  {% summary %}\n  **parts**: `Part array`",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 42,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.1555297313249782,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "",
+        "context_ids": []
+      },
+      {
+        "event": "search",
+        "query": "Gemini API paid tiers uptime SLA percentage service credit refund policy",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-40::B::0086",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "{% details %}\n  {% summary %}\n  **disabledSafetyPolicies**: `string enum array`\n\nOptional. Disabled safety policies for computer use.\n\n{% /summary %}\n\nPossible values:\n\n- `SAFETY_POLICY_UNSPECIFIED`: Unspecified safety policy.\n  - `FINANCIAL_TRANSACTIONS`: Safety policy for financial transactions.\n  - `SENSITIVE_DATA_MODIFICATION`: Safety policy for sensitive data modification.\n  - `COMMUNICATION_TOOL`: Safety policy for communication tools (e.g. Gmail, Chat, Meet).\n  - `ACCOUNT_CREATION`: Safety policy for account creation.\n  - `DATA_MODIFICATION`: Safety policy for data modification.\n  - `USER_CONSENT_MANAGEMENT`: Safety policy for user consent management.\n  - `LEGAL_TERMS_AND_AGREEMENTS`: Safety policy for legal terms and agreements.\n\n{% /details %}\n\n{% /details %}\n\n{% hr /%}",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 86,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.23817760785062522,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-40::B::0009",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "**toolUsePromptTokensDetails**: [`ModalityTokenCount`](/api-reference/generate-content#Resource:ModalityTokenCount) `array`\n\nOutput only. List of modalities that were processed for tool-use request inputs.\n\n{% details %}\n  {% summary %}\n  **serviceTier**: [`ServiceTier`](/api-reference/generate-content#Resource:ServiceTier)\n\nOutput only. Service tier of the request.\n\n{% /summary %}\n\nPossible values:\n\n- `unspecified`: Default service tier, which is standard.\n  - `standard`: Standard service tier.\n  - `flex`: Flex service tier.\n  - `priority`: Priority service tier.\n\n{% /details %}\n\n{% /details %}\n\n{% hr /%}\n\n**modelVersion**: `string`\n\nOutput only. The model version used to generate the response.\n\n{% hr /%}\n\n**responseId**: `string`",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 9,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.19245251465685378,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-40::B::0042",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "### ServiceTier  {% id=\"Resource:ServiceTier\" %}\n\n**Possible values:**\n\n- `unspecified`: Default service tier, which is standard.\n- `standard`: Standard service tier.\n- `flex`: Flex service tier.\n- `priority`: Priority service tier.\n\n### Content  {% id=\"Resource:Content\" %}\n\nThe base structured datatype containing multi-part content of a message.\n\nA [`Content`](/api-reference/generate-content#Resource:Content) includes a `role` field designating the producer of the [`Content`](/api-reference/generate-content#Resource:Content)\nand a `parts` field containing multi-part data that contains the content of\nthe message turn.\n\n**Properties:**\n\n{% section class=\"api-ref-property-list\" %}\n  {% details %}\n  {% summary %}\n  **parts**: `Part array`",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 42,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.1555297313249782,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "",
+        "context_ids": []
+      },
+      {
+        "event": "search",
+        "query": "Gemini API paid tiers uptime SLA percentage service credit refund policy",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-40::B::0086",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "{% details %}\n  {% summary %}\n  **disabledSafetyPolicies**: `string enum array`\n\nOptional. Disabled safety policies for computer use.\n\n{% /summary %}\n\nPossible values:\n\n- `SAFETY_POLICY_UNSPECIFIED`: Unspecified safety policy.\n  - `FINANCIAL_TRANSACTIONS`: Safety policy for financial transactions.\n  - `SENSITIVE_DATA_MODIFICATION`: Safety policy for sensitive data modification.\n  - `COMMUNICATION_TOOL`: Safety policy for communication tools (e.g. Gmail, Chat, Meet).\n  - `ACCOUNT_CREATION`: Safety policy for account creation.\n  - `DATA_MODIFICATION`: Safety policy for data modification.\n  - `USER_CONSENT_MANAGEMENT`: Safety policy for user consent management.\n  - `LEGAL_TERMS_AND_AGREEMENTS`: Safety policy for legal terms and agreements.\n\n{% /details %}\n\n{% /details %}\n\n{% hr /%}",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 86,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.23817760785062522,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-40::B::0009",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "**toolUsePromptTokensDetails**: [`ModalityTokenCount`](/api-reference/generate-content#Resource:ModalityTokenCount) `array`\n\nOutput only. List of modalities that were processed for tool-use request inputs.\n\n{% details %}\n  {% summary %}\n  **serviceTier**: [`ServiceTier`](/api-reference/generate-content#Resource:ServiceTier)\n\nOutput only. Service tier of the request.\n\n{% /summary %}\n\nPossible values:\n\n- `unspecified`: Default service tier, which is standard.\n  - `standard`: Standard service tier.\n  - `flex`: Flex service tier.\n  - `priority`: Priority service tier.\n\n{% /details %}\n\n{% /details %}\n\n{% hr /%}\n\n**modelVersion**: `string`\n\nOutput only. The model version used to generate the response.\n\n{% hr /%}\n\n**responseId**: `string`",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 9,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.19245251465685378,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-40::B::0042",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "### ServiceTier  {% id=\"Resource:ServiceTier\" %}\n\n**Possible values:**\n\n- `unspecified`: Default service tier, which is standard.\n- `standard`: Standard service tier.\n- `flex`: Flex service tier.\n- `priority`: Priority service tier.\n\n### Content  {% id=\"Resource:Content\" %}\n\nThe base structured datatype containing multi-part content of a message.\n\nA [`Content`](/api-reference/generate-content#Resource:Content) includes a `role` field designating the producer of the [`Content`](/api-reference/generate-content#Resource:Content)\nand a `parts` field containing multi-part data that contains the content of\nthe message turn.\n\n**Properties:**\n\n{% section class=\"api-ref-property-list\" %}\n  {% details %}\n  {% summary %}\n  **parts**: `Part array`",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 42,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.1555297313249782,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "",
+        "context_ids": []
+      },
+      {
+        "event": "search_limit"
+      }
+    ],
+    "elapsed_ms": 7797.94,
+    "prompt_tokens": 1526,
+    "completion_tokens": 115,
+    "llm_cost_usd": 0.000298,
+    "error": null
+  },
+  {
+    "query_id": "u04",
+    "split": "test",
+    "answerable": false,
+    "question": "What is the exact Python SDK method and pricing per 1,000 training steps for supervised fine-tuning of Gemini 4 Carbon?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "search_calls": 4,
+    "events": [
+      {
+        "event": "search",
+        "query": "Python SDK method pricing supervised fine-tuning Gemini 4 Carbon",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-15::B::0007",
+            "source_id": "gemini-doc-15",
+            "source": "data/corpus/15_docs_models_gemini-4-carbon.md",
+            "page": 15,
+            "text": "{% /section %}\n\n* [Pricing](/docs/pricing#gemini-4-carbon)\n{% /table %}",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/models/gemini-4-carbon.md",
+              "page": 15,
+              "title": "Gemini 4 Carbon",
+              "source": "data/corpus/15_docs_models_gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 7,
+              "document_id": "gemini-doc-15"
+            },
+            "score": 0.3569936291425432,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-08::B::0004",
+            "source_id": "gemini-doc-08",
+            "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+            "page": 8,
+            "text": "| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Carbon | `gemini-4-carbon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our strongest reasoning model, built for sustained agentic coding, multimodal knowledge work, scientific discovery, and cybersecurity defense. |\n\nFor complete details, see the [Gemini 4 Carbon model page](/docs/models/gemini-4-carbon) and [Latest Gemini models](/docs/latest-model). For introductory pricing details, see the [pricing section](/docs/whats-new-gemini-4-carbon#pricing) on this page or the [pricing page](/docs/pricing#gemini-4-carbon).",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+              "page": 8,
+              "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+              "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 4,
+              "document_id": "gemini-doc-08"
+            },
+            "score": 0.3077289389940293,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-10::B::0031",
+            "source_id": "gemini-doc-10",
+            "source": "data/corpus/10_docs_whats-new-gemini-3_8.md",
+            "page": 10,
+            "text": "## Pricing  {% id=\"pricing\" %}\n\nTake advantage of introductory pricing across Google AI Studio and Gemini Enterprise Agent Platform through December 31, 2026 for Gemini 3.8 Flash and Gemini 3.6 Flash. Standard pricing takes effect January 1, 2027. For complete pricing tiers, see the [pricing page](/docs/pricing#gemini-3.8-flash).\n\n## Other models  {% id=\"other-models\" %}\n\n* [Latest Gemini models](/docs/latest-model)\n* [Gemini 4 Hydrogen](/docs/whats-new-gemini-4-hydrogen)\n* [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon)\n* [Gemini 4 Argon](/docs/whats-new-gemini-4-argon)\n* [Gemini 3.6 Flash and 3.5 Flash-Lite](/docs/whats-new-gemini-3.6)\n* [See all models](/docs/models)",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-3.8.md",
+              "page": 10,
+              "title": "Latest Gemini models — Gemini 3.8 Flash - what's new",
+              "source": "data/corpus/10_docs_whats-new-gemini-3_8.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 31,
+              "document_id": "gemini-doc-10"
+            },
+            "score": 0.23913435787993548,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "[gemini-doc-15::B::0007 | data/corpus/15_docs_models_gemini-4-carbon.md | page 15]\n{% /section %}\n\n* [Pricing](/docs/pricing#gemini-4-carbon)\n{% /table %}",
+        "context_ids": [
+          "gemini-doc-15::B::0007"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Python SDK method pricing supervised fine-tuning Gemini 4 Carbon",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-15::B::0007",
+            "source_id": "gemini-doc-15",
+            "source": "data/corpus/15_docs_models_gemini-4-carbon.md",
+            "page": 15,
+            "text": "{% /section %}\n\n* [Pricing](/docs/pricing#gemini-4-carbon)\n{% /table %}",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/models/gemini-4-carbon.md",
+              "page": 15,
+              "title": "Gemini 4 Carbon",
+              "source": "data/corpus/15_docs_models_gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 7,
+              "document_id": "gemini-doc-15"
+            },
+            "score": 0.3569936291425432,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-08::B::0004",
+            "source_id": "gemini-doc-08",
+            "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+            "page": 8,
+            "text": "| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Carbon | `gemini-4-carbon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our strongest reasoning model, built for sustained agentic coding, multimodal knowledge work, scientific discovery, and cybersecurity defense. |\n\nFor complete details, see the [Gemini 4 Carbon model page](/docs/models/gemini-4-carbon) and [Latest Gemini models](/docs/latest-model). For introductory pricing details, see the [pricing section](/docs/whats-new-gemini-4-carbon#pricing) on this page or the [pricing page](/docs/pricing#gemini-4-carbon).",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+              "page": 8,
+              "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+              "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 4,
+              "document_id": "gemini-doc-08"
+            },
+            "score": 0.3077289389940293,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-10::B::0031",
+            "source_id": "gemini-doc-10",
+            "source": "data/corpus/10_docs_whats-new-gemini-3_8.md",
+            "page": 10,
+            "text": "## Pricing  {% id=\"pricing\" %}\n\nTake advantage of introductory pricing across Google AI Studio and Gemini Enterprise Agent Platform through December 31, 2026 for Gemini 3.8 Flash and Gemini 3.6 Flash. Standard pricing takes effect January 1, 2027. For complete pricing tiers, see the [pricing page](/docs/pricing#gemini-3.8-flash).\n\n## Other models  {% id=\"other-models\" %}\n\n* [Latest Gemini models](/docs/latest-model)\n* [Gemini 4 Hydrogen](/docs/whats-new-gemini-4-hydrogen)\n* [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon)\n* [Gemini 4 Argon](/docs/whats-new-gemini-4-argon)\n* [Gemini 3.6 Flash and 3.5 Flash-Lite](/docs/whats-new-gemini-3.6)\n* [See all models](/docs/models)",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-3.8.md",
+              "page": 10,
+              "title": "Latest Gemini models — Gemini 3.8 Flash - what's new",
+              "source": "data/corpus/10_docs_whats-new-gemini-3_8.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 31,
+              "document_id": "gemini-doc-10"
+            },
+            "score": 0.23913435787993548,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "[gemini-doc-15::B::0007 | data/corpus/15_docs_models_gemini-4-carbon.md | page 15]\n{% /section %}\n\n* [Pricing](/docs/pricing#gemini-4-carbon)\n{% /table %}",
+        "context_ids": [
+          "gemini-doc-15::B::0007"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Python SDK method pricing supervised fine-tuning Gemini 4 Carbon",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-15::B::0007",
+            "source_id": "gemini-doc-15",
+            "source": "data/corpus/15_docs_models_gemini-4-carbon.md",
+            "page": 15,
+            "text": "{% /section %}\n\n* [Pricing](/docs/pricing#gemini-4-carbon)\n{% /table %}",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/models/gemini-4-carbon.md",
+              "page": 15,
+              "title": "Gemini 4 Carbon",
+              "source": "data/corpus/15_docs_models_gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 7,
+              "document_id": "gemini-doc-15"
+            },
+            "score": 0.3569936291425432,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-08::B::0004",
+            "source_id": "gemini-doc-08",
+            "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+            "page": 8,
+            "text": "| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Carbon | `gemini-4-carbon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our strongest reasoning model, built for sustained agentic coding, multimodal knowledge work, scientific discovery, and cybersecurity defense. |\n\nFor complete details, see the [Gemini 4 Carbon model page](/docs/models/gemini-4-carbon) and [Latest Gemini models](/docs/latest-model). For introductory pricing details, see the [pricing section](/docs/whats-new-gemini-4-carbon#pricing) on this page or the [pricing page](/docs/pricing#gemini-4-carbon).",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+              "page": 8,
+              "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+              "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 4,
+              "document_id": "gemini-doc-08"
+            },
+            "score": 0.3077289389940293,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-10::B::0031",
+            "source_id": "gemini-doc-10",
+            "source": "data/corpus/10_docs_whats-new-gemini-3_8.md",
+            "page": 10,
+            "text": "## Pricing  {% id=\"pricing\" %}\n\nTake advantage of introductory pricing across Google AI Studio and Gemini Enterprise Agent Platform through December 31, 2026 for Gemini 3.8 Flash and Gemini 3.6 Flash. Standard pricing takes effect January 1, 2027. For complete pricing tiers, see the [pricing page](/docs/pricing#gemini-3.8-flash).\n\n## Other models  {% id=\"other-models\" %}\n\n* [Latest Gemini models](/docs/latest-model)\n* [Gemini 4 Hydrogen](/docs/whats-new-gemini-4-hydrogen)\n* [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon)\n* [Gemini 4 Argon](/docs/whats-new-gemini-4-argon)\n* [Gemini 3.6 Flash and 3.5 Flash-Lite](/docs/whats-new-gemini-3.6)\n* [See all models](/docs/models)",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-3.8.md",
+              "page": 10,
+              "title": "Latest Gemini models — Gemini 3.8 Flash - what's new",
+              "source": "data/corpus/10_docs_whats-new-gemini-3_8.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 31,
+              "document_id": "gemini-doc-10"
+            },
+            "score": 0.23913435787993548,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "[gemini-doc-15::B::0007 | data/corpus/15_docs_models_gemini-4-carbon.md | page 15]\n{% /section %}\n\n* [Pricing](/docs/pricing#gemini-4-carbon)\n{% /table %}",
+        "context_ids": [
+          "gemini-doc-15::B::0007"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Python SDK method pricing supervised fine-tuning Gemini 4 Carbon",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-15::B::0007",
+            "source_id": "gemini-doc-15",
+            "source": "data/corpus/15_docs_models_gemini-4-carbon.md",
+            "page": 15,
+            "text": "{% /section %}\n\n* [Pricing](/docs/pricing#gemini-4-carbon)\n{% /table %}",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/models/gemini-4-carbon.md",
+              "page": 15,
+              "title": "Gemini 4 Carbon",
+              "source": "data/corpus/15_docs_models_gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 7,
+              "document_id": "gemini-doc-15"
+            },
+            "score": 0.3569936291425432,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-08::B::0004",
+            "source_id": "gemini-doc-08",
+            "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+            "page": 8,
+            "text": "| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Carbon | `gemini-4-carbon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our strongest reasoning model, built for sustained agentic coding, multimodal knowledge work, scientific discovery, and cybersecurity defense. |\n\nFor complete details, see the [Gemini 4 Carbon model page](/docs/models/gemini-4-carbon) and [Latest Gemini models](/docs/latest-model). For introductory pricing details, see the [pricing section](/docs/whats-new-gemini-4-carbon#pricing) on this page or the [pricing page](/docs/pricing#gemini-4-carbon).",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+              "page": 8,
+              "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+              "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 4,
+              "document_id": "gemini-doc-08"
+            },
+            "score": 0.3077289389940293,
+            "strategy": "tfidf"
+          },
+          {
+            "id": "gemini-doc-10::B::0031",
+            "source_id": "gemini-doc-10",
+            "source": "data/corpus/10_docs_whats-new-gemini-3_8.md",
+            "page": 10,
+            "text": "## Pricing  {% id=\"pricing\" %}\n\nTake advantage of introductory pricing across Google AI Studio and Gemini Enterprise Agent Platform through December 31, 2026 for Gemini 3.8 Flash and Gemini 3.6 Flash. Standard pricing takes effect January 1, 2027. For complete pricing tiers, see the [pricing page](/docs/pricing#gemini-3.8-flash).\n\n## Other models  {% id=\"other-models\" %}\n\n* [Latest Gemini models](/docs/latest-model)\n* [Gemini 4 Hydrogen](/docs/whats-new-gemini-4-hydrogen)\n* [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon)\n* [Gemini 4 Argon](/docs/whats-new-gemini-4-argon)\n* [Gemini 3.6 Flash and 3.5 Flash-Lite](/docs/whats-new-gemini-3.6)\n* [See all models](/docs/models)",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-3.8.md",
+              "page": 10,
+              "title": "Latest Gemini models — Gemini 3.8 Flash - what's new",
+              "source": "data/corpus/10_docs_whats-new-gemini-3_8.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 31,
+              "document_id": "gemini-doc-10"
+            },
+            "score": 0.23913435787993548,
+            "strategy": "tfidf"
+          }
+        ],
+        "context": "[gemini-doc-15::B::0007 | data/corpus/15_docs_models_gemini-4-carbon.md | page 15]\n{% /section %}\n\n* [Pricing](/docs/pricing#gemini-4-carbon)\n{% /table %}",
+        "context_ids": [
+          "gemini-doc-15::B::0007"
+        ]
+      },
+      {
+        "event": "search_limit"
+      }
+    ],
+    "elapsed_ms": 8855.63,
+    "prompt_tokens": 1794,
+    "completion_tokens": 115,
+    "llm_cost_usd": 0.000338,
+    "error": null
+  }
+]

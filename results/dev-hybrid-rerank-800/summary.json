@@ -1,0 +1,17 @@
+{
+  "method": "hybrid_rerank",
+  "split": "dev",
+  "budget_chars": 800,
+  "n": 15,
+  "hit1": 7,
+  "hit1_rate": 0.4667,
+  "hit3": 10,
+  "hit3_rate": 0.6667,
+  "context_hit": 6,
+  "context_hit_rate": 0.4,
+  "avg_context_chars": 658.1,
+  "median_ms": 3105.37,
+  "embed_tokens": 353,
+  "rerank_tokens": 23112,
+  "total_cost_usd": 0.003664
+}

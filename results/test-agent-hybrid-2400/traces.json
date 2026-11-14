@@ -1,0 +1,1073 @@
+[
+  {
+    "query_id": "q16",
+    "split": "test",
+    "answerable": true,
+    "question": "Which Gemini 4 model is described as fast and efficient for everyday coding and agentic workflows, and what is its 1M-token price?",
+    "filter": null,
+    "status": "answered",
+    "answer": "The Gemini 4 model described as fast and efficient for everyday coding and agentic workflows is **Gemini 4 Hydrogen** [gemini-doc-29::B::0072]. Its 1M-token price is not explicitly stated in the provided context, but the **Gemini 4 Argon** model, which is also efficient, has an introductory price of $2/1M input tokens and $10/1M output tokens [gemini-doc-09::B::0003].",
+    "citations": [
+      "gemini-doc-29::B::0072",
+      "gemini-doc-09::B::0003"
+    ],
+    "search_calls": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "Gemini 4 model fast efficient everyday coding agentic workflows 1M-token price",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-29::B::0072",
+            "source_id": "gemini-doc-29",
+            "source": "data/corpus/29_docs_antigravity-agent.md",
+            "page": 29,
+            "text": "| Model | Value in `agent_config.model` | Description |\n| :--- | :--- | :--- |\n| **Gemini 4 Hydrogen** (default) | `gemini-4-hydrogen` | Default Gemini 4 model bringing cutting-edge intelligence with speed and efficiency for everyday coding and agentic workflows. |\n| **Gemini 4 Carbon** | `gemini-4-carbon` | Most capable frontier reasoning model for complex software engineering, deep problem solving, and long-horizon agentic tasks. |\n| **Gemini 4 Argon** | `gemini-4-argon` | Our efficient Gemini 4 frontier reasoning model, delivering faster responses and lower token spend per turn compared to [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon) across software engineering and agentic tasks. |",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/antigravity-agent.md",
+              "page": 29,
+              "title": "Antigravity agent",
+              "source": "data/corpus/29_docs_antigravity-agent.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 72,
+              "document_id": "gemini-doc-29"
+            },
+            "score": 0.03177805800756621,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-09::B::0003",
+            "source_id": "gemini-doc-09",
+            "source": "data/corpus/09_docs_whats-new-gemini-4-argon.md",
+            "page": 9,
+            "text": "## New model  {% id=\"new-model\" %}\n\n| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Argon | `gemini-4-argon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our efficient Gemini 4 frontier reasoning model, delivering faster responses and lower token spend per turn compared to [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon) across complex coding, agentic, math, and science tasks. |",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-argon.md",
+              "page": 9,
+              "title": "Latest Gemini models — Gemini 4 Argon - what's new",
+              "source": "data/corpus/09_docs_whats-new-gemini-4-argon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 3,
+              "document_id": "gemini-doc-09"
+            },
+            "score": 0.031746031746031744,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-02::B::0010",
+            "source_id": "gemini-doc-02",
+            "source": "data/corpus/02_docs.md",
+            "page": 2,
+            "text": "{% card description=\"Brings cutting-edge intelligence to everyone, with speed and efficiency for everyday coding and agentic workflows, featuring a shared 1M context window and long decodes up to 1M tokens.\" title=\"Gemini 4 Hydrogen\" variant=\"model-card\" %}\n  {% section class=\"model-specs\" %}\n  *   *Model code* **gemini-4-hydrogen**\n  *   *Context* **1M tokens**\n  *   *Max output* **65K / 1M tokens**\n  *   *Modalities* **Text, Image, Audio, Video, PDF**\n\n{% /section %}",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs.md",
+              "page": 2,
+              "title": "Overview",
+              "source": "data/corpus/02_docs.md",
+              "section": "getting_started",
+              "strategy": "B",
+              "chunk_index": 10,
+              "document_id": "gemini-doc-02"
+            },
+            "score": 0.03128054740957967,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[gemini-doc-29::B::0072 | data/corpus/29_docs_antigravity-agent.md | page 29]\n| Model | Value in `agent_config.model` | Description |\n| :--- | :--- | :--- |\n| **Gemini 4 Hydrogen** (default) | `gemini-4-hydrogen` | Default Gemini 4 model bringing cutting-edge intelligence with speed and efficiency for everyday coding and agentic workflows. |\n| **Gemini 4 Carbon** | `gemini-4-carbon` | Most capable frontier reasoning model for complex software engineering, deep problem solving, and long-horizon agentic tasks. |\n| **Gemini 4 Argon** | `gemini-4-argon` | Our efficient Gemini 4 frontier reasoning model, delivering faster responses and lower token spend per turn compared to [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon) across software engineering and agentic tasks. |\n\n[gemini-doc-09::B::0003 | data/corpus/09_docs_whats-new-gemini-4-argon.md | page 9]\n## New model  {% id=\"new-model\" %}\n\n| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Argon | `gemini-4-argon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our efficient Gemini 4 frontier reasoning model, delivering faster responses and lower token spend per turn compared to [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon) across complex coding, agentic, math, and science tasks. |\n\n[gemini-doc-02::B::0010 | data/corpus/02_docs.md | page 2]\n{% card description=\"Brings cutting-edge intelligence to everyone, with speed and efficiency for everyday coding and agentic workflows, featuring a shared 1M context window and long decodes up to 1M tokens.\" title=\"Gemini 4 Hydrogen\" variant=\"model-card\" %}\n  {% section class=\"model-specs\" %}\n  *   *Model code* **gemini-4-hydrogen**\n  *   *Context* **1M tokens**\n  *   *Max output* **65K / 1M tokens**\n  *   *Modalities* **Text, Image, Audio, Video, PDF**\n\n{% /section %}",
+        "context_ids": [
+          "gemini-doc-29::B::0072",
+          "gemini-doc-09::B::0003",
+          "gemini-doc-02::B::0010"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6061.42,
+    "prompt_tokens": 1169,
+    "completion_tokens": 169,
+    "llm_cost_usd": 0.000277,
+    "error": null
+  },
+  {
+    "query_id": "q17",
+    "split": "test",
+    "answerable": true,
+    "question": "In the api_reference section, what is the difference between `rate_limit_exceeded` and `quota_exceeded` error codes?",
+    "filter": {
+      "section": "api_reference"
+    },
+    "status": "answered",
+    "answer": "The `rate_limit_exceeded` error code indicates that you have exceeded the per-minute or per-second request or token limit, while the `quota_exceeded` error code signifies that you have exceeded your daily quota. In both cases, the response is a 429 Too Many Requests status, but they refer to different limits: one is time-based (rate limit) and the other is a daily usage limit (quota) [gemini-doc-37::B::0006][gemini-doc-37::B::0005].",
+    "citations": [
+      "gemini-doc-37::B::0006",
+      "gemini-doc-37::B::0005"
+    ],
+    "search_calls": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "rate_limit_exceeded quota_exceeded error codes api_reference",
+        "filter": {
+          "section": "api_reference"
+        },
+        "results": [
+          {
+            "id": "gemini-doc-37::B::0002",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "## Standard API error codes  {% id=\"api-error-codes\" %}\n\nThese general request-level error codes correspond to standard HTTP status codes.\nUse the `code` field in your application logic to handle errors programmatically.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 2,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.032266458495966696,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-37::B::0006",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "| `quota_exceeded` | 429 Too Many Requests | You have exceeded your daily quota. | Wait until the quota resets or request a quota increase. |\n| `too_many_requests` | 429 Too Many Requests | You have made too many requests in a short period of time. | Wait and retry with exponential backoff. |\n| `cancelled` | 499 Client Closed Request | The client cancelled the request before it completed. | No action needed. This usually means the client disconnected. |\n| `api_error` | 500 Internal Server Error | An unexpected error occurred on the server. | Retry the request. If it persists, contact support. |\n| `unimplemented` | 501 Not Implemented | The operation or feature is not implemented or supported. | Check API capabilities or switch to a supported feature. |",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 6,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.03177805800756621,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-37::B::0005",
+            "source_id": "gemini-doc-37",
+            "source": "data/corpus/37_docs_api-errors.md",
+            "page": 37,
+            "text": "| `not_found` | 404 Not Found | The requested resource was not found. | Verify the resource path and parameters. |\n| `model_not_found` | 404 Not Found | The specified model was not found. | Verify the model name or fall back to a different model. |\n| `already_exists` | 409 Conflict | The entity you attempted to create already exists. | Check if the resource already exists before re-creating. |\n| `aborted` | 409 Conflict | The operation was aborted due to a conflict or concurrency check failure. | Retry the request at a higher application level. |\n| `rate_limit_exceeded` | 429 Too Many Requests | You have exceeded the per-minute or per-second request or token limit. | Wait and retry with exponential backoff. |",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/api-errors.md",
+              "page": 37,
+              "title": "API errors",
+              "source": "data/corpus/37_docs_api-errors.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 5,
+              "document_id": "gemini-doc-37"
+            },
+            "score": 0.030330882352941176,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[gemini-doc-37::B::0002 | data/corpus/37_docs_api-errors.md | page 37]\n## Standard API error codes  {% id=\"api-error-codes\" %}\n\nThese general request-level error codes correspond to standard HTTP status codes.\nUse the `code` field in your application logic to handle errors programmatically.\n\n[gemini-doc-37::B::0006 | data/corpus/37_docs_api-errors.md | page 37]\n| `quota_exceeded` | 429 Too Many Requests | You have exceeded your daily quota. | Wait until the quota resets or request a quota increase. |\n| `too_many_requests` | 429 Too Many Requests | You have made too many requests in a short period of time. | Wait and retry with exponential backoff. |\n| `cancelled` | 499 Client Closed Request | The client cancelled the request before it completed. | No action needed. This usually means the client disconnected. |\n| `api_error` | 500 Internal Server Error | An unexpected error occurred on the server. | Retry the request. If it persists, contact support. |\n| `unimplemented` | 501 Not Implemented | The operation or feature is not implemented or supported. | Check API capabilities or switch to a supported feature. |\n\n[gemini-doc-37::B::0005 | data/corpus/37_docs_api-errors.md | page 37]\n| `not_found` | 404 Not Found | The requested resource was not found. | Verify the resource path and parameters. |\n| `model_not_found` | 404 Not Found | The specified model was not found. | Verify the model name or fall back to a different model. |\n| `already_exists` | 409 Conflict | The entity you attempted to create already exists. | Check if the resource already exists before re-creating. |\n| `aborted` | 409 Conflict | The operation was aborted due to a conflict or concurrency check failure. | Retry the request at a higher application level. |\n| `rate_limit_exceeded` | 429 Too Many Requests | You have exceeded the per-minute or per-second request or token limit. | Wait and retry with exponential backoff. |",
+        "context_ids": [
+          "gemini-doc-37::B::0002",
+          "gemini-doc-37::B::0006",
+          "gemini-doc-37::B::0005"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6397.88,
+    "prompt_tokens": 1046,
+    "completion_tokens": 169,
+    "llm_cost_usd": 0.000258,
+    "error": null
+  },
+  {
+    "query_id": "q18",
+    "split": "test",
+    "answerable": true,
+    "question": "How are non-PDF text formats like TXT, Markdown, or HTML handled by Gemini compared to PDF files?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "search_calls": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "Gemini handling non-PDF text formats TXT Markdown HTML compared to PDF",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-20::B::0066",
+            "source_id": "gemini-doc-20",
+            "source": "data/corpus/20_docs_document-processing.md",
+            "page": 20,
+            "text": "{% tab label=\"CLI\" %}\n  ```bash\n  curl -sL -o Gemini_paper.pdf \"https://arxiv.org/pdf/2312.11805\"\n  curl -sL -o Gemini_1.5_paper.pdf \"https://arxiv.org/pdf/2403.05530\"\n  PDF_1=$(gemini-api files upload Gemini_paper.pdf --wait)\n  PDF_2=$(gemini-api files upload Gemini_1.5_paper.pdf --wait)\n  gemini-api analyze -i \"$PDF_1\" -i \"$PDF_2\" \\\n    \"What is the difference between each of the main benchmarks between these two papers? Output these in a table.\"\n  ```\n\n{% /tab %}\n\n{% /tabs %}",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/document-processing.md",
+              "page": 20,
+              "title": "Documents",
+              "source": "data/corpus/20_docs_document-processing.md",
+              "section": "core_guides",
+              "strategy": "B",
+              "chunk_index": 66,
+              "document_id": "gemini-doc-20"
+            },
+            "score": 0.030158730158730156,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-20::B::0001",
+            "source_id": "gemini-doc-20",
+            "source": "data/corpus/20_docs_document-processing.md",
+            "page": 20,
+            "text": "> ## AI Agent Context\n> Get the complete documentation index at: https://aistudio.google.com/llms.txt\n> Use this file to discover all available pages.\n> For the full documentation in a single file, fetch: https://aistudio.google.com/llms-full.txt\n\n# Document understanding\n\nGemini models can process documents in PDF format, using native\nvision to understand entire document contexts. This goes beyond\njust text extraction, allowing Gemini to:\n\n*   Analyze and interpret content, including text, images, diagrams,\n  charts, and tables, even in long documents up to 1000 pages.\n\n*   Extract information into [structured output](/docs/structured-output) formats.\n\n*   Summarize and answer questions based on both the visual and textual elements\n  in a document.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/document-processing.md",
+              "page": 20,
+              "title": "Documents",
+              "source": "data/corpus/20_docs_document-processing.md",
+              "section": "core_guides",
+              "strategy": "B",
+              "chunk_index": 1,
+              "document_id": "gemini-doc-20"
+            },
+            "score": 0.030117753623188408,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-20::B::0076",
+            "source_id": "gemini-doc-20",
+            "source": "data/corpus/20_docs_document-processing.md",
+            "page": 20,
+            "text": "### Gemini 3 models  {% id=\"gemini-3-models\" %}\n\nGemini 3 introduces granular control over multimodal vision processing with the\n`media_resolution` parameter. You can now set the resolution to low, medium, or\nhigh per individual media part. With this addition, the processing of PDF\ndocuments has been updated:\n\n1.   **Native text inclusion:** Text natively embedded in the PDF is extracted\n  and provided to the model.\n\n2.   **Billing & token reporting:**\n\n*     You are **not charged** for tokens originating from the extracted\n    **native text** in PDFs.\n\n*     In the `usage_metadata` section of the API response, tokens generated\n    from processing PDF pages (as images) are now counted under the `IMAGE`\n    modality, not a separate `DOCUMENT` modality as in some earlier\n    versions.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/document-processing.md",
+              "page": 20,
+              "title": "Documents",
+              "source": "data/corpus/20_docs_document-processing.md",
+              "section": "core_guides",
+              "strategy": "B",
+              "chunk_index": 76,
+              "document_id": "gemini-doc-20"
+            },
+            "score": 0.029513888888888888,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[gemini-doc-20::B::0066 | data/corpus/20_docs_document-processing.md | page 20]\n{% tab label=\"CLI\" %}\n  ```bash\n  curl -sL -o Gemini_paper.pdf \"https://arxiv.org/pdf/2312.11805\"\n  curl -sL -o Gemini_1.5_paper.pdf \"https://arxiv.org/pdf/2403.05530\"\n  PDF_1=$(gemini-api files upload Gemini_paper.pdf --wait)\n  PDF_2=$(gemini-api files upload Gemini_1.5_paper.pdf --wait)\n  gemini-api analyze -i \"$PDF_1\" -i \"$PDF_2\" \\\n    \"What is the difference between each of the main benchmarks between these two papers? Output these in a table.\"\n  ```\n\n{% /tab %}\n\n{% /tabs %}\n\n[gemini-doc-20::B::0001 | data/corpus/20_docs_document-processing.md | page 20]\n> ## AI Agent Context\n> Get the complete documentation index at: https://aistudio.google.com/llms.txt\n> Use this file to discover all available pages.\n> For the full documentation in a single file, fetch: https://aistudio.google.com/llms-full.txt\n\n# Document understanding\n\nGemini models can process documents in PDF format, using native\nvision to understand entire document contexts. This goes beyond\njust text extraction, allowing Gemini to:\n\n*   Analyze and interpret content, including text, images, diagrams,\n  charts, and tables, even in long documents up to 1000 pages.\n\n*   Extract information into [structured output](/docs/structured-output) formats.\n\n*   Summarize and answer questions based on both the visual and textual elements\n  in a document.\n\n[gemini-doc-20::B::0076 | data/corpus/20_docs_document-processing.md | page 20]\n### Gemini 3 models  {% id=\"gemini-3-models\" %}\n\nGemini 3 introduces granular control over multimodal vision processing with the\n`media_resolution` parameter. You can now set the resolution to low, medium, or\nhigh per individual media part. With this addition, the processing of PDF\ndocuments has been updated:\n\n1.   **Native text inclusion:** Text natively embedded in the PDF is extracted\n  and provided to the model.\n\n2.   **Billing & token reporting:**\n\n*     You are **not charged** for tokens originating from the extracted\n    **native text** in PDFs.\n\n*     In the `usage_metadata` section of the API response, tokens generated\n    from processing PDF pages (as images) are now counted under the `IMAGE`\n    modality, not a separate `DOCUMENT` modality as in some earlier\n    versions.",
+        "context_ids": [
+          "gemini-doc-20::B::0066",
+          "gemini-doc-20::B::0001",
+          "gemini-doc-20::B::0076"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "elapsed_ms": 6368.28,
+    "prompt_tokens": 1170,
+    "completion_tokens": 169,
+    "llm_cost_usd": 0.000277,
+    "error": null
+  },
+  {
+    "query_id": "q19",
+    "split": "test",
+    "answerable": true,
+    "question": "What happens if your coding agent does not have the Gemini Docs MCP server installed when using a Gemini agent skill?",
+    "filter": null,
+    "status": "answered",
+    "answer": "If your coding agent does not have the Gemini Docs MCP server installed, the skill falls back to [`llms.txt`](https://aistudio.google.com/llms.txt) for functionality. This means that the agent will not have access to the live documentation and features provided by the MCP server, which could limit its capabilities when using the Gemini agent skill [gemini-doc-01::B::0005].",
+    "citations": [
+      "gemini-doc-01::B::0005"
+    ],
+    "search_calls": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "Gemini agent skill MCP server installation requirements",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-01::B::0005",
+            "source_id": "gemini-doc-01",
+            "source": "data/corpus/01_docs_coding-agents.md",
+            "page": 1,
+            "text": "## Install Gemini agent skills  {% id=\"available-skills\" %}\n\nAgent skills give your coding agent procedural rules, current model names, and SDK code patterns. Instead of adding long instructions to your prompt, your agent loads each skill only when needed. This helps your agent avoid deprecated SDKs and use modern Gemini patterns.\n\nSkills work alongside the Gemini Docs MCP server. If your agent does not have the MCP server installed, the skill falls back to [`llms.txt`](https://aistudio.google.com/llms.txt). To learn more about how skills work, read the [Gemini API Skills guide](https://aistudio.google.com/learn/gemini-api-skills).",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/coding-agents.md",
+              "page": 1,
+              "title": "Coding agent setup",
+              "source": "data/corpus/01_docs_coding-agents.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 5,
+              "document_id": "gemini-doc-01"
+            },
+            "score": 0.03252247488101534,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-01::B::0024",
+            "source_id": "gemini-doc-01",
+            "source": "data/corpus/01_docs_coding-agents.md",
+            "page": 1,
+            "text": "### Troubleshooting  {% id=\"troubleshooting\" %}\n\n- **Skill or MCP server not detected:** Restart your editor (Cursor or VS Code) or terminal session (Claude Code or Codex). Most agents load MCP servers and skills only when they start.\n- **Global skill conflict:** If your agent ignores a globally installed skill, install the skill in your project root without `--global`:  ```bash\n  npx skills add google-gemini/gemini-skills --skill gemini-api-dev\n  ```\n\n- **Rules ignored:** Make sure your `AGENTS.md`, `.cursorrules`, or `CLAUDE.md` file is in the root directory of your project.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/coding-agents.md",
+              "page": 1,
+              "title": "Coding agent setup",
+              "source": "data/corpus/01_docs_coding-agents.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 24,
+              "document_id": "gemini-doc-01"
+            },
+            "score": 0.032266458495966696,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-01::B::0013",
+            "source_id": "gemini-doc-01",
+            "source": "data/corpus/01_docs_coding-agents.md",
+            "page": 1,
+            "text": "## Connect the Gemini Docs MCP server  {% id=\"mcp-setup\" %}\n\nThe public **Gemini Docs MCP server** (`https://gemini-api-docs-mcp.dev`) gives your agent live access to the entire documentation site. Your agent can search and read documentation pages to check request schemas, model limits, and new features:\n\n- `gemini_search_docs`: Searches Gemini API documentation by topic or query.\n- `gemini_get_doc`: Reads the full Markdown content of a specific documentation page.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/coding-agents.md",
+              "page": 1,
+              "title": "Coding agent setup",
+              "source": "data/corpus/01_docs_coding-agents.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 13,
+              "document_id": "gemini-doc-01"
+            },
+            "score": 0.03200204813108039,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[gemini-doc-01::B::0005 | data/corpus/01_docs_coding-agents.md | page 1]\n## Install Gemini agent skills  {% id=\"available-skills\" %}\n\nAgent skills give your coding agent procedural rules, current model names, and SDK code patterns. Instead of adding long instructions to your prompt, your agent loads each skill only when needed. This helps your agent avoid deprecated SDKs and use modern Gemini patterns.\n\nSkills work alongside the Gemini Docs MCP server. If your agent does not have the MCP server installed, the skill falls back to [`llms.txt`](https://aistudio.google.com/llms.txt). To learn more about how skills work, read the [Gemini API Skills guide](https://aistudio.google.com/learn/gemini-api-skills).\n\n[gemini-doc-01::B::0024 | data/corpus/01_docs_coding-agents.md | page 1]\n### Troubleshooting  {% id=\"troubleshooting\" %}\n\n- **Skill or MCP server not detected:** Restart your editor (Cursor or VS Code) or terminal session (Claude Code or Codex). Most agents load MCP servers and skills only when they start.\n- **Global skill conflict:** If your agent ignores a globally installed skill, install the skill in your project root without `--global`:  ```bash\n  npx skills add google-gemini/gemini-skills --skill gemini-api-dev\n  ```\n\n- **Rules ignored:** Make sure your `AGENTS.md`, `.cursorrules`, or `CLAUDE.md` file is in the root directory of your project.\n\n[gemini-doc-01::B::0013 | data/corpus/01_docs_coding-agents.md | page 1]\n## Connect the Gemini Docs MCP server  {% id=\"mcp-setup\" %}\n\nThe public **Gemini Docs MCP server** (`https://gemini-api-docs-mcp.dev`) gives your agent live access to the entire documentation site. Your agent can search and read documentation pages to check request schemas, model limits, and new features:\n\n- `gemini_search_docs`: Searches Gemini API documentation by topic or query.\n- `gemini_get_doc`: Reads the full Markdown content of a specific documentation page.",
+        "context_ids": [
+          "gemini-doc-01::B::0005",
+          "gemini-doc-01::B::0024",
+          "gemini-doc-01::B::0013"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5702.4,
+    "prompt_tokens": 1050,
+    "completion_tokens": 130,
+    "llm_cost_usd": 0.000236,
+    "error": null
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "answerable": true,
+    "question": "In the tools_and_agents section, what is the default outbound network access policy for managed agents in their Linux sandbox, and how can you restrict it?",
+    "filter": {
+      "section": "tools_and_agents"
+    },
+    "status": "answered",
+    "answer": "The default outbound network access policy for managed agents in their Linux sandbox is unrestricted. You can restrict it by using a `network` allowlist to limit outbound traffic to specific domains or wildcard patterns [gemini-doc-27::B::0004][gemini-doc-31::B::0087].",
+    "citations": [
+      "gemini-doc-27::B::0004",
+      "gemini-doc-31::B::0087"
+    ],
+    "search_calls": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "default outbound network access policy for managed agents in Linux sandbox tools_and_agents",
+        "filter": {
+          "section": "tools_and_agents"
+        },
+        "results": [
+          {
+            "id": "gemini-doc-27::B::0004",
+            "source_id": "gemini-doc-27",
+            "source": "data/corpus/27_docs_agents.md",
+            "page": 27,
+            "text": "### Network access  {% id=\"network-access\" %}\n\nBy default, environments have unrestricted outbound network access. Use a\n`network` allowlist to restrict outbound traffic to specific domains or\nwildcard patterns. For configuration details, see\n[Network Allow List](/docs/aistudio-agents#network-allow-list) (AI\nStudio) or [Network rules](/docs/custom-agents#with-network-rules)\n(API).\n\n### External tools and APIs  {% id=\"external-tools-and-apis\" %}",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/agents.md",
+              "page": 27,
+              "title": "Overview",
+              "source": "data/corpus/27_docs_agents.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 4,
+              "document_id": "gemini-doc-27"
+            },
+            "score": 0.03278688524590164,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-31::B::0087",
+            "source_id": "gemini-doc-31",
+            "source": "data/corpus/31_docs_agent-environment.md",
+            "page": 31,
+            "text": "## Network configuration  {% id=\"network-configuration\" %}\n\nBy default, environments have unrestricted outbound network access. Use the\n`network` field to restrict outbound traffic to specific domains. Each rule\nspecifies a `domain`, plus an optional `credential` to inject a stored secret\nand an optional `transform` object to inject headers into matching requests.\nThese headers can be unique per interaction, and you can update them for the same environment.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/agent-environment.md",
+              "page": 31,
+              "title": "Environments",
+              "source": "data/corpus/31_docs_agent-environment.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 87,
+              "document_id": "gemini-doc-31"
+            },
+            "score": 0.031746031746031744,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-27::B::0003",
+            "source_id": "gemini-doc-27",
+            "source": "data/corpus/27_docs_agents.md",
+            "page": 27,
+            "text": "*   **[Deep Research](/docs/deep-research)**: Autonomous research agent\n  that plans, executes, and synthesizes multi-step research tasks for use\n  cases like market analysis, due diligence, and literature reviews.\n\n## Security and best practices  {% id=\"security-best-practices\" %}\n\n{% callout type=\"note\" %}\n  Note: Managed agents are in **Public Preview**. Review the agent's actions and\n  outputs before relying on them in sensitive workflows.\n\n{% /callout %}\n\nEvery agent runs in a sandboxed environment that is isolated at the OS level.\nThe sandbox has unrestricted outbound network access by default. You can\nrestrict or disable network access using an allowlist.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/agents.md",
+              "page": 27,
+              "title": "Overview",
+              "source": "data/corpus/27_docs_agents.md",
+              "section": "tools_and_agents",
+              "strategy": "B",
+              "chunk_index": 3,
+              "document_id": "gemini-doc-27"
+            },
+            "score": 0.030834914611005692,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[gemini-doc-27::B::0004 | data/corpus/27_docs_agents.md | page 27]\n### Network access  {% id=\"network-access\" %}\n\nBy default, environments have unrestricted outbound network access. Use a\n`network` allowlist to restrict outbound traffic to specific domains or\nwildcard patterns. For configuration details, see\n[Network Allow List](/docs/aistudio-agents#network-allow-list) (AI\nStudio) or [Network rules](/docs/custom-agents#with-network-rules)\n(API).\n\n### External tools and APIs  {% id=\"external-tools-and-apis\" %}\n\n[gemini-doc-31::B::0087 | data/corpus/31_docs_agent-environment.md | page 31]\n## Network configuration  {% id=\"network-configuration\" %}\n\nBy default, environments have unrestricted outbound network access. Use the\n`network` field to restrict outbound traffic to specific domains. Each rule\nspecifies a `domain`, plus an optional `credential` to inject a stored secret\nand an optional `transform` object to inject headers into matching requests.\nThese headers can be unique per interaction, and you can update them for the same environment.\n\n[gemini-doc-27::B::0003 | data/corpus/27_docs_agents.md | page 27]\n*   **[Deep Research](/docs/deep-research)**: Autonomous research agent\n  that plans, executes, and synthesizes multi-step research tasks for use\n  cases like market analysis, due diligence, and literature reviews.\n\n## Security and best practices  {% id=\"security-best-practices\" %}\n\n{% callout type=\"note\" %}\n  Note: Managed agents are in **Public Preview**. Review the agent's actions and\n  outputs before relying on them in sensitive workflows.\n\n{% /callout %}\n\nEvery agent runs in a sandboxed environment that is isolated at the OS level.\nThe sandbox has unrestricted outbound network access by default. You can\nrestrict or disable network access using an allowlist.",
+        "context_ids": [
+          "gemini-doc-27::B::0004",
+          "gemini-doc-31::B::0087",
+          "gemini-doc-27::B::0003"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6760.49,
+    "prompt_tokens": 1022,
+    "completion_tokens": 126,
+    "llm_cost_usd": 0.000229,
+    "error": null
+  },
+  {
+    "query_id": "u03",
+    "split": "test",
+    "answerable": false,
+    "question": "What is the guaranteed uptime SLA percentage (e.g., 99.9%) and service credit refund policy for paid Gemini API tiers?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "search_calls": 4,
+    "events": [
+      {
+        "event": "search",
+        "query": "Gemini API paid tiers uptime SLA percentage service credit refund policy",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-05::B::0019",
+            "source_id": "gemini-doc-05",
+            "source": "data/corpus/05_docs_pricing.md",
+            "page": 5,
+            "text": "{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Not available\n  * $1.00\n\n---\n\n* Output price (including thinking tokens)\n  * Not available\n  * $5.00\n\n---\n\n* Context caching price\n  * Not available\n  * $0.05\n  Implicit caching only (explicit caching is not supported).\n\n---\n\n* Used to improve our products\n  * Not available\n  * [Yes](/docs/logs-policy#contributor-tier)\n  {% /table %}",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/pricing.md",
+              "page": 5,
+              "title": "Pricing",
+              "source": "data/corpus/05_docs_pricing.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 19,
+              "document_id": "gemini-doc-05"
+            },
+            "score": 0.028381642512077296,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-05::B::0054",
+            "source_id": "gemini-doc-05",
+            "source": "data/corpus/05_docs_pricing.md",
+            "page": 5,
+            "text": "{% sup %}*{% /sup %} A customer-submitted request to Gemini may result in one or\n    more queries to Google Search. You will be charged for each individual search\n    query performed.\n\n{% sup %}**{% /sup %} Can be tested in Google AI Studio.\n\n{% /tab %}\n\n{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Free of charge\n  * $0.15 (text / image / video / audio)\n\n---",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/pricing.md",
+              "page": 5,
+              "title": "Pricing",
+              "source": "data/corpus/05_docs_pricing.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 54,
+              "document_id": "gemini-doc-05"
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-40::B::0009",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "**toolUsePromptTokensDetails**: [`ModalityTokenCount`](/api-reference/generate-content#Resource:ModalityTokenCount) `array`\n\nOutput only. List of modalities that were processed for tool-use request inputs.\n\n{% details %}\n  {% summary %}\n  **serviceTier**: [`ServiceTier`](/api-reference/generate-content#Resource:ServiceTier)\n\nOutput only. Service tier of the request.\n\n{% /summary %}\n\nPossible values:\n\n- `unspecified`: Default service tier, which is standard.\n  - `standard`: Standard service tier.\n  - `flex`: Flex service tier.\n  - `priority`: Priority service tier.\n\n{% /details %}\n\n{% /details %}\n\n{% hr /%}\n\n**modelVersion**: `string`\n\nOutput only. The model version used to generate the response.\n\n{% hr /%}\n\n**responseId**: `string`",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 9,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[gemini-doc-05::B::0019 | data/corpus/05_docs_pricing.md | page 5]\n{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Not available\n  * $1.00\n\n---\n\n* Output price (including thinking tokens)\n  * Not available\n  * $5.00\n\n---\n\n* Context caching price\n  * Not available\n  * $0.05\n  Implicit caching only (explicit caching is not supported).\n\n---\n\n* Used to improve our products\n  * Not available\n  * [Yes](/docs/logs-policy#contributor-tier)\n  {% /table %}\n\n[gemini-doc-05::B::0054 | data/corpus/05_docs_pricing.md | page 5]\n{% sup %}*{% /sup %} A customer-submitted request to Gemini may result in one or\n    more queries to Google Search. You will be charged for each individual search\n    query performed.\n\n{% sup %}**{% /sup %} Can be tested in Google AI Studio.\n\n{% /tab %}\n\n{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Free of charge\n  * $0.15 (text / image / video / audio)\n\n---",
+        "context_ids": [
+          "gemini-doc-05::B::0019",
+          "gemini-doc-05::B::0054"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Gemini API paid tiers uptime SLA percentage service credit refund policy",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-05::B::0019",
+            "source_id": "gemini-doc-05",
+            "source": "data/corpus/05_docs_pricing.md",
+            "page": 5,
+            "text": "{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Not available\n  * $1.00\n\n---\n\n* Output price (including thinking tokens)\n  * Not available\n  * $5.00\n\n---\n\n* Context caching price\n  * Not available\n  * $0.05\n  Implicit caching only (explicit caching is not supported).\n\n---\n\n* Used to improve our products\n  * Not available\n  * [Yes](/docs/logs-policy#contributor-tier)\n  {% /table %}",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/pricing.md",
+              "page": 5,
+              "title": "Pricing",
+              "source": "data/corpus/05_docs_pricing.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 19,
+              "document_id": "gemini-doc-05"
+            },
+            "score": 0.028381642512077296,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-05::B::0054",
+            "source_id": "gemini-doc-05",
+            "source": "data/corpus/05_docs_pricing.md",
+            "page": 5,
+            "text": "{% sup %}*{% /sup %} A customer-submitted request to Gemini may result in one or\n    more queries to Google Search. You will be charged for each individual search\n    query performed.\n\n{% sup %}**{% /sup %} Can be tested in Google AI Studio.\n\n{% /tab %}\n\n{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Free of charge\n  * $0.15 (text / image / video / audio)\n\n---",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/pricing.md",
+              "page": 5,
+              "title": "Pricing",
+              "source": "data/corpus/05_docs_pricing.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 54,
+              "document_id": "gemini-doc-05"
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-40::B::0009",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "**toolUsePromptTokensDetails**: [`ModalityTokenCount`](/api-reference/generate-content#Resource:ModalityTokenCount) `array`\n\nOutput only. List of modalities that were processed for tool-use request inputs.\n\n{% details %}\n  {% summary %}\n  **serviceTier**: [`ServiceTier`](/api-reference/generate-content#Resource:ServiceTier)\n\nOutput only. Service tier of the request.\n\n{% /summary %}\n\nPossible values:\n\n- `unspecified`: Default service tier, which is standard.\n  - `standard`: Standard service tier.\n  - `flex`: Flex service tier.\n  - `priority`: Priority service tier.\n\n{% /details %}\n\n{% /details %}\n\n{% hr /%}\n\n**modelVersion**: `string`\n\nOutput only. The model version used to generate the response.\n\n{% hr /%}\n\n**responseId**: `string`",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 9,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[gemini-doc-05::B::0019 | data/corpus/05_docs_pricing.md | page 5]\n{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Not available\n  * $1.00\n\n---\n\n* Output price (including thinking tokens)\n  * Not available\n  * $5.00\n\n---\n\n* Context caching price\n  * Not available\n  * $0.05\n  Implicit caching only (explicit caching is not supported).\n\n---\n\n* Used to improve our products\n  * Not available\n  * [Yes](/docs/logs-policy#contributor-tier)\n  {% /table %}\n\n[gemini-doc-05::B::0054 | data/corpus/05_docs_pricing.md | page 5]\n{% sup %}*{% /sup %} A customer-submitted request to Gemini may result in one or\n    more queries to Google Search. You will be charged for each individual search\n    query performed.\n\n{% sup %}**{% /sup %} Can be tested in Google AI Studio.\n\n{% /tab %}\n\n{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Free of charge\n  * $0.15 (text / image / video / audio)\n\n---",
+        "context_ids": [
+          "gemini-doc-05::B::0019",
+          "gemini-doc-05::B::0054"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Gemini API paid tiers uptime SLA percentage service credit refund policy",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-05::B::0019",
+            "source_id": "gemini-doc-05",
+            "source": "data/corpus/05_docs_pricing.md",
+            "page": 5,
+            "text": "{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Not available\n  * $1.00\n\n---\n\n* Output price (including thinking tokens)\n  * Not available\n  * $5.00\n\n---\n\n* Context caching price\n  * Not available\n  * $0.05\n  Implicit caching only (explicit caching is not supported).\n\n---\n\n* Used to improve our products\n  * Not available\n  * [Yes](/docs/logs-policy#contributor-tier)\n  {% /table %}",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/pricing.md",
+              "page": 5,
+              "title": "Pricing",
+              "source": "data/corpus/05_docs_pricing.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 19,
+              "document_id": "gemini-doc-05"
+            },
+            "score": 0.028381642512077296,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-05::B::0054",
+            "source_id": "gemini-doc-05",
+            "source": "data/corpus/05_docs_pricing.md",
+            "page": 5,
+            "text": "{% sup %}*{% /sup %} A customer-submitted request to Gemini may result in one or\n    more queries to Google Search. You will be charged for each individual search\n    query performed.\n\n{% sup %}**{% /sup %} Can be tested in Google AI Studio.\n\n{% /tab %}\n\n{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Free of charge\n  * $0.15 (text / image / video / audio)\n\n---",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/pricing.md",
+              "page": 5,
+              "title": "Pricing",
+              "source": "data/corpus/05_docs_pricing.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 54,
+              "document_id": "gemini-doc-05"
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-40::B::0009",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "**toolUsePromptTokensDetails**: [`ModalityTokenCount`](/api-reference/generate-content#Resource:ModalityTokenCount) `array`\n\nOutput only. List of modalities that were processed for tool-use request inputs.\n\n{% details %}\n  {% summary %}\n  **serviceTier**: [`ServiceTier`](/api-reference/generate-content#Resource:ServiceTier)\n\nOutput only. Service tier of the request.\n\n{% /summary %}\n\nPossible values:\n\n- `unspecified`: Default service tier, which is standard.\n  - `standard`: Standard service tier.\n  - `flex`: Flex service tier.\n  - `priority`: Priority service tier.\n\n{% /details %}\n\n{% /details %}\n\n{% hr /%}\n\n**modelVersion**: `string`\n\nOutput only. The model version used to generate the response.\n\n{% hr /%}\n\n**responseId**: `string`",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 9,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[gemini-doc-05::B::0019 | data/corpus/05_docs_pricing.md | page 5]\n{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Not available\n  * $1.00\n\n---\n\n* Output price (including thinking tokens)\n  * Not available\n  * $5.00\n\n---\n\n* Context caching price\n  * Not available\n  * $0.05\n  Implicit caching only (explicit caching is not supported).\n\n---\n\n* Used to improve our products\n  * Not available\n  * [Yes](/docs/logs-policy#contributor-tier)\n  {% /table %}\n\n[gemini-doc-05::B::0054 | data/corpus/05_docs_pricing.md | page 5]\n{% sup %}*{% /sup %} A customer-submitted request to Gemini may result in one or\n    more queries to Google Search. You will be charged for each individual search\n    query performed.\n\n{% sup %}**{% /sup %} Can be tested in Google AI Studio.\n\n{% /tab %}\n\n{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Free of charge\n  * $0.15 (text / image / video / audio)\n\n---",
+        "context_ids": [
+          "gemini-doc-05::B::0019",
+          "gemini-doc-05::B::0054"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Gemini API paid tiers uptime SLA percentage service credit refund policy",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-05::B::0019",
+            "source_id": "gemini-doc-05",
+            "source": "data/corpus/05_docs_pricing.md",
+            "page": 5,
+            "text": "{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Not available\n  * $1.00\n\n---\n\n* Output price (including thinking tokens)\n  * Not available\n  * $5.00\n\n---\n\n* Context caching price\n  * Not available\n  * $0.05\n  Implicit caching only (explicit caching is not supported).\n\n---\n\n* Used to improve our products\n  * Not available\n  * [Yes](/docs/logs-policy#contributor-tier)\n  {% /table %}",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/pricing.md",
+              "page": 5,
+              "title": "Pricing",
+              "source": "data/corpus/05_docs_pricing.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 19,
+              "document_id": "gemini-doc-05"
+            },
+            "score": 0.028381642512077296,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-05::B::0054",
+            "source_id": "gemini-doc-05",
+            "source": "data/corpus/05_docs_pricing.md",
+            "page": 5,
+            "text": "{% sup %}*{% /sup %} A customer-submitted request to Gemini may result in one or\n    more queries to Google Search. You will be charged for each individual search\n    query performed.\n\n{% sup %}**{% /sup %} Can be tested in Google AI Studio.\n\n{% /tab %}\n\n{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Free of charge\n  * $0.15 (text / image / video / audio)\n\n---",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/pricing.md",
+              "page": 5,
+              "title": "Pricing",
+              "source": "data/corpus/05_docs_pricing.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 54,
+              "document_id": "gemini-doc-05"
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-40::B::0009",
+            "source_id": "gemini-doc-40",
+            "source": "data/corpus/40_api-reference_generate-content.md",
+            "page": 40,
+            "text": "**toolUsePromptTokensDetails**: [`ModalityTokenCount`](/api-reference/generate-content#Resource:ModalityTokenCount) `array`\n\nOutput only. List of modalities that were processed for tool-use request inputs.\n\n{% details %}\n  {% summary %}\n  **serviceTier**: [`ServiceTier`](/api-reference/generate-content#Resource:ServiceTier)\n\nOutput only. Service tier of the request.\n\n{% /summary %}\n\nPossible values:\n\n- `unspecified`: Default service tier, which is standard.\n  - `standard`: Standard service tier.\n  - `flex`: Flex service tier.\n  - `priority`: Priority service tier.\n\n{% /details %}\n\n{% /details %}\n\n{% hr /%}\n\n**modelVersion**: `string`\n\nOutput only. The model version used to generate the response.\n\n{% hr /%}\n\n**responseId**: `string`",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference/generate-content.md",
+              "page": 40,
+              "title": "GenerateContent — Overview",
+              "source": "data/corpus/40_api-reference_generate-content.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 9,
+              "document_id": "gemini-doc-40"
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[gemini-doc-05::B::0019 | data/corpus/05_docs_pricing.md | page 5]\n{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Not available\n  * $1.00\n\n---\n\n* Output price (including thinking tokens)\n  * Not available\n  * $5.00\n\n---\n\n* Context caching price\n  * Not available\n  * $0.05\n  Implicit caching only (explicit caching is not supported).\n\n---\n\n* Used to improve our products\n  * Not available\n  * [Yes](/docs/logs-policy#contributor-tier)\n  {% /table %}\n\n[gemini-doc-05::B::0054 | data/corpus/05_docs_pricing.md | page 5]\n{% sup %}*{% /sup %} A customer-submitted request to Gemini may result in one or\n    more queries to Google Search. You will be charged for each individual search\n    query performed.\n\n{% sup %}**{% /sup %} Can be tested in Google AI Studio.\n\n{% /tab %}\n\n{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Free of charge\n  * $0.15 (text / image / video / audio)\n\n---",
+        "context_ids": [
+          "gemini-doc-05::B::0019",
+          "gemini-doc-05::B::0054"
+        ]
+      },
+      {
+        "event": "search_limit"
+      }
+    ],
+    "elapsed_ms": 14762.58,
+    "prompt_tokens": 3502,
+    "completion_tokens": 115,
+    "llm_cost_usd": 0.000594,
+    "error": null
+  },
+  {
+    "query_id": "u04",
+    "split": "test",
+    "answerable": false,
+    "question": "What is the exact Python SDK method and pricing per 1,000 training steps for supervised fine-tuning of Gemini 4 Carbon?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "search_calls": 4,
+    "events": [
+      {
+        "event": "search",
+        "query": "Python SDK method pricing supervised fine-tuning Gemini 4 Carbon",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-08::B::0004",
+            "source_id": "gemini-doc-08",
+            "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+            "page": 8,
+            "text": "| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Carbon | `gemini-4-carbon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our strongest reasoning model, built for sustained agentic coding, multimodal knowledge work, scientific discovery, and cybersecurity defense. |\n\nFor complete details, see the [Gemini 4 Carbon model page](/docs/models/gemini-4-carbon) and [Latest Gemini models](/docs/latest-model). For introductory pricing details, see the [pricing section](/docs/whats-new-gemini-4-carbon#pricing) on this page or the [pricing page](/docs/pricing#gemini-4-carbon).",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+              "page": 8,
+              "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+              "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 4,
+              "document_id": "gemini-doc-08"
+            },
+            "score": 0.032266458495966696,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-10::B::0031",
+            "source_id": "gemini-doc-10",
+            "source": "data/corpus/10_docs_whats-new-gemini-3_8.md",
+            "page": 10,
+            "text": "## Pricing  {% id=\"pricing\" %}\n\nTake advantage of introductory pricing across Google AI Studio and Gemini Enterprise Agent Platform through December 31, 2026 for Gemini 3.8 Flash and Gemini 3.6 Flash. Standard pricing takes effect January 1, 2027. For complete pricing tiers, see the [pricing page](/docs/pricing#gemini-3.8-flash).\n\n## Other models  {% id=\"other-models\" %}\n\n* [Latest Gemini models](/docs/latest-model)\n* [Gemini 4 Hydrogen](/docs/whats-new-gemini-4-hydrogen)\n* [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon)\n* [Gemini 4 Argon](/docs/whats-new-gemini-4-argon)\n* [Gemini 3.6 Flash and 3.5 Flash-Lite](/docs/whats-new-gemini-3.6)\n* [See all models](/docs/models)",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-3.8.md",
+              "page": 10,
+              "title": "Latest Gemini models — Gemini 3.8 Flash - what's new",
+              "source": "data/corpus/10_docs_whats-new-gemini-3_8.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 31,
+              "document_id": "gemini-doc-10"
+            },
+            "score": 0.03200204813108039,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-08::B::0033",
+            "source_id": "gemini-doc-08",
+            "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+            "page": 8,
+            "text": "## Pricing  {% id=\"pricing\" %}\n\nGemini 4 Carbon is available at introductory pricing through November 30, 2026:\n\n* **Input tokens:** $2.00 per 1M tokens ($4.00 starting December 1, 2026)  *   **Cached input tokens:** Implicit caching discounts cached input by 95%, to $0.10 per 1M tokens ($0.20 starting December 1, 2026).\n\n* **Output tokens, including thinking tokens:** $10.00 per 1M tokens ($20.00 starting December 1, 2026)\n\nEvery token the model processes is counted and billed, including thinking tokens and internal tool system instructions and function declarations when using grounding. Grounding with Google Search also remains billed per query.\n\nGemini 4 Carbon is not available on the Free tier. For complete pricing tiers, see the [pricing page](/docs/pricing#gemini-4-carbon).",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+              "page": 8,
+              "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+              "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 33,
+              "document_id": "gemini-doc-08"
+            },
+            "score": 0.03177805800756621,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[gemini-doc-08::B::0004 | data/corpus/08_docs_whats-new-gemini-4-carbon.md | page 8]\n| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Carbon | `gemini-4-carbon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our strongest reasoning model, built for sustained agentic coding, multimodal knowledge work, scientific discovery, and cybersecurity defense. |\n\nFor complete details, see the [Gemini 4 Carbon model page](/docs/models/gemini-4-carbon) and [Latest Gemini models](/docs/latest-model). For introductory pricing details, see the [pricing section](/docs/whats-new-gemini-4-carbon#pricing) on this page or the [pricing page](/docs/pricing#gemini-4-carbon).\n\n[gemini-doc-10::B::0031 | data/corpus/10_docs_whats-new-gemini-3_8.md | page 10]\n## Pricing  {% id=\"pricing\" %}\n\nTake advantage of introductory pricing across Google AI Studio and Gemini Enterprise Agent Platform through December 31, 2026 for Gemini 3.8 Flash and Gemini 3.6 Flash. Standard pricing takes effect January 1, 2027. For complete pricing tiers, see the [pricing page](/docs/pricing#gemini-3.8-flash).\n\n## Other models  {% id=\"other-models\" %}\n\n* [Latest Gemini models](/docs/latest-model)\n* [Gemini 4 Hydrogen](/docs/whats-new-gemini-4-hydrogen)\n* [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon)\n* [Gemini 4 Argon](/docs/whats-new-gemini-4-argon)\n* [Gemini 3.6 Flash and 3.5 Flash-Lite](/docs/whats-new-gemini-3.6)\n* [See all models](/docs/models)",
+        "context_ids": [
+          "gemini-doc-08::B::0004",
+          "gemini-doc-10::B::0031"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Python SDK method supervised fine-tuning Gemini 4 Carbon",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-08::B::0024",
+            "source_id": "gemini-doc-08",
+            "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+            "page": 8,
+            "text": "## Gemini 4 Carbon in Managed Agents  {% id=\"managed-agents\" %}\n\nThe [Antigravity agent](/docs/antigravity-agent) in Gemini Managed Agents supports Gemini 4 Carbon. To use it, set the model in `agent_config`:\n\n{% tabs %}\n  {% tab label=\"Python\" %}\n  ```python\n  from google import genai\n\nclient = genai.Client()",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+              "page": 8,
+              "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+              "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 24,
+              "document_id": "gemini-doc-08"
+            },
+            "score": 0.03252247488101534,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-38::B::0015",
+            "source_id": "gemini-doc-38",
+            "source": "data/corpus/38_api-reference.md",
+            "page": 38,
+            "text": "## SDK references  {% id=\"sdk-references\" %}\n\nGenerated client, method, and type documentation for the official Google GenAI\nSDKs.\n\n{% card-grid columns=\"3\" %}\n  {% card description=\"Reference for the google-genai Python SDK, including sync and async clients.\" href=\"https://googleapis.github.io/python-genai/\" subtitle=\"pip install google-genai\" title=\"Python\" variant=\"stacked-icon\" /%}\n\n{% card description=\"Reference for the @google/genai SDK for Node.js and TypeScript.\" href=\"https://googleapis.github.io/js-genai/\" subtitle=\"npm install @google/genai\" title=\"TypeScript and JavaScript\" variant=\"stacked-icon\" /%}",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference.md",
+              "page": 38,
+              "title": "Overview",
+              "source": "data/corpus/38_api-reference.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 15,
+              "document_id": "gemini-doc-38"
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-08::B::0031",
+            "source_id": "gemini-doc-08",
+            "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+            "page": 8,
+            "text": "* **Update model ID:** Change your target model string to `gemini-4-carbon`.\n* **Review `max_output_tokens`:** If you set it explicitly today, consider raising it. We recommend at least 32,768, since Gemini 4 Carbon can spend more of the limit on thinking.\n* **Configure thinking level:** Choose `low`, `medium` (default), or `high`, and test your workload at all three.\n* **Move off explicit context caching:** Explicit caching (`cachedContents` / `caches.create`) is not supported on Gemini 4 Carbon. Remove calls that create or reference `cached_content` from your requests. [Implicit caching](/docs/caching) is enabled by default for prompts of at least 4,096 tokens and discounts cached input tokens by 95% on cache hits.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+              "page": 8,
+              "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+              "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 31,
+              "document_id": "gemini-doc-08"
+            },
+            "score": 0.016129032258064516,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[gemini-doc-08::B::0004 | data/corpus/08_docs_whats-new-gemini-4-carbon.md | page 8]\n| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Carbon | `gemini-4-carbon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our strongest reasoning model, built for sustained agentic coding, multimodal knowledge work, scientific discovery, and cybersecurity defense. |\n\nFor complete details, see the [Gemini 4 Carbon model page](/docs/models/gemini-4-carbon) and [Latest Gemini models](/docs/latest-model). For introductory pricing details, see the [pricing section](/docs/whats-new-gemini-4-carbon#pricing) on this page or the [pricing page](/docs/pricing#gemini-4-carbon).\n\n[gemini-doc-10::B::0031 | data/corpus/10_docs_whats-new-gemini-3_8.md | page 10]\n## Pricing  {% id=\"pricing\" %}\n\nTake advantage of introductory pricing across Google AI Studio and Gemini Enterprise Agent Platform through December 31, 2026 for Gemini 3.8 Flash and Gemini 3.6 Flash. Standard pricing takes effect January 1, 2027. For complete pricing tiers, see the [pricing page](/docs/pricing#gemini-3.8-flash).\n\n## Other models  {% id=\"other-models\" %}\n\n* [Latest Gemini models](/docs/latest-model)\n* [Gemini 4 Hydrogen](/docs/whats-new-gemini-4-hydrogen)\n* [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon)\n* [Gemini 4 Argon](/docs/whats-new-gemini-4-argon)\n* [Gemini 3.6 Flash and 3.5 Flash-Lite](/docs/whats-new-gemini-3.6)\n* [See all models](/docs/models)\n\n[gemini-doc-08::B::0024 | data/corpus/08_docs_whats-new-gemini-4-carbon.md | page 8]\n## Gemini 4 Carbon in Managed Agents  {% id=\"managed-agents\" %}\n\nThe [Antigravity agent](/docs/antigravity-agent) in Gemini Managed Agents supports Gemini 4 Carbon. To use it, set the model in `agent_config`:\n\n{% tabs %}\n  {% tab label=\"Python\" %}\n  ```python\n  from google import genai\n\nclient = genai.Client()",
+        "context_ids": [
+          "gemini-doc-08::B::0004",
+          "gemini-doc-10::B::0031",
+          "gemini-doc-08::B::0024"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Python SDK method supervised fine-tuning Gemini 4 Carbon pricing",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-08::B::0004",
+            "source_id": "gemini-doc-08",
+            "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+            "page": 8,
+            "text": "| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Carbon | `gemini-4-carbon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our strongest reasoning model, built for sustained agentic coding, multimodal knowledge work, scientific discovery, and cybersecurity defense. |\n\nFor complete details, see the [Gemini 4 Carbon model page](/docs/models/gemini-4-carbon) and [Latest Gemini models](/docs/latest-model). For introductory pricing details, see the [pricing section](/docs/whats-new-gemini-4-carbon#pricing) on this page or the [pricing page](/docs/pricing#gemini-4-carbon).",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+              "page": 8,
+              "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+              "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 4,
+              "document_id": "gemini-doc-08"
+            },
+            "score": 0.032018442622950824,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-08::B::0033",
+            "source_id": "gemini-doc-08",
+            "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+            "page": 8,
+            "text": "## Pricing  {% id=\"pricing\" %}\n\nGemini 4 Carbon is available at introductory pricing through November 30, 2026:\n\n* **Input tokens:** $2.00 per 1M tokens ($4.00 starting December 1, 2026)  *   **Cached input tokens:** Implicit caching discounts cached input by 95%, to $0.10 per 1M tokens ($0.20 starting December 1, 2026).\n\n* **Output tokens, including thinking tokens:** $10.00 per 1M tokens ($20.00 starting December 1, 2026)\n\nEvery token the model processes is counted and billed, including thinking tokens and internal tool system instructions and function declarations when using grounding. Grounding with Google Search also remains billed per query.\n\nGemini 4 Carbon is not available on the Free tier. For complete pricing tiers, see the [pricing page](/docs/pricing#gemini-4-carbon).",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+              "page": 8,
+              "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+              "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 33,
+              "document_id": "gemini-doc-08"
+            },
+            "score": 0.03177805800756621,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-08::B::0024",
+            "source_id": "gemini-doc-08",
+            "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+            "page": 8,
+            "text": "## Gemini 4 Carbon in Managed Agents  {% id=\"managed-agents\" %}\n\nThe [Antigravity agent](/docs/antigravity-agent) in Gemini Managed Agents supports Gemini 4 Carbon. To use it, set the model in `agent_config`:\n\n{% tabs %}\n  {% tab label=\"Python\" %}\n  ```python\n  from google import genai\n\nclient = genai.Client()",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+              "page": 8,
+              "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+              "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 24,
+              "document_id": "gemini-doc-08"
+            },
+            "score": 0.030834914611005692,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[gemini-doc-08::B::0004 | data/corpus/08_docs_whats-new-gemini-4-carbon.md | page 8]\n| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Carbon | `gemini-4-carbon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our strongest reasoning model, built for sustained agentic coding, multimodal knowledge work, scientific discovery, and cybersecurity defense. |\n\nFor complete details, see the [Gemini 4 Carbon model page](/docs/models/gemini-4-carbon) and [Latest Gemini models](/docs/latest-model). For introductory pricing details, see the [pricing section](/docs/whats-new-gemini-4-carbon#pricing) on this page or the [pricing page](/docs/pricing#gemini-4-carbon).\n\n[gemini-doc-10::B::0031 | data/corpus/10_docs_whats-new-gemini-3_8.md | page 10]\n## Pricing  {% id=\"pricing\" %}\n\nTake advantage of introductory pricing across Google AI Studio and Gemini Enterprise Agent Platform through December 31, 2026 for Gemini 3.8 Flash and Gemini 3.6 Flash. Standard pricing takes effect January 1, 2027. For complete pricing tiers, see the [pricing page](/docs/pricing#gemini-3.8-flash).\n\n## Other models  {% id=\"other-models\" %}\n\n* [Latest Gemini models](/docs/latest-model)\n* [Gemini 4 Hydrogen](/docs/whats-new-gemini-4-hydrogen)\n* [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon)\n* [Gemini 4 Argon](/docs/whats-new-gemini-4-argon)\n* [Gemini 3.6 Flash and 3.5 Flash-Lite](/docs/whats-new-gemini-3.6)\n* [See all models](/docs/models)\n\n[gemini-doc-08::B::0024 | data/corpus/08_docs_whats-new-gemini-4-carbon.md | page 8]\n## Gemini 4 Carbon in Managed Agents  {% id=\"managed-agents\" %}\n\nThe [Antigravity agent](/docs/antigravity-agent) in Gemini Managed Agents supports Gemini 4 Carbon. To use it, set the model in `agent_config`:\n\n{% tabs %}\n  {% tab label=\"Python\" %}\n  ```python\n  from google import genai\n\nclient = genai.Client()",
+        "context_ids": [
+          "gemini-doc-08::B::0004",
+          "gemini-doc-10::B::0031",
+          "gemini-doc-08::B::0024"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Python SDK method supervised fine-tuning Gemini 4 Carbon",
+        "filter": null,
+        "results": [
+          {
+            "id": "gemini-doc-08::B::0024",
+            "source_id": "gemini-doc-08",
+            "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+            "page": 8,
+            "text": "## Gemini 4 Carbon in Managed Agents  {% id=\"managed-agents\" %}\n\nThe [Antigravity agent](/docs/antigravity-agent) in Gemini Managed Agents supports Gemini 4 Carbon. To use it, set the model in `agent_config`:\n\n{% tabs %}\n  {% tab label=\"Python\" %}\n  ```python\n  from google import genai\n\nclient = genai.Client()",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+              "page": 8,
+              "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+              "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 24,
+              "document_id": "gemini-doc-08"
+            },
+            "score": 0.03252247488101534,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-38::B::0015",
+            "source_id": "gemini-doc-38",
+            "source": "data/corpus/38_api-reference.md",
+            "page": 38,
+            "text": "## SDK references  {% id=\"sdk-references\" %}\n\nGenerated client, method, and type documentation for the official Google GenAI\nSDKs.\n\n{% card-grid columns=\"3\" %}\n  {% card description=\"Reference for the google-genai Python SDK, including sync and async clients.\" href=\"https://googleapis.github.io/python-genai/\" subtitle=\"pip install google-genai\" title=\"Python\" variant=\"stacked-icon\" /%}\n\n{% card description=\"Reference for the @google/genai SDK for Node.js and TypeScript.\" href=\"https://googleapis.github.io/js-genai/\" subtitle=\"npm install @google/genai\" title=\"TypeScript and JavaScript\" variant=\"stacked-icon\" /%}",
+            "metadata": {
+              "url": "https://aistudio.google.com/api-reference.md",
+              "page": 38,
+              "title": "Overview",
+              "source": "data/corpus/38_api-reference.md",
+              "section": "api_reference",
+              "strategy": "B",
+              "chunk_index": 15,
+              "document_id": "gemini-doc-38"
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "gemini-doc-08::B::0031",
+            "source_id": "gemini-doc-08",
+            "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+            "page": 8,
+            "text": "* **Update model ID:** Change your target model string to `gemini-4-carbon`.\n* **Review `max_output_tokens`:** If you set it explicitly today, consider raising it. We recommend at least 32,768, since Gemini 4 Carbon can spend more of the limit on thinking.\n* **Configure thinking level:** Choose `low`, `medium` (default), or `high`, and test your workload at all three.\n* **Move off explicit context caching:** Explicit caching (`cachedContents` / `caches.create`) is not supported on Gemini 4 Carbon. Remove calls that create or reference `cached_content` from your requests. [Implicit caching](/docs/caching) is enabled by default for prompts of at least 4,096 tokens and discounts cached input tokens by 95% on cache hits.",
+            "metadata": {
+              "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+              "page": 8,
+              "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+              "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+              "section": "models_and_pricing",
+              "strategy": "B",
+              "chunk_index": 31,
+              "document_id": "gemini-doc-08"
+            },
+            "score": 0.016129032258064516,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[gemini-doc-08::B::0004 | data/corpus/08_docs_whats-new-gemini-4-carbon.md | page 8]\n| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Carbon | `gemini-4-carbon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our strongest reasoning model, built for sustained agentic coding, multimodal knowledge work, scientific discovery, and cybersecurity defense. |\n\nFor complete details, see the [Gemini 4 Carbon model page](/docs/models/gemini-4-carbon) and [Latest Gemini models](/docs/latest-model). For introductory pricing details, see the [pricing section](/docs/whats-new-gemini-4-carbon#pricing) on this page or the [pricing page](/docs/pricing#gemini-4-carbon).\n\n[gemini-doc-10::B::0031 | data/corpus/10_docs_whats-new-gemini-3_8.md | page 10]\n## Pricing  {% id=\"pricing\" %}\n\nTake advantage of introductory pricing across Google AI Studio and Gemini Enterprise Agent Platform through December 31, 2026 for Gemini 3.8 Flash and Gemini 3.6 Flash. Standard pricing takes effect January 1, 2027. For complete pricing tiers, see the [pricing page](/docs/pricing#gemini-3.8-flash).\n\n## Other models  {% id=\"other-models\" %}\n\n* [Latest Gemini models](/docs/latest-model)\n* [Gemini 4 Hydrogen](/docs/whats-new-gemini-4-hydrogen)\n* [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon)\n* [Gemini 4 Argon](/docs/whats-new-gemini-4-argon)\n* [Gemini 3.6 Flash and 3.5 Flash-Lite](/docs/whats-new-gemini-3.6)\n* [See all models](/docs/models)\n\n[gemini-doc-08::B::0024 | data/corpus/08_docs_whats-new-gemini-4-carbon.md | page 8]\n## Gemini 4 Carbon in Managed Agents  {% id=\"managed-agents\" %}\n\nThe [Antigravity agent](/docs/antigravity-agent) in Gemini Managed Agents supports Gemini 4 Carbon. To use it, set the model in `agent_config`:\n\n{% tabs %}\n  {% tab label=\"Python\" %}\n  ```python\n  from google import genai\n\nclient = genai.Client()",
+        "context_ids": [
+          "gemini-doc-08::B::0004",
+          "gemini-doc-10::B::0031",
+          "gemini-doc-08::B::0024"
+        ]
+      },
+      {
+        "event": "search_limit"
+      }
+    ],
+    "elapsed_ms": 13808.12,
+    "prompt_tokens": 3989,
+    "completion_tokens": 112,
+    "llm_cost_usd": 0.000666,
+    "error": null
+  }
+]

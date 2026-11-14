@@ -5,7 +5,7 @@ __pycache__/
 .env.*
 !.env.example
 .codex-log/
-
+day6_raw/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/

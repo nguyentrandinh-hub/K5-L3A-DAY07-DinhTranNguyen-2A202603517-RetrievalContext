@@ -1,0 +1,17 @@
+{
+  "method": "tfidf",
+  "split": "test",
+  "budget_chars": 800,
+  "n": 5,
+  "hit1": 3,
+  "hit1_rate": 0.6,
+  "hit3": 3,
+  "hit3_rate": 0.6,
+  "context_hit": 3,
+  "context_hit_rate": 0.6,
+  "avg_context_chars": 644,
+  "median_ms": 10.2,
+  "embed_tokens": 0,
+  "rerank_tokens": 0,
+  "total_cost_usd": 0.0
+}

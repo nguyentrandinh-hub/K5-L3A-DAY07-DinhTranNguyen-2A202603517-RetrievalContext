@@ -1,0 +1,1294 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "question": "Which command-line tool lets AI coding agents search and install Gemini agent skills from the google-gemini/gemini-skills repository?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-01",
+        "page": 1,
+        "evidence": "npx skills add google-gemini/gemini-skills --list"
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-01::B::0006",
+        "source_id": "gemini-doc-01",
+        "source": "data/corpus/01_docs_coding-agents.md",
+        "page": 1,
+        "text": "{% callout type=\"note\" %}\n  Skills come pre-installed in [Google AI Studio Build](https://ai.studio/build) and are bundled in the [Gemini API plugin](/docs/coding-agents#gemini-api-plugin) for Antigravity.\n\n{% /callout %}\n\n### Install with the CLI (`skills.sh` or Context7)  {% id=\"install-skills-cli\" %}\n\nInstall skills using [skills.sh](https://skills.sh) (recommended) or [Context7](https://context7.com):\n\n```bash\n# List all available skills in the repository\nnpx skills add google-gemini/gemini-skills --list",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/coding-agents.md",
+          "page": 1,
+          "title": "Coding agent setup",
+          "source": "data/corpus/01_docs_coding-agents.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 6,
+          "document_id": "gemini-doc-01"
+        },
+        "score": 0.4936828488488672,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "gemini-doc-01::B::0011",
+        "source_id": "gemini-doc-01",
+        "source": "data/corpus/01_docs_coding-agents.md",
+        "page": 1,
+        "text": "### Mount skills in Managed Agents  {% id=\"managed-agents-skills\" %}\n\nWhen you run remote managed agents with the Interactions API, you can mount the `google-gemini/gemini-skills` repository into the agent's workspace. See the [Gemini API Skills guide](https://aistudio.google.com/learn/gemini-api-skills) for details:\n\n```python\nfrom google import genai\n\nclient = genai.Client(http_options={\"api_version\": \"v1beta\"})",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/coding-agents.md",
+          "page": 1,
+          "title": "Coding agent setup",
+          "source": "data/corpus/01_docs_coding-agents.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 11,
+          "document_id": "gemini-doc-01"
+        },
+        "score": 0.4605651138980264,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-07::B::0019",
+        "source_id": "gemini-doc-07",
+        "source": "data/corpus/07_docs_latest-model.md",
+        "page": 7,
+        "text": "# Install official Gemini API agent skills\nnpx skills add google-gemini/gemini-skills --skill gemini-api-dev --global\n\n# Or install the bundled Antigravity plugin\nagy plugin install https://github.com/google-gemini/gemini-skills\n```\n\nYou can also append `.md` to any documentation URL or feed [`llms.txt`](https://aistudio.google.com/llms.txt) to your agent. See [Coding agent setup](/docs/coding-agents) for editor configs and `AGENTS.md` templates.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/latest-model.md",
+          "page": 7,
+          "title": "Latest Gemini models — Overview",
+          "source": "data/corpus/07_docs_latest-model.md",
+          "section": "models_and_pricing",
+          "strategy": "B",
+          "chunk_index": 19,
+          "document_id": "gemini-doc-07"
+        },
+        "score": 0.444544319083061,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-01::B::0006 | data/corpus/01_docs_coding-agents.md | page 1]\n{% callout type=\"note\" %}\n  Skills come pre-installed in [Google AI Studio Build](https://ai.studio/build) and are bundled in the [Gemini API plugin](/docs/coding-agents#gemini-api-plugin) for Antigravity.\n\n{% /callout %}\n\n### Install with the CLI (`skills.sh` or Context7)  {% id=\"install-skills-cli\" %}\n\nInstall skills using [skills.sh](https://skills.sh) (recommended) or [Context7](https://context7.com):\n\n```bash\n# List all available skills in the repository\nnpx skills add google-gemini/gemini-skills --list",
+    "context_ids": [
+      "gemini-doc-01::B::0006"
+    ],
+    "context_chars": 586,
+    "elapsed_ms": 9.503900000709109,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "q02",
+    "split": "dev",
+    "question": "What happens to the Gemini API CLI (`gemini-api`) output when you pass `--dry-run`?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-06",
+        "page": 6,
+        "evidence": "`--dry-run` validates inputs, redacts credentials, and previews the HTTP request offline."
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-06::B::0012",
+        "source_id": "gemini-doc-06",
+        "source": "data/corpus/06_docs_cli.md",
+        "page": 6,
+        "text": "# Check the active credential source, then preview a request offline\ngemini-api whoami\ngemini-api generate \"Confirm CLI setup in one sentence.\" --dry-run\n```\n\n{% callout type=\"warning\" %}\n  Treat `GEMINI_API_KEY` as a secret. In CI, inject the key from your secret store instead of committing it to a repository or build file.\n\n{% /callout %}\n\n### 3. Give your agent instructions  {% id=\"agent-instructions\" %}\n\nAdd this snippet to your project's `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, or system prompt so your coding agent knows how to use `gemini-api`:\n\n```markdown\n## Gemini API CLI (`gemini-api`)\n\nYou have access to `gemini-api` through the shell. Use it to generate text or media (images, speech, music, video), analyze documents and recordings, or run and manage Gemini managed agents.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/cli.md",
+          "page": 6,
+          "title": "API CLI",
+          "source": "data/corpus/06_docs_cli.md",
+          "section": "getting_started",
+          "strategy": "B",
+          "chunk_index": 12,
+          "document_id": "gemini-doc-06"
+        },
+        "score": 0.29440661252806316,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-06::B::0013",
+        "source_id": "gemini-doc-06",
+        "source": "data/corpus/06_docs_cli.md",
+        "page": 6,
+        "text": "1. Run `gemini-api --help` or `gemini-api --usage` to choose a command, and `gemini-api <command> --schema` before building a `--body` JSON payload.\n2. Preview unfamiliar or complex calls offline with `--dry-run -o json`.\n3. For a single JSON result or `--jq` filtering on `generate` or `agent run`, pass `--stream=false -o json`.\n4. To chain multi-step workflows, capture the output paths that media and transcription commands print to stdout, and the `id` values returned by `generate` or `agent run`.\n```\n\nThen prompt your coding agent as usual:",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/cli.md",
+          "page": 6,
+          "title": "API CLI",
+          "source": "data/corpus/06_docs_cli.md",
+          "section": "getting_started",
+          "strategy": "B",
+          "chunk_index": 13,
+          "document_id": "gemini-doc-06"
+        },
+        "score": 0.27228121691889595,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-06::B::0028",
+        "source_id": "gemini-doc-06",
+        "source": "data/corpus/06_docs_cli.md",
+        "page": 6,
+        "text": "## What's next  {% id=\"whats-next\" %}\n\n- [Coding agent setup](/docs/coding-agents)\n- [Interactions API](/docs/interactions-overview)\n- [Gemini managed agents](/docs/agents)\n- [gemini-api-cli on GitHub](https://github.com/google-gemini/gemini-api-cli)",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/cli.md",
+          "page": 6,
+          "title": "API CLI",
+          "source": "data/corpus/06_docs_cli.md",
+          "section": "getting_started",
+          "strategy": "B",
+          "chunk_index": 28,
+          "document_id": "gemini-doc-06"
+        },
+        "score": 0.27047238095980186,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-06::B::0013 | data/corpus/06_docs_cli.md | page 6]\n1. Run `gemini-api --help` or `gemini-api --usage` to choose a command, and `gemini-api <command> --schema` before building a `--body` JSON payload.\n2. Preview unfamiliar or complex calls offline with `--dry-run -o json`.\n3. For a single JSON result or `--jq` filtering on `generate` or `agent run`, pass `--stream=false -o json`.\n4. To chain multi-step workflows, capture the output paths that media and transcription commands print to stdout, and the `id` values returned by `generate` or `agent run`.\n```\n\nThen prompt your coding agent as usual:",
+    "context_ids": [
+      "gemini-doc-06::B::0013"
+    ],
+    "context_chars": 611,
+    "elapsed_ms": 6.980899997870438,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "q03",
+    "split": "dev",
+    "question": "Starting May 28, 2026, what kind of API keys are created by default in Google AI Studio, and what happens to unrestricted standard keys?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-04",
+        "page": 4,
+        "evidence": "Starting May 28, 2026, all new API keys created in\n  Google AI Studio are automatically created as auth keys."
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-04::B::0003",
+        "source_id": "gemini-doc-04",
+        "source": "data/corpus/04_docs_api-key.md",
+        "page": 4,
+        "text": "*   **Authorization (auth) keys**: Bound directly to a Google Cloud service\n  account. When you use an authorization key, your requests are processed\n  under the identity of that bound service account, enabling granular access\n  control. Authorization keys are restricted to the Generative Language API\n  (Gemini API) by default and provide fast-acting leaked key enforcement that\n  quickly stops the usage of leaked keys detected by our systems.\n\nTo ensure secure usage, Gemini API will move from standard keys to auth keys:\n\n*   **Auth keys default**: Starting May 28, 2026, all new API keys created in\n  Google AI Studio are automatically created as auth keys.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/api-key.md",
+          "page": 4,
+          "title": "API keys",
+          "source": "data/corpus/04_docs_api-key.md",
+          "section": "api_reference",
+          "strategy": "B",
+          "chunk_index": 3,
+          "document_id": "gemini-doc-04"
+        },
+        "score": 0.45861818316446945,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "gemini-doc-04::B::0023",
+        "source_id": "gemini-doc-04",
+        "source": "data/corpus/04_docs_api-key.md",
+        "page": 4,
+        "text": "### Securing unrestricted standard API keys  {% id=\"secure-unrestricted-keys\" %}\n\nTo continue using the Gemini API, you must secure any unrestricted keys.\n\n#### Method A: Restrict the key to the Gemini API only (AI Studio)  {% id=\"method-a-restrict-the-key-to-the-gemini-api-only-ai-studio\" %}\n\nIf you only use the key for the Gemini API, secure it directly in AI Studio:\n\n1.   On the **API Keys** page in [Google AI Studio](https://aistudio.google.com/api-keys), locate keys marked with the\n  **Unrestricted** label.\n\n2.   Hover over the label and click **Add restrictions** in the dialog.\n\n3.   Select **Restrict to Gemini API only**.\n\n4.   Click **Restrict key** to confirm.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/api-key.md",
+          "page": 4,
+          "title": "API keys",
+          "source": "data/corpus/04_docs_api-key.md",
+          "section": "api_reference",
+          "strategy": "B",
+          "chunk_index": 23,
+          "document_id": "gemini-doc-04"
+        },
+        "score": 0.4039618462884971,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-04::B::0004",
+        "source_id": "gemini-doc-04",
+        "source": "data/corpus/04_docs_api-key.md",
+        "page": 4,
+        "text": "*   **Unrestricted keys rejected**: The Gemini API rejects requests\n  from **unrestricted standard keys**. Standard API keys that have explicit\n  restrictions applied continue to work. This restriction prevents the\n  unauthorized use of keys that might be shared publicly or linked to other\n  services.\n\n{% callout type=\"note\" %}\n  Requests authenticated by authorization keys are not recorded in\n  Google Cloud service account usage metrics.\n\n{% /callout %}",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/api-key.md",
+          "page": 4,
+          "title": "API keys",
+          "source": "data/corpus/04_docs_api-key.md",
+          "section": "api_reference",
+          "strategy": "B",
+          "chunk_index": 4,
+          "document_id": "gemini-doc-04"
+        },
+        "score": 0.3954978223344487,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-04::B::0003 | data/corpus/04_docs_api-key.md | page 4]\n*   **Authorization (auth) keys**: Bound directly to a Google Cloud service\n  account. When you use an authorization key, your requests are processed\n  under the identity of that bound service account, enabling granular access\n  control. Authorization keys are restricted to the Generative Language API\n  (Gemini API) by default and provide fast-acting leaked key enforcement that\n  quickly stops the usage of leaked keys detected by our systems.\n\nTo ensure secure usage, Gemini API will move from standard keys to auth keys:\n\n*   **Auth keys default**: Starting May 28, 2026, all new API keys created in\n  Google AI Studio are automatically created as auth keys.",
+    "context_ids": [
+      "gemini-doc-04::B::0003"
+    ],
+    "context_chars": 730,
+    "elapsed_ms": 11.32560000041849,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "q04",
+    "split": "dev",
+    "question": "In the models_and_pricing section, what is the context window and introductory 1M-token price for Gemini 4 Carbon?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-07",
+        "page": 7,
+        "evidence": "*   *Price (1M)* **$2.00 / $10.00 (intro thru Nov 30)**"
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-08::B::0004",
+        "source_id": "gemini-doc-08",
+        "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+        "page": 8,
+        "text": "| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Carbon | `gemini-4-carbon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our strongest reasoning model, built for sustained agentic coding, multimodal knowledge work, scientific discovery, and cybersecurity defense. |\n\nFor complete details, see the [Gemini 4 Carbon model page](/docs/models/gemini-4-carbon) and [Latest Gemini models](/docs/latest-model). For introductory pricing details, see the [pricing section](/docs/whats-new-gemini-4-carbon#pricing) on this page or the [pricing page](/docs/pricing#gemini-4-carbon).",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+          "page": 8,
+          "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+          "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+          "section": "models_and_pricing",
+          "strategy": "B",
+          "chunk_index": 4,
+          "document_id": "gemini-doc-08"
+        },
+        "score": 0.40102206979687427,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-08::B::0002",
+        "source_id": "gemini-doc-08",
+        "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+        "page": 8,
+        "text": "Gemini 4 Carbon is available on the paid tier of the Gemini API and in Google AI Studio. Like [Gemini 4 Argon](/docs/whats-new-gemini-4-argon), it supports a unified 1M-token context window, long decode up to 1M tokens, and tunable thinking levels (`low`, `medium`, `high`) at the same per-token price.\n\n{% card-grid %}\n  {% card description=\"View token limits, supported capabilities, and full specifications.\" href=\"/docs/models/gemini-4-carbon\" icon=\"id_card\" title=\"Model card\" /%}\n\n{% card description=\"Build and verify full-stack web and 3D apps with Gemini 4 Carbon.\" href=\"https://aistudio.google.com/apps?model=gemini-4-carbon\" icon=\"experiment\" title=\"Build in AI Studio\" /%}",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+          "page": 8,
+          "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+          "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+          "section": "models_and_pricing",
+          "strategy": "B",
+          "chunk_index": 2,
+          "document_id": "gemini-doc-08"
+        },
+        "score": 0.3688218473838585,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-08::B::0008",
+        "source_id": "gemini-doc-08",
+        "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+        "page": 8,
+        "text": "* **Unified 1M context window and long decode:** Input, thinking, and output tokens share one 1,048,576-token window, and a single response can now go past 64K tokens, up to 1M tokens minus your input. See [Long decode](/docs/long-decode).\n* **Supported in Managed Agents:** The [Antigravity agent](/docs/antigravity-agent) in Gemini Managed Agents now supports `gemini-4-carbon`.\n\n## Choosing between Carbon, Argon, and other models  {% id=\"choosing-between-models\" %}\n\nGemini 4 Carbon and [Gemini 4 Argon](/docs/whats-new-gemini-4-argon) share the same 1M unified context window, built-in tools, and per-token pricing. The main difference is how many thinking tokens each model spends per turn:",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+          "page": 8,
+          "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+          "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+          "section": "models_and_pricing",
+          "strategy": "B",
+          "chunk_index": 8,
+          "document_id": "gemini-doc-08"
+        },
+        "score": 0.3664128495381066,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-08::B::0002 | data/corpus/08_docs_whats-new-gemini-4-carbon.md | page 8]\nGemini 4 Carbon is available on the paid tier of the Gemini API and in Google AI Studio. Like [Gemini 4 Argon](/docs/whats-new-gemini-4-argon), it supports a unified 1M-token context window, long decode up to 1M tokens, and tunable thinking levels (`low`, `medium`, `high`) at the same per-token price.\n\n{% card-grid %}\n  {% card description=\"View token limits, supported capabilities, and full specifications.\" href=\"/docs/models/gemini-4-carbon\" icon=\"id_card\" title=\"Model card\" /%}\n\n{% card description=\"Build and verify full-stack web and 3D apps with Gemini 4 Carbon.\" href=\"https://aistudio.google.com/apps?model=gemini-4-carbon\" icon=\"experiment\" title=\"Build in AI Studio\" /%}",
+    "context_ids": [
+      "gemini-doc-08::B::0002"
+    ],
+    "context_chars": 770,
+    "elapsed_ms": 7.710100002441322,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "q05",
+    "split": "dev",
+    "question": "Which model should developers migrate to now that Veo 3.1 Preview has been shut down in the Gemini API?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-18",
+        "page": 18,
+        "evidence": "Use [Gemini Omni Flash](/docs/omni) (`gemini-omni-1.2-flash`) as your model for\nvideo generation and conversational video editing in the Gemini API."
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-18::B::0003",
+        "source_id": "gemini-doc-18",
+        "source": "data/corpus/18_docs_video.md",
+        "page": 18,
+        "text": "## Veo 3.1  {% id=\"veo\" %}\n\n{% callout type=\"warning\" %}\n   Veo 3.1 Preview (`veo-3.1-generate-preview`,\n  `veo-3.1-fast-generate-preview`, and `veo-3.1-lite-generate-preview`) in the\n  Gemini API was [shut down](/docs/deprecations) on **October 22, 2026**; migrate\n  to [Gemini Omni Flash](/docs/omni) (`gemini-omni-1.2-flash`) or the GA models\n  available through the\n  [Gemini Enterprise Agent Platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate)\n  to avoid service interruptions.\n\n{% /callout %}",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/video.md",
+          "page": 18,
+          "title": "Video — Video overview",
+          "source": "data/corpus/18_docs_video.md",
+          "section": "core_guides",
+          "strategy": "B",
+          "chunk_index": 3,
+          "document_id": "gemini-doc-18"
+        },
+        "score": 0.4501340999752467,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-14::B::0034",
+        "source_id": "gemini-doc-14",
+        "source": "data/corpus/14_docs_models.md",
+        "page": 14,
+        "text": "* [Gemini 3.1 Flash-Lite Preview](/docs/models/gemini-3.1-flash-lite-preview)\n    (Shut down)\n  * Our most cost-efficient multimodal model, offering the fastest performance\n    for high-frequency, lightweight tasks.\n  * `gemini-3.1-flash-lite-preview`\n\n---\n\n* [Gemini 3 Pro Preview](/docs/models/gemini-3-pro-preview) (Shut down)\n  * Our state-of-the-art reasoning model, with advanced multimodal\n    understanding.\n  * `gemini-3-pro-preview`\n{% /table %}",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/models.md",
+          "page": 14,
+          "title": "All models",
+          "source": "data/corpus/14_docs_models.md",
+          "section": "models_and_pricing",
+          "strategy": "B",
+          "chunk_index": 34,
+          "document_id": "gemini-doc-14"
+        },
+        "score": 0.3106743707714058,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-08::B::0030",
+        "source_id": "gemini-doc-08",
+        "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+        "page": 8,
+        "text": "### Migrate from Gemini 3 and earlier  {% id=\"migrate-to-gemini-4-carbon\" %}",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+          "page": 8,
+          "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+          "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+          "section": "models_and_pricing",
+          "strategy": "B",
+          "chunk_index": 30,
+          "document_id": "gemini-doc-08"
+        },
+        "score": 0.2735339748297773,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-18::B::0003 | data/corpus/18_docs_video.md | page 18]\n## Veo 3.1  {% id=\"veo\" %}\n\n{% callout type=\"warning\" %}\n   Veo 3.1 Preview (`veo-3.1-generate-preview`,\n  `veo-3.1-fast-generate-preview`, and `veo-3.1-lite-generate-preview`) in the\n  Gemini API was [shut down](/docs/deprecations) on **October 22, 2026**; migrate\n  to [Gemini Omni Flash](/docs/omni) (`gemini-omni-1.2-flash`) or the GA models\n  available through the\n  [Gemini Enterprise Agent Platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate)\n  to avoid service interruptions.\n\n{% /callout %}\n\n[gemini-doc-08::B::0030 | data/corpus/08_docs_whats-new-gemini-4-carbon.md | page 8]\n### Migrate from Gemini 3 and earlier  {% id=\"migrate-to-gemini-4-carbon\" %}",
+    "context_ids": [
+      "gemini-doc-18::B::0003",
+      "gemini-doc-08::B::0030"
+    ],
+    "context_chars": 773,
+    "elapsed_ms": 10.384699999121949,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "q06",
+    "split": "dev",
+    "question": "In Gemini 4 models, how does the API behave if your input tokens plus `max_output_tokens` exceed 1,048,576 tokens?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-25",
+        "page": 25,
+        "evidence": "If your input tokens plus `max_output_tokens` exceed 1,048,576 tokens, the API automatically caps the output limit to the remaining space in the context window (`1,048,576` minus your input tokens)."
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-25::B::0004",
+        "source_id": "gemini-doc-25",
+        "source": "data/corpus/25_docs_long-context.md",
+        "page": 25,
+        "text": "In Gemini 4 (`gemini-4-carbon`, `gemini-4-argon`, and `gemini-4-hydrogen`), the 1M-token context window is **shared across input, thinking, and output tokens**, and the model can generate up to 1M output tokens using [long decode](/docs/long-decode). If your input tokens plus `max_output_tokens` exceed 1,048,576 tokens, the API automatically caps the output limit to the remaining space in the context window (`1,048,576` minus your input tokens). Earlier Gemini 3 and 2.5 models use separate 1M input and 64K output budgets.\n\nYou can read more about how models work in our [generative models\nguide](/docs/prompting-strategies).",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/long-context.md",
+          "page": 25,
+          "title": "Long context",
+          "source": "data/corpus/25_docs_long-context.md",
+          "section": "core_guides",
+          "strategy": "B",
+          "chunk_index": 4,
+          "document_id": "gemini-doc-25"
+        },
+        "score": 0.5101680531596415,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "gemini-doc-22::B::0051",
+        "source_id": "gemini-doc-22",
+        "source": "data/corpus/22_docs_thinking.md",
+        "page": 22,
+        "text": "For Gemini 4 models (`gemini-4-carbon`, `gemini-4-argon`, and `gemini-4-hydrogen`), keep the following context and output limits in mind:\n\n* **Shared 1M context window:** Input, thinking, and output tokens share a single 1M-token context window (`1,048,576` tokens). If your input tokens plus `max_output_tokens` exceed 1,048,576 tokens, the API automatically caps the output limit to the remaining space in the context window (`1,048,576` minus your input tokens).\n* **Default synchronous output cap (64K):** When `background=False`, the default `max_output_tokens` cap is 65,536 tokens. A single foreground hop generates up to 65,536 tokens for streaming calls and `gemini-4-hydrogen` non-streaming calls, or up to 32,768 tokens for non-streaming calls on `gemini-4-carbon` and `gemini-4-argon`.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/thinking.md",
+          "page": 22,
+          "title": "Thinking — Thinking",
+          "source": "data/corpus/22_docs_thinking.md",
+          "section": "core_guides",
+          "strategy": "B",
+          "chunk_index": 51,
+          "document_id": "gemini-doc-22"
+        },
+        "score": 0.492889970677505,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-26::B::0011",
+        "source_id": "gemini-doc-26",
+        "source": "data/corpus/26_docs_long-decode.md",
+        "page": 26,
+        "text": "| How you create the interaction | Output limit |\n| :--- | :--- |\n| `background: false`, `max_output_tokens` not set | 65,536 tokens |\n| `background: false`, `max_output_tokens` greater than 65,536, `automatic_continuation: true` (SDK default) | Your `max_output_tokens`, up to 1,048,576 minus your input |\n| `background: false`, `max_output_tokens` greater than 65,536, `automatic_continuation: false` or REST | 65,536 tokens per streaming hop (or non-streaming hop on `gemini-4-hydrogen`), or 32,768 per non-streaming hop on `gemini-4-carbon` and `gemini-4-argon`. Loop with `continuation_token` to generate up to your `max_output_tokens`. |\n| `background: true`, `max_output_tokens` not set | 65,536 tokens |",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/long-decode.md",
+          "page": 26,
+          "title": "Long decode",
+          "source": "data/corpus/26_docs_long-decode.md",
+          "section": "core_guides",
+          "strategy": "B",
+          "chunk_index": 11,
+          "document_id": "gemini-doc-26"
+        },
+        "score": 0.25466518337222094,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-25::B::0004 | data/corpus/25_docs_long-context.md | page 25]\nIn Gemini 4 (`gemini-4-carbon`, `gemini-4-argon`, and `gemini-4-hydrogen`), the 1M-token context window is **shared across input, thinking, and output tokens**, and the model can generate up to 1M output tokens using [long decode](/docs/long-decode). If your input tokens plus `max_output_tokens` exceed 1,048,576 tokens, the API automatically caps the output limit to the remaining space in the context window (`1,048,576` minus your input tokens). Earlier Gemini 3 and 2.5 models use separate 1M input and 64K output budgets.\n\nYou can read more about how models work in our [generative models\nguide](/docs/prompting-strategies).",
+    "context_ids": [
+      "gemini-doc-25::B::0004"
+    ],
+    "context_chars": 703,
+    "elapsed_ms": 9.41140000213636,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "q07",
+    "split": "dev",
+    "question": "What are the two fields contained in every `thought` step returned by the Interactions API?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-22",
+        "page": 22,
+        "evidence": "An encrypted representation of the model's internal reasoning state. Always present, even when the model performs minimal reasoning."
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-03::B::0143",
+        "source_id": "gemini-doc-03",
+        "source": "data/corpus/03_docs_get-started.md",
+        "page": 3,
+        "text": "// Print thought summaries if returned\n      for _, step := range res.Interaction.Steps {\n          if thought := step.ThoughtStep; thought != nil {\n              for _, part := range thought.Summary {\n                  if part.TextContent != nil {\n                      fmt.Printf(\"Thought Summary: %s\\n\", part.TextContent.Text)\n                  }\n              }\n          }\n      }\n\nif res.Interaction.OutputText != nil {\n          fmt.Printf(\"Answer: %s\\n\", *res.Interaction.OutputText)\n      }\n  }\n  ```\n\n{% /tab %}",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/get-started.md",
+          "page": 3,
+          "title": "Get started",
+          "source": "data/corpus/03_docs_get-started.md",
+          "section": "getting_started",
+          "strategy": "B",
+          "chunk_index": 143,
+          "document_id": "gemini-doc-03"
+        },
+        "score": 0.2632702410326709,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-22::B::0002",
+        "source_id": "gemini-doc-22",
+        "source": "data/corpus/22_docs_thinking.md",
+        "page": 22,
+        "text": "Every thought step contains two fields:\n\n{% table %}\n  * Field\n  * Required\n  * Description\n\n---\n\n* `signature`\n  * ✅ Yes\n  * An encrypted representation of the model's internal reasoning state. Always present, even when the model performs minimal reasoning.\n\n---\n\n* `summary`\n  * ❌ No\n  * An array of content (text and/or images) summarizing the reasoning. May be empty depending on the [`thinking_summaries`](/api-reference/interactions-api) config, whether the model performed enough reasoning, or the content type (for example, image latents may not have text summaries).\n{% /table %}\n\n{% callout type=\"note\" %}\n  The Interactions API handles thoughts and signatures differently than the\n  `generateContent` API:",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/thinking.md",
+          "page": 22,
+          "title": "Thinking — Thinking",
+          "source": "data/corpus/22_docs_thinking.md",
+          "section": "core_guides",
+          "strategy": "B",
+          "chunk_index": 2,
+          "document_id": "gemini-doc-22"
+        },
+        "score": 0.25859509362333893,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "gemini-doc-22::B::0009",
+        "source_id": "gemini-doc-22",
+        "source": "data/corpus/22_docs_thinking.md",
+        "page": 22,
+        "text": "## Thought summaries  {% id=\"summaries\" %}\n\nThought summaries provide insights into the model's internal reasoning process.\nBy default, only the final output is returned. You can enable thought summaries\nwith `thinking_summaries`:\n\n{% tabs %}\n  {% tab label=\"Python\" %}\n  ```python\n  from google import genai\n\nclient = genai.Client()\n\ninteraction = client.interactions.create(\n      model=\"gemini-4-hydrogen\",\n      input=\"What is the sum of the first 50 prime numbers?\",\n      generation_config={\n          \"thinking_summaries\": \"auto\"\n      }\n  )",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/thinking.md",
+          "page": 22,
+          "title": "Thinking — Thinking",
+          "source": "data/corpus/22_docs_thinking.md",
+          "section": "core_guides",
+          "strategy": "B",
+          "chunk_index": 9,
+          "document_id": "gemini-doc-22"
+        },
+        "score": 0.2517246243494995,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-03::B::0143 | data/corpus/03_docs_get-started.md | page 3]\n// Print thought summaries if returned\n      for _, step := range res.Interaction.Steps {\n          if thought := step.ThoughtStep; thought != nil {\n              for _, part := range thought.Summary {\n                  if part.TextContent != nil {\n                      fmt.Printf(\"Thought Summary: %s\\n\", part.TextContent.Text)\n                  }\n              }\n          }\n      }\n\nif res.Interaction.OutputText != nil {\n          fmt.Printf(\"Answer: %s\\n\", *res.Interaction.OutputText)\n      }\n  }\n  ```\n\n{% /tab %}",
+    "context_ids": [
+      "gemini-doc-03::B::0143"
+    ],
+    "context_chars": 592,
+    "elapsed_ms": 8.804700002656318,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q08",
+    "split": "dev",
+    "question": "How does the Paid tier of the Gemini Developer API differ from the Free tier regarding user content privacy and batch processing?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-05",
+        "page": 5,
+        "evidence": "Content **not** used to improve our products"
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-29::B::0144",
+        "source_id": "gemini-doc-29",
+        "source": "data/corpus/29_docs_antigravity-agent.md",
+        "page": 29,
+        "text": "## Availability and pricing  {% id=\"availability-and-pricing\" %}\n\nAntigravity agent is available in preview through the\n[Interactions API](/docs/interactions-overview) in Google AI Studio\nand the Gemini API for both free tier and paid tier projects.\n\nPricing follows a [pay-as-you-go model](/docs/pricing#pricing-for-agents)\nbased on the underlying Gemini model tokens and the tools the agent uses. Unlike a\nstandard chat request that produces a single output, an Antigravity interaction is an\nagentic workflow. A single request triggers an autonomous loop of reasoning, tool\nexecution, code running, and file management. Free tier projects include a free rate limit\nand usage quota.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/antigravity-agent.md",
+          "page": 29,
+          "title": "Antigravity agent",
+          "source": "data/corpus/29_docs_antigravity-agent.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 144,
+          "document_id": "gemini-doc-29"
+        },
+        "score": 0.2131593664692159,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-05::B::0135",
+        "source_id": "gemini-doc-05",
+        "source": "data/corpus/05_docs_pricing.md",
+        "page": 5,
+        "text": "Our 2.5 Flash text-to-speech audio model optimized for price-performant,\nlow-latency, controllable speech generation.\n\n{% tabs %}\n  {% tab title=\"Standard\" %}\n  {% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD\n\n---\n\n* Input price\n  * Free of charge\n  * $0.50 (text)\n\n---\n\n* Output price\n  * Free of charge\n  * $10.00 (audio)\n\n---\n\n* Used to improve our products\n  * [Yes](/docs/terms)\n  * [No](/docs/terms)\n  {% /table %}\n\n{% /tab %}\n\n{% tab title=\"Batch\" %}\n  {% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD\n\n---\n\n* Input price\n  * Not available\n  * $0.25 (text)\n\n---\n\n* Output price\n  * Not available\n  * $5.00 (audio)\n\n---\n\n* Used to improve our products\n  * [Yes](/docs/terms)\n  * [No](/docs/terms)\n  {% /table %}\n\n{% /tab %}\n\n{% /tabs %}",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/pricing.md",
+          "page": 5,
+          "title": "Pricing",
+          "source": "data/corpus/05_docs_pricing.md",
+          "section": "models_and_pricing",
+          "strategy": "B",
+          "chunk_index": 135,
+          "document_id": "gemini-doc-05"
+        },
+        "score": 0.2070630376460194,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-05::B::0033",
+        "source_id": "gemini-doc-05",
+        "source": "data/corpus/05_docs_pricing.md",
+        "page": 5,
+        "text": "* Used to improve our products\n  * [Yes](/docs/terms)\n  * [No](/docs/terms)\n  {% /table %}\n\n{% /tab %}\n\n{% tab title=\"Contributor\" %}\n  {% callout type=\"note\" %}\n  The Gemini API Contributor Tier is offered as a private preview on an\n      invite-only basis. Speed and reliability are equivalent to\n      [Standard Tier inference](/docs/optimization). Eligible users will be invited by\n      email and see a callout in AI Studio.\n\n{% /callout %}\n\n{% table %}\n  * Feature\n  * Free Tier\n  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}\n\n---\n\n* Input price\n  * Free of charge\n  * $0.375\n\n---\n\n* Output price (including thinking tokens)\n  * Free of charge\n  * $1.875\n\n---\n\n* Context caching price\n  * Free of charge\n  * $0.0375\n  $0.50 / 1,000,000 tokens per hour (storage price)\n\n---",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/pricing.md",
+          "page": 5,
+          "title": "Pricing",
+          "source": "data/corpus/05_docs_pricing.md",
+          "section": "models_and_pricing",
+          "strategy": "B",
+          "chunk_index": 33,
+          "document_id": "gemini-doc-05"
+        },
+        "score": 0.20169185396719086,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-29::B::0144 | data/corpus/29_docs_antigravity-agent.md | page 29]\n## Availability and pricing  {% id=\"availability-and-pricing\" %}\n\nAntigravity agent is available in preview through the\n[Interactions API](/docs/interactions-overview) in Google AI Studio\nand the Gemini API for both free tier and paid tier projects.\n\nPricing follows a [pay-as-you-go model](/docs/pricing#pricing-for-agents)\nbased on the underlying Gemini model tokens and the tools the agent uses. Unlike a\nstandard chat request that produces a single output, an Antigravity interaction is an\nagentic workflow. A single request triggers an autonomous loop of reasoning, tool\nexecution, code running, and file management. Free tier projects include a free rate limit\nand usage quota.",
+    "context_ids": [
+      "gemini-doc-29::B::0144"
+    ],
+    "context_chars": 761,
+    "elapsed_ms": 9.25699999788776,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "q09",
+    "split": "dev",
+    "question": "In the tools_and_agents section, how should managed agents store and use external secrets without exposing them inside the sandbox?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-27",
+        "page": 27,
+        "evidence": "Store\nsecrets as managed credentials and reference them by ID, so the egress proxy\ninjects them at request time and they are never exposed inside the sandbox."
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-08::B::0024",
+        "source_id": "gemini-doc-08",
+        "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+        "page": 8,
+        "text": "## Gemini 4 Carbon in Managed Agents  {% id=\"managed-agents\" %}\n\nThe [Antigravity agent](/docs/antigravity-agent) in Gemini Managed Agents supports Gemini 4 Carbon. To use it, set the model in `agent_config`:\n\n{% tabs %}\n  {% tab label=\"Python\" %}\n  ```python\n  from google import genai\n\nclient = genai.Client()",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/whats-new-gemini-4-carbon.md",
+          "page": 8,
+          "title": "Latest Gemini models — Gemini 4 Carbon - what's new",
+          "source": "data/corpus/08_docs_whats-new-gemini-4-carbon.md",
+          "section": "models_and_pricing",
+          "strategy": "B",
+          "chunk_index": 24,
+          "document_id": "gemini-doc-08"
+        },
+        "score": 0.27352326544782485,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-09::B::0024",
+        "source_id": "gemini-doc-09",
+        "source": "data/corpus/09_docs_whats-new-gemini-4-argon.md",
+        "page": 9,
+        "text": "## Gemini 4 Argon in Managed Agents  {% id=\"managed-agents\" %}\n\nThe [Antigravity agent](/docs/antigravity-agent) in Gemini Managed Agents supports Gemini 4 Argon. To use it, set the model in `agent_config`:\n\n{% tabs %}\n  {% tab label=\"Python\" %}\n  ```python\n  from google import genai\n\nclient = genai.Client(http_options={\"api_version\": \"v1beta\"})",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/whats-new-gemini-4-argon.md",
+          "page": 9,
+          "title": "Latest Gemini models — Gemini 4 Argon - what's new",
+          "source": "data/corpus/09_docs_whats-new-gemini-4-argon.md",
+          "section": "models_and_pricing",
+          "strategy": "B",
+          "chunk_index": 24,
+          "document_id": "gemini-doc-09"
+        },
+        "score": 0.2617816379156585,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-27::B::0002",
+        "source_id": "gemini-doc-27",
+        "source": "data/corpus/27_docs_agents.md",
+        "page": 27,
+        "text": "{% card description=\"Capabilities, tools, multimodal input, and pricing for the\\ndefault agent.\" href=\"/docs/antigravity-agent\" icon=\"smart_toy\" title=\"Antigravity Agent\" /%}\n\n{% card description=\"Visual playground for prototyping agents without writing code.\" href=\"/docs/aistudio-agents\" icon=\"experiment\" title=\"Agents in AI Studio\" /%}\n\n{% /card-grid %}\n\n## Available managed agents  {% id=\"managed-agents\" %}\n\n*   **[Antigravity agent](/docs/antigravity-agent)**: General-purpose\n  managed agent built with Gemini 4 Hydrogen. Runs code, manages files, and\n  searches the web inside a secure Linux sandbox hosted by Google. You can\n  extend it with your own instructions, skills, and data to\n  [build a custom agent](/docs/custom-agents).",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/agents.md",
+          "page": 27,
+          "title": "Overview",
+          "source": "data/corpus/27_docs_agents.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 2,
+          "document_id": "gemini-doc-27"
+        },
+        "score": 0.23894550328297656,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-08::B::0024 | data/corpus/08_docs_whats-new-gemini-4-carbon.md | page 8]\n## Gemini 4 Carbon in Managed Agents  {% id=\"managed-agents\" %}\n\nThe [Antigravity agent](/docs/antigravity-agent) in Gemini Managed Agents supports Gemini 4 Carbon. To use it, set the model in `agent_config`:\n\n{% tabs %}\n  {% tab label=\"Python\" %}\n  ```python\n  from google import genai\n\nclient = genai.Client()",
+    "context_ids": [
+      "gemini-doc-08::B::0024"
+    ],
+    "context_chars": 396,
+    "elapsed_ms": 7.599100001243642,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "q10",
+    "split": "dev",
+    "question": "Which HTTP status code and error code are returned when your Prepay credit balance is depleted?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-37",
+        "page": 37,
+        "evidence": "| `payment_required` | 402 Payment Required | Your Prepay credit balance is depleted."
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-37::B::0004",
+        "source_id": "gemini-doc-37",
+        "source": "data/corpus/37_docs_api-errors.md",
+        "page": 37,
+        "text": "| `authentication` | 401 Unauthorized | The API key is missing, invalid, or expired. | Verify your [API key](/docs/api-key). |\n| `payment_required` | 402 Payment Required | Your Prepay credit balance is depleted. | [Add credits](/docs/billing#buy-credits) to your billing account, or turn on [auto-reload](/docs/billing#auto-reload). Don't retry: the request won't succeed until credits are added. |\n| `permission_denied` | 403 Forbidden | Your API key lacks permission for this resource, or your project is restricted or requires verification or billing changes. | Check your API key permissions, [verification status](/docs/verification), and billing status. See [Project restricted or unavailable](/docs/troubleshooting#project-unavailable). |",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/api-errors.md",
+          "page": 37,
+          "title": "API errors",
+          "source": "data/corpus/37_docs_api-errors.md",
+          "section": "api_reference",
+          "strategy": "B",
+          "chunk_index": 4,
+          "document_id": "gemini-doc-37"
+        },
+        "score": 0.22856492952236207,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "gemini-doc-37::B::0013",
+        "source_id": "gemini-doc-37",
+        "source": "data/corpus/37_docs_api-errors.md",
+        "page": 37,
+        "text": "## How errors are delivered  {% id=\"error-delivery\" %}\n\nThe API delivers errors differently depending on whether you make a standard HTTP request or a streaming (SSE) request.\n\n### Standard HTTP requests  {% id=\"http-errors\" %}\n\nFor standard (non-streaming) requests, the API sets the HTTP response status code (such as `400 Bad Request`, `401 Unauthorized`, or `429 Too Many Requests`) and returns an `error` object in the JSON response body:\n\n```json\n{\n  \"error\": {\n    \"code\": \"invalid_request\",\n    \"message\": \"The value 'invalid_tool_type_xyz' is not supported for 'type' at 'tools[0]'.\"\n  }\n}\n```",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/api-errors.md",
+          "page": 37,
+          "title": "API errors",
+          "source": "data/corpus/37_docs_api-errors.md",
+          "section": "api_reference",
+          "strategy": "B",
+          "chunk_index": 13,
+          "document_id": "gemini-doc-37"
+        },
+        "score": 0.2142801068216542,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-37::B::0012",
+        "source_id": "gemini-doc-37",
+        "source": "data/corpus/37_docs_api-errors.md",
+        "page": 37,
+        "text": "## Error response format  {% id=\"error-schema\" %}\n\nAll errors from the Interactions API return an `error` object containing a `code` and `message`. For example, passing an unsupported tool type returns:\n\n```json\n{\n  \"error\": {\n    \"code\": \"invalid_request\",\n    \"message\": \"The value 'invalid_tool_type_xyz' is not supported for 'type' at 'tools[0]'. Supported values: 'function', 'code_execution', 'mcp_server', 'filesystem', 'google_maps', 'google_search', 'bash', 'computer_use', 'file_search', 'url_context'.\"\n  }\n}\n```\n\n| Field | Type | Description |\n| :--- | :--- | :--- |\n| `code` | string | A machine-readable error code in `snake_case`. |\n| `message` | string | A human-readable description of what went wrong. |",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/api-errors.md",
+          "page": 37,
+          "title": "API errors",
+          "source": "data/corpus/37_docs_api-errors.md",
+          "section": "api_reference",
+          "strategy": "B",
+          "chunk_index": 12,
+          "document_id": "gemini-doc-37"
+        },
+        "score": 0.20882353154140665,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-37::B::0013 | data/corpus/37_docs_api-errors.md | page 37]\n## How errors are delivered  {% id=\"error-delivery\" %}\n\nThe API delivers errors differently depending on whether you make a standard HTTP request or a streaming (SSE) request.\n\n### Standard HTTP requests  {% id=\"http-errors\" %}\n\nFor standard (non-streaming) requests, the API sets the HTTP response status code (such as `400 Bad Request`, `401 Unauthorized`, or `429 Too Many Requests`) and returns an `error` object in the JSON response body:\n\n```json\n{\n  \"error\": {\n    \"code\": \"invalid_request\",\n    \"message\": \"The value 'invalid_tool_type_xyz' is not supported for 'type' at 'tools[0]'.\"\n  }\n}\n```",
+    "context_ids": [
+      "gemini-doc-37::B::0013"
+    ],
+    "context_chars": 673,
+    "elapsed_ms": 9.212600001774263,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q11",
+    "split": "dev",
+    "question": "Which libraries do the Google GenAI SDKs support for defining Structured Outputs schemas in Python and JavaScript?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-23",
+        "page": 23,
+        "evidence": "In addition to supporting JSON Schema in the REST API, the Google GenAI SDKs\nallow defining schemas using\n[Pydantic](https://docs.pydantic.dev/latest/) (Python) and\n[Zod](https://zod.dev/) (JavaScript)."
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-03::B::0161",
+        "source_id": "gemini-doc-03",
+        "source": "data/corpus/03_docs_get-started.md",
+        "page": 3,
+        "text": "planning and synthesis.\n-   [Structured output](/docs/structured-output): JSON schemas, enums, and\n  recursive type definitions.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/get-started.md",
+          "page": 3,
+          "title": "Get started",
+          "source": "data/corpus/03_docs_get-started.md",
+          "section": "getting_started",
+          "strategy": "B",
+          "chunk_index": 161,
+          "document_id": "gemini-doc-03"
+        },
+        "score": 0.24803077056645953,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-38::B::0017",
+        "source_id": "gemini-doc-38",
+        "source": "data/corpus/38_api-reference.md",
+        "page": 38,
+        "text": "{% card description=\"Install SDK packages, configure environment variables, or migrate from legacy libraries.\" href=\"/docs/libraries\" subtitle=\"/docs/libraries\" title=\"Installation and migration\" variant=\"stacked-icon\" /%}\n\n{% /card-grid %}",
+        "metadata": {
+          "url": "https://aistudio.google.com/api-reference.md",
+          "page": 38,
+          "title": "Overview",
+          "source": "data/corpus/38_api-reference.md",
+          "section": "api_reference",
+          "strategy": "B",
+          "chunk_index": 17,
+          "document_id": "gemini-doc-38"
+        },
+        "score": 0.23633739511956797,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-23::B::0001",
+        "source_id": "gemini-doc-23",
+        "source": "data/corpus/23_docs_structured-output.md",
+        "page": 23,
+        "text": "> ## AI Agent Context\n> Get the complete documentation index at: https://aistudio.google.com/llms.txt\n> Use this file to discover all available pages.\n> For the full documentation in a single file, fetch: https://aistudio.google.com/llms-full.txt\n\n# Structured outputs\n\nYou can configure Gemini models to generate responses that adhere to a provided\nJSON Schema. This ensures predictable, type-safe results and simplifies\nextracting structured data from unstructured text.\n\nUsing structured outputs is ideal for:\n\n* **Data extraction:** Pull specific information like names and dates from text.\n* **Structured classification:** Classify text into predefined categories.\n* **Agentic workflows:** Generate structured inputs for tools or APIs.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/structured-output.md",
+          "page": 23,
+          "title": "Structured outputs",
+          "source": "data/corpus/23_docs_structured-output.md",
+          "section": "core_guides",
+          "strategy": "B",
+          "chunk_index": 1,
+          "document_id": "gemini-doc-23"
+        },
+        "score": 0.21074132978715096,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-03::B::0161 | data/corpus/03_docs_get-started.md | page 3]\nplanning and synthesis.\n-   [Structured output](/docs/structured-output): JSON schemas, enums, and\n  recursive type definitions.\n\n[gemini-doc-38::B::0017 | data/corpus/38_api-reference.md | page 38]\n{% card description=\"Install SDK packages, configure environment variables, or migrate from legacy libraries.\" href=\"/docs/libraries\" subtitle=\"/docs/libraries\" title=\"Installation and migration\" variant=\"stacked-icon\" /%}\n\n{% /card-grid %}",
+    "context_ids": [
+      "gemini-doc-03::B::0161",
+      "gemini-doc-38::B::0017"
+    ],
+    "context_chars": 510,
+    "elapsed_ms": 15.032600000267848,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "q12",
+    "split": "dev",
+    "question": "Up to how many pages can Gemini models process in a PDF document using native vision?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-20",
+        "page": 20,
+        "evidence": "Analyze and interpret content, including text, images, diagrams,\n  charts, and tables, even in long documents up to 1000 pages."
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-20::B::0001",
+        "source_id": "gemini-doc-20",
+        "source": "data/corpus/20_docs_document-processing.md",
+        "page": 20,
+        "text": "> ## AI Agent Context\n> Get the complete documentation index at: https://aistudio.google.com/llms.txt\n> Use this file to discover all available pages.\n> For the full documentation in a single file, fetch: https://aistudio.google.com/llms-full.txt\n\n# Document understanding\n\nGemini models can process documents in PDF format, using native\nvision to understand entire document contexts. This goes beyond\njust text extraction, allowing Gemini to:\n\n*   Analyze and interpret content, including text, images, diagrams,\n  charts, and tables, even in long documents up to 1000 pages.\n\n*   Extract information into [structured output](/docs/structured-output) formats.\n\n*   Summarize and answer questions based on both the visual and textual elements\n  in a document.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/document-processing.md",
+          "page": 20,
+          "title": "Documents",
+          "source": "data/corpus/20_docs_document-processing.md",
+          "section": "core_guides",
+          "strategy": "B",
+          "chunk_index": 1,
+          "document_id": "gemini-doc-20"
+        },
+        "score": 0.3654457651805279,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "gemini-doc-02::B::0045",
+        "source_id": "gemini-doc-02",
+        "source": "data/corpus/02_docs.md",
+        "page": 2,
+        "text": "{% section class=\"capability-highlights\" %}\n  *   {% icon name=\"check\" /%} **Native vision-based PDF parsing** beyond plain\n            OCR\n  *   {% icon name=\"check\" /%} **Up to 1,000 pages** per document in a single\n            request\n  *   {% icon name=\"check\" /%} **Structured extraction** of complex tables, forms,\n            and figures\n\n{% /section %}\n\n{% button href=\"/docs/document-processing\" tooltip=\"Read Document understanding docs\" variant=\"ais\" %}Read docs{% /button %}\n\n{% /right-column %}\n\n{% /two-column-layout %}\n\n{% /tab %}\n\n{% /tabs %}",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs.md",
+          "page": 2,
+          "title": "Overview",
+          "source": "data/corpus/02_docs.md",
+          "section": "getting_started",
+          "strategy": "B",
+          "chunk_index": 45,
+          "document_id": "gemini-doc-02"
+        },
+        "score": 0.2818967386815021,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-20::B::0076",
+        "source_id": "gemini-doc-20",
+        "source": "data/corpus/20_docs_document-processing.md",
+        "page": 20,
+        "text": "### Gemini 3 models  {% id=\"gemini-3-models\" %}\n\nGemini 3 introduces granular control over multimodal vision processing with the\n`media_resolution` parameter. You can now set the resolution to low, medium, or\nhigh per individual media part. With this addition, the processing of PDF\ndocuments has been updated:\n\n1.   **Native text inclusion:** Text natively embedded in the PDF is extracted\n  and provided to the model.\n\n2.   **Billing & token reporting:**\n\n*     You are **not charged** for tokens originating from the extracted\n    **native text** in PDFs.\n\n*     In the `usage_metadata` section of the API response, tokens generated\n    from processing PDF pages (as images) are now counted under the `IMAGE`\n    modality, not a separate `DOCUMENT` modality as in some earlier\n    versions.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/document-processing.md",
+          "page": 20,
+          "title": "Documents",
+          "source": "data/corpus/20_docs_document-processing.md",
+          "section": "core_guides",
+          "strategy": "B",
+          "chunk_index": 76,
+          "document_id": "gemini-doc-20"
+        },
+        "score": 0.2783071695748942,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-02::B::0045 | data/corpus/02_docs.md | page 2]\n{% section class=\"capability-highlights\" %}\n  *   {% icon name=\"check\" /%} **Native vision-based PDF parsing** beyond plain\n            OCR\n  *   {% icon name=\"check\" /%} **Up to 1,000 pages** per document in a single\n            request\n  *   {% icon name=\"check\" /%} **Structured extraction** of complex tables, forms,\n            and figures\n\n{% /section %}\n\n{% button href=\"/docs/document-processing\" tooltip=\"Read Document understanding docs\" variant=\"ais\" %}Read docs{% /button %}\n\n{% /right-column %}\n\n{% /two-column-layout %}\n\n{% /tab %}\n\n{% /tabs %}",
+    "context_ids": [
+      "gemini-doc-02::B::0045"
+    ],
+    "context_chars": 617,
+    "elapsed_ms": 15.179200003331061,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q13",
+    "split": "dev",
+    "question": "What are the three primary use cases for function calling with the Gemini API?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-24",
+        "page": 24,
+        "evidence": "Function calling has 3 primary use cases:"
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-29::B::0027",
+        "source_id": "gemini-doc-29",
+        "source": "data/corpus/29_docs_antigravity-agent.md",
+        "page": 29,
+        "text": "Environment: genai.Ptr(interactions.NewCreateAgentInteractionEnvironment(\"remote\")),\n          }),\n      })\n      if err != nil {\n          log.Fatal(err)\n      }\n      if res.Interaction.OutputText != nil {\n          fmt.Println(*res.Interaction.OutputText)\n      }\n  }\n  ```\n\n{% /tab %}\n\n{% /tabs %}\n\n## Function calling  {% id=\"function-calling\" %}\n\nFunction calling allows you to connect the Antigravity agent to external APIs and databases by defining custom tools the agent can invoke. For general concepts, see [Function calling with the Gemini API](/docs/function-calling).\n\nThe following example demonstrates a 2-turn interaction. The agent first requests a custom `get_weather` function call, and the client executes it and returns the result in the second turn.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/antigravity-agent.md",
+          "page": 29,
+          "title": "Antigravity agent",
+          "source": "data/corpus/29_docs_antigravity-agent.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 27,
+          "document_id": "gemini-doc-29"
+        },
+        "score": 0.3465767556604156,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-24::B::0001",
+        "source_id": "gemini-doc-24",
+        "source": "data/corpus/24_docs_function-calling.md",
+        "page": 24,
+        "text": "> ## AI Agent Context\n> Get the complete documentation index at: https://aistudio.google.com/llms.txt\n> Use this file to discover all available pages.\n> For the full documentation in a single file, fetch: https://aistudio.google.com/llms-full.txt\n\n# Function calling with the Gemini API\n\nFunction calling lets you connect models to external tools and APIs.\nInstead of generating text responses, the model determines when to call specific\nfunctions and provides the necessary parameters to execute real-world actions.\nThis allows the model to act as a bridge between natural language and real-world\nactions and data. Function calling has 3 primary use cases:",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/function-calling.md",
+          "page": 24,
+          "title": "Function calling",
+          "source": "data/corpus/24_docs_function-calling.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 1,
+          "document_id": "gemini-doc-24"
+        },
+        "score": 0.31559042660217007,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "gemini-doc-24::B::0046",
+        "source_id": "gemini-doc-24",
+        "source": "data/corpus/24_docs_function-calling.md",
+        "page": 24,
+        "text": "1. **Define Function Declaration:** Define the function's name, parameters, and\n  purpose to the model.\n2. **Call LLM with function declarations:** Send user prompt along with the\n  function declaration(s) to the model.\n3. **Execute Function Code (Your Responsibility):** The model *doesn't*\n  execute the function itself. Extract the name and args and execute in\n  your application.\n4. **Create User friendly response:** Send the result back to the model for a\n  final, user-friendly response.\n\nThis process can be repeated over multiple turns. The model supports calling\nmultiple functions in a single turn ([parallel function calling](/docs/function-calling#parallel_function_calling)) and in sequence ([compositional function calling](/docs/function-calling#compositional_function_calling)).",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/function-calling.md",
+          "page": 24,
+          "title": "Function calling",
+          "source": "data/corpus/24_docs_function-calling.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 46,
+          "document_id": "gemini-doc-24"
+        },
+        "score": 0.3040135575926097,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-24::B::0001 | data/corpus/24_docs_function-calling.md | page 24]\n> ## AI Agent Context\n> Get the complete documentation index at: https://aistudio.google.com/llms.txt\n> Use this file to discover all available pages.\n> For the full documentation in a single file, fetch: https://aistudio.google.com/llms-full.txt\n\n# Function calling with the Gemini API\n\nFunction calling lets you connect models to external tools and APIs.\nInstead of generating text responses, the model determines when to call specific\nfunctions and provides the necessary parameters to execute real-world actions.\nThis allows the model to act as a bridge between natural language and real-world\nactions and data. Function calling has 3 primary use cases:",
+    "context_ids": [
+      "gemini-doc-24::B::0001"
+    ],
+    "context_chars": 734,
+    "elapsed_ms": 8.946999998443061,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "q14",
+    "split": "dev",
+    "question": "In the getting_started section, which transport protocol and SDK method are used to open a Gemini Live API session?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-35",
+        "page": 35,
+        "evidence": "The Gemini Live API uses WebSockets for real-time communication."
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-01::B::0009",
+        "source_id": "gemini-doc-01",
+        "source": "data/corpus/01_docs_coding-agents.md",
+        "page": 1,
+        "text": "#### `gemini-live-api-dev` {% id=\"gemini-live-api-dev\" %}\n\nSkill for building real-time audio and video streaming applications with the [Gemini Live API](/docs/live-api). This skill covers:\n\n- WebSocket session management, ephemeral client tokens, and session resumption\n- Streaming audio, video, and text with voice activity detection (VAD) and barge-in support\n- Background reasoning (extended thinking), non-blocking asynchronous tool calls, transcription, and live speech translation\n\n```bash\nnpx skills add google-gemini/gemini-skills --skill gemini-live-api-dev --global\n```",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/coding-agents.md",
+          "page": 1,
+          "title": "Coding agent setup",
+          "source": "data/corpus/01_docs_coding-agents.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 9,
+          "document_id": "gemini-doc-01"
+        },
+        "score": 0.25396825959487923,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-35::B::0015",
+        "source_id": "gemini-doc-35",
+        "source": "data/corpus/35_docs_live-api_get-started-sdk.md",
+        "page": 35,
+        "text": "## What's next  {% id=\"whats-next\" %}\n\n* Read the full Live API [Capabilities](/docs/live-api/capabilities) guide for key capabilities and configurations; including Voice Activity Detection and native audio features.\n* Read the [Tool use](/docs/live-api/tools) guide to learn how to integrate Live API with tools and function calling.\n* Read the [Session management](/docs/live-api/session-management) guide for managing long running conversations.\n* Read the [Ephemeral tokens](/docs/live-api/ephemeral-tokens) guide for secure authentication in [client-to-server](/docs/live-api#implementation-approach) applications.\n* For more information about the underlying WebSockets API, see the [WebSockets API reference](/api-reference/live).",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/live-api/get-started-sdk.md",
+          "page": 35,
+          "title": "Get started — Using GenAI SDK",
+          "source": "data/corpus/35_docs_live-api_get-started-sdk.md",
+          "section": "getting_started",
+          "strategy": "B",
+          "chunk_index": 15,
+          "document_id": "gemini-doc-35"
+        },
+        "score": 0.25325876555790194,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-36::B::0027",
+        "source_id": "gemini-doc-36",
+        "source": "data/corpus/36_docs_live-api_get-started-websocket.md",
+        "page": 36,
+        "text": "## What's next  {% id=\"whats-next\" %}\n\n* Read the full Live API [Capabilities](/docs/live-api/capabilities) guide for key\n  capabilities and configurations; including Voice Activity Detection and native\n  audio features.\n* Read the [Tool use](/docs/live-api/tools) guide to learn how to integrate Live API\n  with tools and function calling.\n* Read the [Session management](/docs/live-api/session-management) guide for managing long\n  running conversations.\n* Read the [Ephemeral tokens](/docs/live-api/ephemeral-tokens) guide for secure\n  authentication in [client-to-server](/docs/live-api#implementation-approach) applications.\n* For more information about the underlying WebSockets API, see the\n  [WebSockets API reference](/api-reference/live).",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/live-api/get-started-websocket.md",
+          "page": 36,
+          "title": "Get started — Using WebSockets",
+          "source": "data/corpus/36_docs_live-api_get-started-websocket.md",
+          "section": "getting_started",
+          "strategy": "B",
+          "chunk_index": 27,
+          "document_id": "gemini-doc-36"
+        },
+        "score": 0.25325876555790194,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-01::B::0009 | data/corpus/01_docs_coding-agents.md | page 1]\n#### `gemini-live-api-dev` {% id=\"gemini-live-api-dev\" %}\n\nSkill for building real-time audio and video streaming applications with the [Gemini Live API](/docs/live-api). This skill covers:\n\n- WebSocket session management, ephemeral client tokens, and session resumption\n- Streaming audio, video, and text with voice activity detection (VAD) and barge-in support\n- Background reasoning (extended thinking), non-blocking asynchronous tool calls, transcription, and live speech translation\n\n```bash\nnpx skills add google-gemini/gemini-skills --skill gemini-live-api-dev --global\n```",
+    "context_ids": [
+      "gemini-doc-01::B::0009"
+    ],
+    "context_chars": 653,
+    "elapsed_ms": 9.546600002067862,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "q15",
+    "split": "dev",
+    "question": "Which API version do the latest Google Gen AI SDKs default to starting November 2026, and what happens if you call a v1beta-only feature without changing it?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "gemini-doc-39",
+        "page": 39,
+        "evidence": "Starting with the November 2026 major\n  releases, the Google Gen AI SDKs call `v1` unless you set a version."
+      }
+    ],
+    "results": [
+      {
+        "id": "gemini-doc-39::B::0003",
+        "source_id": "gemini-doc-39",
+        "source": "data/corpus/39_api-reference_api-versions.md",
+        "page": 39,
+        "text": "{% callout type=\"warning\" %}\n  **The latest SDKs default to `v1`.** Starting with the November 2026 major\n  releases, the Google Gen AI SDKs call `v1` unless you set a version. Earlier\n  releases defaulted to `v1beta`. If you upgrade and use any `v1beta`-only feature in the\n  [table below](/api-reference/api-versions#feature-support), such as the Live API, explicit context\n  caching, or managed agents, those calls fail until you set the API version to\n  `v1beta`. See [Configure API version in an SDK](/api-reference/api-versions#configure-api-version).\n\n{% /callout %}",
+        "metadata": {
+          "url": "https://aistudio.google.com/api-reference/api-versions.md",
+          "page": 39,
+          "title": "API versions",
+          "source": "data/corpus/39_api-reference_api-versions.md",
+          "section": "api_reference",
+          "strategy": "B",
+          "chunk_index": 3,
+          "document_id": "gemini-doc-39"
+        },
+        "score": 0.43743595825886505,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "gemini-doc-39::B::0009",
+        "source_id": "gemini-doc-39",
+        "source": "data/corpus/39_api-reference_api-versions.md",
+        "page": 39,
+        "text": "## Configure API version in an SDK  {% id=\"configure-api-version\" %}\n\nThe latest Gemini API SDKs default to `v1`. Earlier SDK releases defaulted to\n`v1beta`. To use `v1beta`-only features, set the API version explicitly, as\nshown in the following code samples. You can also set the\n`GOOGLE_GENAI_API_VERSION` environment variable (for example,\n`GOOGLE_GENAI_API_VERSION=v1beta`). A version set in code takes precedence\nover the environment variable.\n\n{% tabs %}\n  {% tab filename=\"api_version.py\" label=\"Python\" %}\n  ```python\n  from google import genai\n\nclient = genai.Client(http_options={\"api_version\": \"v1beta\"})\n\ninteraction = client.interactions.create(\n      model=\"gemini-4-hydrogen\",\n      input=\"Explain how AI works\",\n  )\n\nprint(interaction.output_text)\n  ```\n\n{% /tab %}",
+        "metadata": {
+          "url": "https://aistudio.google.com/api-reference/api-versions.md",
+          "page": 39,
+          "title": "API versions",
+          "source": "data/corpus/39_api-reference_api-versions.md",
+          "section": "api_reference",
+          "strategy": "B",
+          "chunk_index": 9,
+          "document_id": "gemini-doc-39"
+        },
+        "score": 0.2614924158960761,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-39::B::0002",
+        "source_id": "gemini-doc-39",
+        "source": "data/corpus/39_api-reference_api-versions.md",
+        "page": 39,
+        "text": "* **v1**: Stable version of the API. Features in the stable version are\n  fully supported over the lifetime of the major version. If there are any\n  breaking changes, a new major version of the API will be created and the\n  existing version will be deprecated after a reasonable period of time.\n  Non-breaking changes may be introduced to the API without changing the\n  major version. The **Interactions API** and its core features are\n  generally available in `v1`.\n* **v1beta**: This version includes early features and capabilities that are\n  actively being developed. While features in `v1beta` may be subject to\n  changes as we refine them based on feedback, it lets you try new\n  capabilities before they are promoted to stable.",
+        "metadata": {
+          "url": "https://aistudio.google.com/api-reference/api-versions.md",
+          "page": 39,
+          "title": "API versions",
+          "source": "data/corpus/39_api-reference_api-versions.md",
+          "section": "api_reference",
+          "strategy": "B",
+          "chunk_index": 2,
+          "document_id": "gemini-doc-39"
+        },
+        "score": 0.23122572141113193,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-39::B::0003 | data/corpus/39_api-reference_api-versions.md | page 39]\n{% callout type=\"warning\" %}\n  **The latest SDKs default to `v1`.** Starting with the November 2026 major\n  releases, the Google Gen AI SDKs call `v1` unless you set a version. Earlier\n  releases defaulted to `v1beta`. If you upgrade and use any `v1beta`-only feature in the\n  [table below](/api-reference/api-versions#feature-support), such as the Live API, explicit context\n  caching, or managed agents, those calls fail until you set the API version to\n  `v1beta`. See [Configure API version in an SDK](/api-reference/api-versions#configure-api-version).\n\n{% /callout %}",
+    "context_ids": [
+      "gemini-doc-39::B::0003"
+    ],
+    "context_chars": 655,
+    "elapsed_ms": 11.9038000011642,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  }
+]
