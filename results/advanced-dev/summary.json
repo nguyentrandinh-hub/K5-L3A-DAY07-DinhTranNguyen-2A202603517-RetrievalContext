@@ -1,0 +1,10 @@
+{
+  "split": "dev",
+  "model": "openai/gpt-4o-mini",
+  "n": 18,
+  "answered": 15,
+  "abstain": 3,
+  "errors": 0,
+  "median_ms": 6506.08,
+  "total_cost_usd": 0.00987
+}

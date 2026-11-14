@@ -86,4 +86,33 @@ Vì vậy, theo tiêu chí chốt trước khi chạy `test` (ưu tiên `Context
 
 ## Thử thách nâng cao (nếu thực hiện)
 
-Không thực hiện phần thử thách nâng cao (+15 điểm) trong bài nộp này; tập trung hoàn thiện phần cơ bản (85 điểm).
+- **Tài liệu, nguồn, quyền sử dụng, số trang và phiên bản:** OpenAI *GPT-4 Technical Report* ([arXiv:2303.08774](https://arxiv.org/abs/2303.08774), bản công khai trên arXiv), đúng **100 trang** (`data/advanced/gpt4_technical_report.pdf`, 5.0 MB), gồm text học thuật, 21 trang chứa bảng benchmark/exam, 8 trang chứa ảnh nhúng (multimodal examples) và 23 trang chứa biểu đồ (`Figure`).
+- **Cách xử lý text, bảng, ảnh, biểu đồ; phạm vi index và phần chưa xử lý:**
+  - Dùng `pymupdf` trích xuất text toàn bộ **100 trang** (0 trang bị bỏ trống), chia thành **426 text chunks** (`max_chars=900`, `overlap=150`, giữ `page` gốc).
+  - Với **36 trang** có bảng, ảnh nhúng hoặc `Figure`, hệ thống render ảnh PNG (`150 DPI`, lưu tại `data/advanced/pages/page_XXX.png`) và dùng `openai/gpt-4o-mini` Vision tạo **27 visual-summary chunks** (mô tả cấu trúc bảng, trục/chú giải/đơn vị biểu đồ và chi tiết ảnh). Toàn bộ **453 chunks** được embed bằng `openai/text-embedding-3-small` (1,536 chiều). Chi phí index: **\$0.151241** (`335.67s`).
+  - Pipeline Agent (`src/advanced_rag.py`) trang bị 2 tool: `search` (Hybrid RRF trên cả text và visual summary, `top_k=6`, `budget=8000` chars) và `inspect_page(page)` (mở trực tiếp ảnh PNG trang gốc bằng Vision để kiểm chứng ô bảng, trục biểu đồ và ảnh trước khi trả lời). Phần tài liệu tham khảo/danh sách tác giả dài ở cuối PDF vẫn được index text đầy đủ, không cần xử lý ảnh.
+- **Cách chia benchmark, schema evidence, model và cấu hình đã chốt trên dev:**
+  - Bộ `dev` gồm 18 câu (`adv-d01`–`adv-d15` bao phủ đủ 5 nhóm + `adv-u01`–`adv-u03` thiếu bằng chứng) đạt **15/15 trả lời đúng citation + 3/3 abstain đúng** (`\$0.00987`).
+  - Ở lần chạy test đầu (`data/advanced/benchmark.json`), pipeline đạt **26/30 (86.7%)** do bỏ qua `inspect_page` ở 2 câu bảng. Theo đúng quy tắc của `ADVANCED.md`, sau khi chỉnh sửa (`top_k=6`, `budget=8000`, bắt buộc `inspect_page` với câu hỏi bảng/biểu đồ/ảnh), tôi tạo bộ **30 câu `test` mới hoàn toàn độc lập** (`data/advanced/benchmark_v2.json`, gồm 24 câu có đáp án + 6 câu thiếu bằng chứng) để đánh giá lại.
+
+| Nhóm test | Đạt / tổng | Tỷ lệ | Lỗi / nhận xét |
+|---|---:|---:|---|
+| Bảng | 5 / 6 | 83.3% | Đạt `t25, t26, t27, t29, t30`; sai `t28` (đọc nhầm cột 84.2% LLaMA few-shot thay vì 85.6% ALUM) |
+| Ảnh, sơ đồ | 5 / 5 | 100.0% | Đạt toàn bộ `t31`–`t35` (ảnh VGA/Lightning, chart 1997, sơ đồ nhiệt tiếng Pháp, Extreme Ironing, InstructGPT) |
+| Biểu đồ | 5 / 5 | 100.0% | Đạt toàn bộ `t36`–`t40` (đúng trục, đơn vị, legend và giá trị matrix Figure 11) |
+| Multi-hop | 2 / 4 | 50.0% | Đạt `t41, t43`; `t42` từ chối nhầm; `t44` thiếu nửa sau ở trang 63 |
+| Text | 4 / 4 | 100.0% | Đạt toàn bộ `t45`–`t48` |
+| Thiếu bằng chứng | 6 / 6 | 100.0% | Từ chối chính xác toàn bộ `u10`–`u15` |
+| **Toàn bộ** | **27 / 30** | **90.0%** | **Đạt ngưỡng ≥ 90% (0 lỗi hệ thống)** |
+
+- **Trace, nhãn và evidence từng câu; thời gian, chi phí, lỗi hệ thống:**
+  - Trace và nhãn chấm đối chiếu bản gốc từng câu được lưu tại `results/advanced-test-v2/traces.json`, `results/advanced-test-v2/summary.json` và `results/advanced-test-v2/reviews.json`.
+  - Thời gian median: **10,062.0 ms/câu**; tổng chi phí chạy 30 câu test: **\$0.082144**; lỗi hệ thống: **0**.
+- **Giới hạn, cách tái lập và đường dẫn benchmark:**
+  - **Giới hạn:** Câu multi-hop dài (`t42`, `t44`) đôi khi không kích hoạt đủ lượt `search`/`inspect_page` cho trang thứ hai; bảng nhiều cột dày đặc như Table 2 (`t28`) vẫn có rủi ro đọc nhầm cột cạnh nhau nếu không crop sát từng hàng.
+  - **Đường dẫn & lệnh chạy tái lập:**
+    ```bash
+    python -X utf8 src/advanced_rag.py --mode index
+    python -X utf8 src/advanced_rag.py --mode run --split dev --output results/advanced-dev
+    python -X utf8 src/advanced_rag.py --mode run --benchmark data/advanced/benchmark_v2.json --split test --output results/advanced-test-v2
+    ```

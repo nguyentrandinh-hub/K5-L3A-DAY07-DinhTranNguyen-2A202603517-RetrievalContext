@@ -1,0 +1,212 @@
+[
+  {
+    "query_id": "adv-t25",
+    "category": "Table",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t26",
+    "category": "Table",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t27",
+    "category": "Table",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t28",
+    "category": "Table",
+    "answerable": true,
+    "passed": false,
+    "reason": "FAIL: Misread HellaSwag tuned SOTA ALUM score as 84.2% (LLaMA few-shot) instead of 85.6%."
+  },
+  {
+    "query_id": "adv-t29",
+    "category": "Table",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t30",
+    "category": "Table",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t31",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t32",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t33",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t34",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t35",
+    "category": "Image/Diagram",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t36",
+    "category": "Chart",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t37",
+    "category": "Chart",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t38",
+    "category": "Chart",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t39",
+    "category": "Chart",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t40",
+    "category": "Chart",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t41",
+    "category": "Multi-hop",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t42",
+    "category": "Multi-hop",
+    "answerable": true,
+    "passed": false,
+    "reason": "FAIL: False abstention on multi-hop GRE Writing + USNCO."
+  },
+  {
+    "query_id": "adv-t43",
+    "category": "Multi-hop",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t44",
+    "category": "Multi-hop",
+    "answerable": true,
+    "passed": false,
+    "reason": "FAIL: Answered RBRM role on p.12 but failed to retrieve/inspect p.63 Figure 6 for [Is it a refusal?]."
+  },
+  {
+    "query_id": "adv-t45",
+    "category": "Text",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t46",
+    "category": "Text",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t47",
+    "category": "Text",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-t48",
+    "category": "Text",
+    "answerable": true,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-u10",
+    "category": "Unanswerable",
+    "answerable": false,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-u11",
+    "category": "Unanswerable",
+    "answerable": false,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-u12",
+    "category": "Unanswerable",
+    "answerable": false,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-u13",
+    "category": "Unanswerable",
+    "answerable": false,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-u14",
+    "category": "Unanswerable",
+    "answerable": false,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  },
+  {
+    "query_id": "adv-u15",
+    "category": "Unanswerable",
+    "answerable": false,
+    "passed": true,
+    "reason": "PASS: Verified answer/abstention and citations against original PDF page."
+  }
+]
