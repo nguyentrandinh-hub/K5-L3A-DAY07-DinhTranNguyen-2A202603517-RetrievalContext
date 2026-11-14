@@ -1,0 +1,402 @@
+[
+  {
+    "query_id": "q16",
+    "split": "test",
+    "question": "Which Gemini 4 model is described as fast and efficient for everyday coding and agentic workflows, and what is its 1M-token price?",
+    "filter": null,
+    "method": "tfidf",
+    "budget_chars": 800,
+    "results": [
+      {
+        "id": "gemini-doc-29::B::0072",
+        "source_id": "gemini-doc-29",
+        "source": "data/corpus/29_docs_antigravity-agent.md",
+        "page": 29,
+        "text": "| Model | Value in `agent_config.model` | Description |\n| :--- | :--- | :--- |\n| **Gemini 4 Hydrogen** (default) | `gemini-4-hydrogen` | Default Gemini 4 model bringing cutting-edge intelligence with speed and efficiency for everyday coding and agentic workflows. |\n| **Gemini 4 Carbon** | `gemini-4-carbon` | Most capable frontier reasoning model for complex software engineering, deep problem solving, and long-horizon agentic tasks. |\n| **Gemini 4 Argon** | `gemini-4-argon` | Our efficient Gemini 4 frontier reasoning model, delivering faster responses and lower token spend per turn compared to [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon) across software engineering and agentic tasks. |",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/antigravity-agent.md",
+          "page": 29,
+          "title": "Antigravity agent",
+          "source": "data/corpus/29_docs_antigravity-agent.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 72,
+          "document_id": "gemini-doc-29"
+        },
+        "score": 0.3310525984372667,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-09::B::0003",
+        "source_id": "gemini-doc-09",
+        "source": "data/corpus/09_docs_whats-new-gemini-4-argon.md",
+        "page": 9,
+        "text": "## New model  {% id=\"new-model\" %}\n\n| Model | Model ID | Default thinking level | Pricing | Description |\n| :--- | :--- | :---: | :--- | :--- |\n| Gemini 4 Argon | `gemini-4-argon` | `medium` | Available through Nov 30, 2026 at an introductory price of $2/1M input tokens and $10/1M output tokens ($4/1M input and $20/1M output thereafter). See [pricing](/docs/pricing) for details. | Our efficient Gemini 4 frontier reasoning model, delivering faster responses and lower token spend per turn compared to [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon) across complex coding, agentic, math, and science tasks. |",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/whats-new-gemini-4-argon.md",
+          "page": 9,
+          "title": "Latest Gemini models — Gemini 4 Argon - what's new",
+          "source": "data/corpus/09_docs_whats-new-gemini-4-argon.md",
+          "section": "models_and_pricing",
+          "strategy": "B",
+          "chunk_index": 3,
+          "document_id": "gemini-doc-09"
+        },
+        "score": 0.31805067200492354,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-02::B::0010",
+        "source_id": "gemini-doc-02",
+        "source": "data/corpus/02_docs.md",
+        "page": 2,
+        "text": "{% card description=\"Brings cutting-edge intelligence to everyone, with speed and efficiency for everyday coding and agentic workflows, featuring a shared 1M context window and long decodes up to 1M tokens.\" title=\"Gemini 4 Hydrogen\" variant=\"model-card\" %}\n  {% section class=\"model-specs\" %}\n  *   *Model code* **gemini-4-hydrogen**\n  *   *Context* **1M tokens**\n  *   *Max output* **65K / 1M tokens**\n  *   *Modalities* **Text, Image, Audio, Video, PDF**\n\n{% /section %}",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs.md",
+          "page": 2,
+          "title": "Overview",
+          "source": "data/corpus/02_docs.md",
+          "section": "getting_started",
+          "strategy": "B",
+          "chunk_index": 10,
+          "document_id": "gemini-doc-02"
+        },
+        "score": 0.30812901053897573,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-29::B::0072 | data/corpus/29_docs_antigravity-agent.md | page 29]\n| Model | Value in `agent_config.model` | Description |\n| :--- | :--- | :--- |\n| **Gemini 4 Hydrogen** (default) | `gemini-4-hydrogen` | Default Gemini 4 model bringing cutting-edge intelligence with speed and efficiency for everyday coding and agentic workflows. |\n| **Gemini 4 Carbon** | `gemini-4-carbon` | Most capable frontier reasoning model for complex software engineering, deep problem solving, and long-horizon agentic tasks. |\n| **Gemini 4 Argon** | `gemini-4-argon` | Our efficient Gemini 4 frontier reasoning model, delivering faster responses and lower token spend per turn compared to [Gemini 4 Carbon](/docs/whats-new-gemini-4-carbon) across software engineering and agentic tasks. |",
+    "context_ids": [
+      "gemini-doc-29::B::0072"
+    ],
+    "context_chars": 777,
+    "elapsed_ms": 11.83,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "q17",
+    "split": "test",
+    "question": "In the api_reference section, what is the difference between `rate_limit_exceeded` and `quota_exceeded` error codes?",
+    "filter": {
+      "section": "api_reference"
+    },
+    "method": "tfidf",
+    "budget_chars": 800,
+    "results": [
+      {
+        "id": "gemini-doc-37::B::0002",
+        "source_id": "gemini-doc-37",
+        "source": "data/corpus/37_docs_api-errors.md",
+        "page": 37,
+        "text": "## Standard API error codes  {% id=\"api-error-codes\" %}\n\nThese general request-level error codes correspond to standard HTTP status codes.\nUse the `code` field in your application logic to handle errors programmatically.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/api-errors.md",
+          "page": 37,
+          "title": "API errors",
+          "source": "data/corpus/37_docs_api-errors.md",
+          "section": "api_reference",
+          "strategy": "B",
+          "chunk_index": 2,
+          "document_id": "gemini-doc-37"
+        },
+        "score": 0.3556648793692552,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-37::B::0010",
+        "source_id": "gemini-doc-37",
+        "source": "data/corpus/37_docs_api-errors.md",
+        "page": 37,
+        "text": "| `content_blocked` | An unspecified policy reason blocked the request. |\n\n## Generation error codes  {% id=\"generation-error-codes\" %}\n\nThese error codes indicate a structural issue with the model's generated output (such as a malformed function call or an undeclared tool call).",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/api-errors.md",
+          "page": 37,
+          "title": "API errors",
+          "source": "data/corpus/37_docs_api-errors.md",
+          "section": "api_reference",
+          "strategy": "B",
+          "chunk_index": 10,
+          "document_id": "gemini-doc-37"
+        },
+        "score": 0.2971055395374483,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-37::B::0008",
+        "source_id": "gemini-doc-37",
+        "source": "data/corpus/37_docs_api-errors.md",
+        "page": 37,
+        "text": "## Generation blocked codes  {% id=\"generation-blocked-codes\" %}\n\nThese error codes indicate that policy, safety, or content restrictions blocked the model's output. When you receive one of these codes, modify your input and retry.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/api-errors.md",
+          "page": 37,
+          "title": "API errors",
+          "source": "data/corpus/37_docs_api-errors.md",
+          "section": "api_reference",
+          "strategy": "B",
+          "chunk_index": 8,
+          "document_id": "gemini-doc-37"
+        },
+        "score": 0.27849227323794523,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-37::B::0002 | data/corpus/37_docs_api-errors.md | page 37]\n## Standard API error codes  {% id=\"api-error-codes\" %}\n\nThese general request-level error codes correspond to standard HTTP status codes.\nUse the `code` field in your application logic to handle errors programmatically.\n\n[gemini-doc-37::B::0010 | data/corpus/37_docs_api-errors.md | page 37]\n| `content_blocked` | An unspecified policy reason blocked the request. |\n\n## Generation error codes  {% id=\"generation-error-codes\" %}\n\nThese error codes indicate a structural issue with the model's generated output (such as a malformed function call or an undeclared tool call).",
+    "context_ids": [
+      "gemini-doc-37::B::0002",
+      "gemini-doc-37::B::0010"
+    ],
+    "context_chars": 644,
+    "elapsed_ms": 8.69,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "q18",
+    "split": "test",
+    "question": "How are non-PDF text formats like TXT, Markdown, or HTML handled by Gemini compared to PDF files?",
+    "filter": null,
+    "method": "tfidf",
+    "budget_chars": 800,
+    "results": [
+      {
+        "id": "gemini-doc-20::B::0002",
+        "source_id": "gemini-doc-20",
+        "source": "data/corpus/20_docs_document-processing.md",
+        "page": 20,
+        "text": "*   Transcribe document content (e.g. to HTML), preserving layouts and\n  formatting, for use in downstream applications.\n\nYou can also pass Microsoft Office and OpenDocument files, such as Word\ndocuments, PowerPoint presentations, and Excel spreadsheets. For details, see\n[Office and OpenDocument files](/docs/document-processing#office-documents).\nOther non-PDF documents, such as TXT, Markdown, or HTML files, are processed as\nplain text, which eliminates context like charts or formatting.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/document-processing.md",
+          "page": 20,
+          "title": "Documents",
+          "source": "data/corpus/20_docs_document-processing.md",
+          "section": "core_guides",
+          "strategy": "B",
+          "chunk_index": 2,
+          "document_id": "gemini-doc-20"
+        },
+        "score": 0.26081224680404497,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "gemini-doc-01::B::0018",
+        "source_id": "gemini-doc-01",
+        "source": "data/corpus/01_docs_coding-agents.md",
+        "page": 1,
+        "text": "| Method | How to use | Why use it |\n| :--- | :--- | :--- |\n| **Accept header (content negotiation)** | Send `Accept: text/markdown` on any `/docs/...` URL | Gets raw Markdown from the same URL you visit in a browser without changing the path. |\n| **Direct `.md` URLs** | Add `.md` to any doc URL (such as `/docs/coding-agents.md`) | Gives you a clean Markdown link to share in prompts, `AGENTS.md` files, or scripts. |\n| **`llms.txt` index** | [`https://aistudio.google.com/llms.txt`](https://aistudio.google.com/llms.txt) | Lists every documentation page with links to each raw Markdown file. |",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/coding-agents.md",
+          "page": 1,
+          "title": "Coding agent setup",
+          "source": "data/corpus/01_docs_coding-agents.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 18,
+          "document_id": "gemini-doc-01"
+        },
+        "score": 0.22502269717723555,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-24::B::0154",
+        "source_id": "gemini-doc-24",
+        "source": "data/corpus/24_docs_function-calling.md",
+        "page": 24,
+        "text": "* **`text`**\n* **`image`**: `image/png`, `image/jpeg`, `image/webp`\n* **`document`**: `application/pdf`, `text/csv`, and\n  [Office and OpenDocument files](/docs/document-processing#office-documents)\n  (DOCX, DOC, DOTX, ODT, PPTX, PPT, ODP, XLSX, XLS, ODS)\n* **`audio`**: [Supported audio formats](/docs/audio#supported-formats)\n* **`video`**: [Supported video formats](/docs/video-understanding#supported-formats)\n  (available in `v1beta` and `v1alpha`)\n\nEach media block accepts either base64-encoded `data` or a `uri`, such as a\n[Files API](/docs/files) URI. Files in function results are processed the same\nway as the same file in a regular input. See\n[Return files by URI](/docs/function-calling#file-uri) for an example.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/function-calling.md",
+          "page": 24,
+          "title": "Function calling",
+          "source": "data/corpus/24_docs_function-calling.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 154,
+          "document_id": "gemini-doc-24"
+        },
+        "score": 0.22124182303820483,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-20::B::0002 | data/corpus/20_docs_document-processing.md | page 20]\n*   Transcribe document content (e.g. to HTML), preserving layouts and\n  formatting, for use in downstream applications.\n\nYou can also pass Microsoft Office and OpenDocument files, such as Word\ndocuments, PowerPoint presentations, and Excel spreadsheets. For details, see\n[Office and OpenDocument files](/docs/document-processing#office-documents).\nOther non-PDF documents, such as TXT, Markdown, or HTML files, are processed as\nplain text, which eliminates context like charts or formatting.",
+    "context_ids": [
+      "gemini-doc-20::B::0002"
+    ],
+    "context_chars": 572,
+    "elapsed_ms": 10.76,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "q19",
+    "split": "test",
+    "question": "What happens if your coding agent does not have the Gemini Docs MCP server installed when using a Gemini agent skill?",
+    "filter": null,
+    "method": "tfidf",
+    "budget_chars": 800,
+    "results": [
+      {
+        "id": "gemini-doc-01::B::0005",
+        "source_id": "gemini-doc-01",
+        "source": "data/corpus/01_docs_coding-agents.md",
+        "page": 1,
+        "text": "## Install Gemini agent skills  {% id=\"available-skills\" %}\n\nAgent skills give your coding agent procedural rules, current model names, and SDK code patterns. Instead of adding long instructions to your prompt, your agent loads each skill only when needed. This helps your agent avoid deprecated SDKs and use modern Gemini patterns.\n\nSkills work alongside the Gemini Docs MCP server. If your agent does not have the MCP server installed, the skill falls back to [`llms.txt`](https://aistudio.google.com/llms.txt). To learn more about how skills work, read the [Gemini API Skills guide](https://aistudio.google.com/learn/gemini-api-skills).",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/coding-agents.md",
+          "page": 1,
+          "title": "Coding agent setup",
+          "source": "data/corpus/01_docs_coding-agents.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 5,
+          "document_id": "gemini-doc-01"
+        },
+        "score": 0.39152446808605934,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "gemini-doc-01::B::0024",
+        "source_id": "gemini-doc-01",
+        "source": "data/corpus/01_docs_coding-agents.md",
+        "page": 1,
+        "text": "### Troubleshooting  {% id=\"troubleshooting\" %}\n\n- **Skill or MCP server not detected:** Restart your editor (Cursor or VS Code) or terminal session (Claude Code or Codex). Most agents load MCP servers and skills only when they start.\n- **Global skill conflict:** If your agent ignores a globally installed skill, install the skill in your project root without `--global`:  ```bash\n  npx skills add google-gemini/gemini-skills --skill gemini-api-dev\n  ```\n\n- **Rules ignored:** Make sure your `AGENTS.md`, `.cursorrules`, or `CLAUDE.md` file is in the root directory of your project.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/coding-agents.md",
+          "page": 1,
+          "title": "Coding agent setup",
+          "source": "data/corpus/01_docs_coding-agents.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 24,
+          "document_id": "gemini-doc-01"
+        },
+        "score": 0.32096075292099596,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-07::B::0018",
+        "source_id": "gemini-doc-07",
+        "source": "data/corpus/07_docs_latest-model.md",
+        "page": 7,
+        "text": "{% tab label=\"REST\" %}\n  ```bash\n  curl -X POST \"https://generativelanguage.googleapis.com/v1beta/interactions\" \\\n    -H \"x-goog-api-key: $GEMINI_API_KEY\" \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\n      \"model\": \"gemini-4-carbon\",\n      \"input\": \"Explain gravity to a skeptical cat in three short sentences.\"\n    }'\n  ```\n\n{% /tab %}\n\n{% /tabs %}\n\n## Set up your coding agent  {% class=\"hide-from-toc\" id=\"coding-agents\" %}\n\nGive your coding agent live access to the latest Gemini models, SDK syntax, and documentation so it always builds with up-to-date information.\n\n```bash\n# Connect the live Gemini Docs MCP server\nnpx add-mcp \"https://gemini-api-docs-mcp.dev\"",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/latest-model.md",
+          "page": 7,
+          "title": "Latest Gemini models — Overview",
+          "source": "data/corpus/07_docs_latest-model.md",
+          "section": "models_and_pricing",
+          "strategy": "B",
+          "chunk_index": 18,
+          "document_id": "gemini-doc-07"
+        },
+        "score": 0.29086345841968975,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-01::B::0005 | data/corpus/01_docs_coding-agents.md | page 1]\n## Install Gemini agent skills  {% id=\"available-skills\" %}\n\nAgent skills give your coding agent procedural rules, current model names, and SDK code patterns. Instead of adding long instructions to your prompt, your agent loads each skill only when needed. This helps your agent avoid deprecated SDKs and use modern Gemini patterns.\n\nSkills work alongside the Gemini Docs MCP server. If your agent does not have the MCP server installed, the skill falls back to [`llms.txt`](https://aistudio.google.com/llms.txt). To learn more about how skills work, read the [Gemini API Skills guide](https://aistudio.google.com/learn/gemini-api-skills).",
+    "context_ids": [
+      "gemini-doc-01::B::0005"
+    ],
+    "context_chars": 712,
+    "elapsed_ms": 9.3,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "question": "In the tools_and_agents section, what is the default outbound network access policy for managed agents in their Linux sandbox, and how can you restrict it?",
+    "filter": {
+      "section": "tools_and_agents"
+    },
+    "method": "tfidf",
+    "budget_chars": 800,
+    "results": [
+      {
+        "id": "gemini-doc-27::B::0004",
+        "source_id": "gemini-doc-27",
+        "source": "data/corpus/27_docs_agents.md",
+        "page": 27,
+        "text": "### Network access  {% id=\"network-access\" %}\n\nBy default, environments have unrestricted outbound network access. Use a\n`network` allowlist to restrict outbound traffic to specific domains or\nwildcard patterns. For configuration details, see\n[Network Allow List](/docs/aistudio-agents#network-allow-list) (AI\nStudio) or [Network rules](/docs/custom-agents#with-network-rules)\n(API).\n\n### External tools and APIs  {% id=\"external-tools-and-apis\" %}",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/agents.md",
+          "page": 27,
+          "title": "Overview",
+          "source": "data/corpus/27_docs_agents.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 4,
+          "document_id": "gemini-doc-27"
+        },
+        "score": 0.3534479788021832,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "gemini-doc-31::B::0087",
+        "source_id": "gemini-doc-31",
+        "source": "data/corpus/31_docs_agent-environment.md",
+        "page": 31,
+        "text": "## Network configuration  {% id=\"network-configuration\" %}\n\nBy default, environments have unrestricted outbound network access. Use the\n`network` field to restrict outbound traffic to specific domains. Each rule\nspecifies a `domain`, plus an optional `credential` to inject a stored secret\nand an optional `transform` object to inject headers into matching requests.\nThese headers can be unique per interaction, and you can update them for the same environment.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/agent-environment.md",
+          "page": 31,
+          "title": "Environments",
+          "source": "data/corpus/31_docs_agent-environment.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 87,
+          "document_id": "gemini-doc-31"
+        },
+        "score": 0.31074544009814753,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "gemini-doc-27::B::0003",
+        "source_id": "gemini-doc-27",
+        "source": "data/corpus/27_docs_agents.md",
+        "page": 27,
+        "text": "*   **[Deep Research](/docs/deep-research)**: Autonomous research agent\n  that plans, executes, and synthesizes multi-step research tasks for use\n  cases like market analysis, due diligence, and literature reviews.\n\n## Security and best practices  {% id=\"security-best-practices\" %}\n\n{% callout type=\"note\" %}\n  Note: Managed agents are in **Public Preview**. Review the agent's actions and\n  outputs before relying on them in sensitive workflows.\n\n{% /callout %}\n\nEvery agent runs in a sandboxed environment that is isolated at the OS level.\nThe sandbox has unrestricted outbound network access by default. You can\nrestrict or disable network access using an allowlist.",
+        "metadata": {
+          "url": "https://aistudio.google.com/docs/agents.md",
+          "page": 27,
+          "title": "Overview",
+          "source": "data/corpus/27_docs_agents.md",
+          "section": "tools_and_agents",
+          "strategy": "B",
+          "chunk_index": 3,
+          "document_id": "gemini-doc-27"
+        },
+        "score": 0.29206610454512333,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[gemini-doc-27::B::0004 | data/corpus/27_docs_agents.md | page 27]\n### Network access  {% id=\"network-access\" %}\n\nBy default, environments have unrestricted outbound network access. Use a\n`network` allowlist to restrict outbound traffic to specific domains or\nwildcard patterns. For configuration details, see\n[Network Allow List](/docs/aistudio-agents#network-allow-list) (AI\nStudio) or [Network rules](/docs/custom-agents#with-network-rules)\n(API).\n\n### External tools and APIs  {% id=\"external-tools-and-apis\" %}",
+    "context_ids": [
+      "gemini-doc-27::B::0004"
+    ],
+    "context_chars": 515,
+    "elapsed_ms": 10.2,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "method": "hybrid_rrf",
+  "split": "dev",
+  "budget_chars": 800,
+  "n": 15,
+  "hit1": 11,
+  "hit1_rate": 0.7333,
+  "hit3": 12,
+  "hit3_rate": 0.8,
+  "context_hit": 8,
+  "context_hit_rate": 0.5333,
+  "avg_context_chars": 637.5,
+  "median_ms": 1360.51,
+  "embed_tokens": 353,
+  "rerank_tokens": 0,
+  "total_cost_usd": 7e-06
+}

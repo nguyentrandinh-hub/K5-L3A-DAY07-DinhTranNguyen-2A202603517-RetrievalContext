@@ -1,0 +1,17 @@
+{
+  "method": "dense",
+  "split": "dev",
+  "budget_chars": 800,
+  "n": 15,
+  "hit1": 7,
+  "hit1_rate": 0.4667,
+  "hit3": 12,
+  "hit3_rate": 0.8,
+  "context_hit": 6,
+  "context_hit_rate": 0.4,
+  "avg_context_chars": 602.9,
+  "median_ms": 1334.91,
+  "embed_tokens": 353,
+  "rerank_tokens": 0,
+  "total_cost_usd": 7e-06
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "query_id": "q16",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "False abstention: TF-IDF failed to retrieve gemini-doc-07."
+  },
+  {
+    "query_id": "q17",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "False abstention: budget=800 dropped quota_exceeded chunk."
+  },
+  {
+    "query_id": "q18",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "False abstention: TF-IDF missed gemini-doc-20."
+  },
+  {
+    "query_id": "q19",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "False abstention: TF-IDF missed gemini-doc-01."
+  },
+  {
+    "query_id": "q20",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "Correctly answered using gemini-doc-27::B::0004."
+  },
+  {
+    "query_id": "u03",
+    "abstention_correct": true,
+    "note": "Correctly abstained on SLA uptime/service credit (absent in corpus).",
+    "citation_support": []
+  },
+  {
+    "query_id": "u04",
+    "abstention_correct": true,
+    "note": "Correctly abstained on supervised fine-tuning steps/pricing (absent in corpus).",
+    "citation_support": []
+  }
+]

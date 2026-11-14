@@ -1,0 +1,18 @@
+{
+  "mode": "agent",
+  "method": "hybrid_rrf",
+  "model": "openai/gpt-4o-mini",
+  "split": "test",
+  "budget_chars": 2400,
+  "max_searches": 4,
+  "top_k": 3,
+  "n": 7,
+  "answered": 4,
+  "abstain": 3,
+  "errors": 0,
+  "avg_searches": 1.86,
+  "median_ms": 6397.88,
+  "total_prompt_tokens": 12948,
+  "total_completion_tokens": 990,
+  "total_cost_usd": 0.002539
+}

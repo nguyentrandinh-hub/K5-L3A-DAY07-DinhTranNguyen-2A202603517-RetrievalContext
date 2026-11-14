@@ -1,0 +1,174 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "Which command-line tool lets AI coding agents search and install Gemini agent skills from the google-gemini/gemini-skills repository?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "What happens to the Gemini API CLI (`gemini-api`) output when you pass `--dry-run`?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "Starting May 28, 2026, what kind of API keys are created by default in Google AI Studio, and what happens to unrestricted standard keys?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "In the models_and_pricing section, what is the context window and introductory 1M-token price for Gemini 4 Carbon?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "Which model should developers migrate to now that Veo 3.1 Preview has been shut down in the Gemini API?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "In Gemini 4 models, how does the API behave if your input tokens plus `max_output_tokens` exceed 1,048,576 tokens?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "What are the two fields contained in every `thought` step returned by the Interactions API?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "How does the Paid tier of the Gemini Developer API differ from the Free tier regarding user content privacy and batch processing?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "In the tools_and_agents section, how should managed agents store and use external secrets without exposing them inside the sandbox?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Which HTTP status code and error code are returned when your Prepay credit balance is depleted?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "Which libraries do the Google GenAI SDKs support for defining Structured Outputs schemas in Python and JavaScript?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "Up to how many pages can Gemini models process in a PDF document using native vision?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "What are the three primary use cases for function calling with the Gemini API?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "In the getting_started section, which transport protocol and SDK method are used to open a Gemini Live API session?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "Which API version do the latest Google Gen AI SDKs default to starting November 2026, and what happens if you call a v1beta-only feature without changing it?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question": "Which Gemini 4 model is described as fast and efficient for everyday coding and agentic workflows, and what is its 1M-token price?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "question": "In the api_reference section, what is the difference between `rate_limit_exceeded` and `quota_exceeded` error codes?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question": "How are non-PDF text formats like TXT, Markdown, or HTML handled by Gemini compared to PDF files?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question": "What happens if your coding agent does not have the Gemini Docs MCP server installed when using a Gemini agent skill?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "In the tools_and_agents section, what is the default outbound network access policy for managed agents in their Linux sandbox, and how can you restrict it?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "u01",
+    "split": "dev",
+    "question": "Does the Gemini API offer a signed HIPAA Business Associate Agreement (BAA) or SOC 2 Type II compliance report for healthcare workloads in this documentation?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Regex check across all 40 Day 6 corpus documents for \\bhipaa\\b, \\bbaa\\b, and \\bsoc\\s*2\\b returned 0 matches."
+  },
+  {
+    "id": "u02",
+    "split": "dev",
+    "question": "What are the open-weights download URLs and local GPU VRAM requirements to self-host Gemini 4 Carbon?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Regex check across all 40 Day 6 corpus documents for open weights and \\bvram\\b returned 0 matches; Gemini 4 Carbon is only documented as a hosted API model."
+  },
+  {
+    "id": "u03",
+    "split": "test",
+    "question": "What is the guaranteed uptime SLA percentage (e.g., 99.9%) and service credit refund policy for paid Gemini API tiers?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Regex check across all 40 Day 6 corpus documents for \\bsla\\b, \\buptime\\b, and service credit returned 0 matches."
+  },
+  {
+    "id": "u04",
+    "split": "test",
+    "question": "What is the exact Python SDK method and pricing per 1,000 training steps for supervised fine-tuning of Gemini 4 Carbon?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Regex check across all 40 Day 6 corpus documents for supervised fine and training steps returned 0 matches."
+  }
+]

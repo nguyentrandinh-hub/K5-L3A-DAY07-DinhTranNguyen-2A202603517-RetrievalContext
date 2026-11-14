@@ -1,0 +1,55 @@
+[
+  {
+    "query_id": "q16",
+    "answer_grade": 1,
+    "citation_support": [
+      true,
+      true
+    ],
+    "note": "Identified Gemini 4 Hydrogen [gemini-doc-29::B::0072], noted price missing and cited Argon price [gemini-doc-09::B::0003]; missed Hydrogen .50/.50 in doc-07."
+  },
+  {
+    "query_id": "q17",
+    "answer_grade": 2,
+    "citation_support": [
+      true,
+      false
+    ],
+    "note": "Correctly explained rate_limit_exceeded vs quota_exceeded (429); gemini-doc-37::B::0006 supports quota_exceeded, but gemini-doc-37::B::0005 is 404/409 errors instead of gemini-doc-37::B::0002."
+  },
+  {
+    "query_id": "q18",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "False abstention: top-3 chunks from gemini-doc-20 did not contain the TXT/Markdown/HTML plain-text passage."
+  },
+  {
+    "query_id": "q19",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "Correctly answered llms.txt fallback supported by gemini-doc-01::B::0005."
+  },
+  {
+    "query_id": "q20",
+    "answer_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "note": "Correctly answered unrestricted outbound network + allowlist supported by gemini-doc-27::B::0004 and gemini-doc-31::B::0087."
+  },
+  {
+    "query_id": "u03",
+    "abstention_correct": true,
+    "note": "Correctly abstained after 4 searches on SLA/uptime.",
+    "citation_support": []
+  },
+  {
+    "query_id": "u04",
+    "abstention_correct": true,
+    "note": "Correctly abstained after 4 searches on supervised fine-tuning.",
+    "citation_support": []
+  }
+]
